@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="preload"
+          href="https://fonts.googleapis.com/css?family=Montserrat%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900%2C100i%2C200i%2C300i%2C400i%2C500i%2C600i%2C700i%2C800i%2C900i%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontaga%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;subset=latin,vietnamese&#038;display=swap"
+          as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.min.css">
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/swiper.css">
+    <script src="js/swipper.js"></script>
+    <link rel="stylesheet" href="css/fancy-box.css"/>
+    <script src="js/fancy-box.js"></script>
+</head>
+<body>
+
+<div class="float-menu-icon">
+    <i class="fas fa-bars"></i>
+</div>
+
+<button id="scrollTop" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+<!--Mobile Menu-->
+<div class="mobile-menu">
+    <div class="dropdown-inner">
+        <ul class="dropdown">
+            <li class="dropdown-item"><a href=""><span>Trang chủ</span></a></li>
+            <li class="dropdown-item"><a href=""><span>Tổng quan</span></a></li>
+            <li class="dropdown-item"><a href=""><span>Vị trí</span></a>
+            </li>
+            <li class="dropdown-item"><a href=""><span>Tiện ích</span></a></li>
+            <li class="dropdown-item"><a href=""><span>Mặt bằng</span></a></li>
+            <li class="dropdown-item"><a href=""><span>Thiết kế</span></a></li>
+            <li class="dropdown-item"><a href=""><span>Liên hệ</span></a></li>
+        </ul>
+        <div class="phone-box">
+            <i class="fas fa-phone-alt"></i>
+            <span>0907.609.089</span>
+        </div>
+
+        <div class="close-menu">
+            <i class="fas fa-times"></i>
+        </div>
+    </div>
+</div>
+<!--End of Mobile menu-->
+
+<!-- Header -->
+<div class="header">
+    <div class="header__inner">
+        <div class="logo-box">
+            <a href="">
+                <img src="img/logo.jpg" alt="">
+            </a>
+        </div>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="menu-box">
+            <ul class="main-menu">
+                <li class="menu-item">
+                    <a href=""><span class="text-wrap">Trang chủ</span></a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#tongquan"><span class="text-wrap">Tổng quan</span></a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#vitri"><span class="text-wrap">Vị trí</span></a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#tienich"><span class="text-wrap">Tiện ích</span></a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#matbang"><span class="text-wrap">Mặt bằng</span></a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#thietke"><span class="text-wrap">Thiết kế</span></a>
+                </li>
+
+                <li class="menu-item">
+                    <a href="#lienhe"><span class="text-wrap">Liên hệ</span></a>
+                </li>
+            </ul>
+        </div>
+        <div class="phone-box">
+            <i class="fas fa-phone-alt"></i>
+            <span>0907.609.089</span>
+        </div>
+    </div>
+</div>
+<!-- End of header -->
+
+<!--Main Slider-->
+<div class="main-slider__wrap">
+    <div class="swiper-container main-slider ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="img/ecoxuan.png" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="img/eco-xuan-1024x576.jpeg" alt="">
+            </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+<!--End of Main slider-->
+
+<!--Main content-->
+
+<div id="main-content">
+    <div class="container">
+        <div class="content_inner">
+            <!--Section Overview-->
+            <div class="section overview">
+                <h2 class="heading">
+                    <img src="img/hot-1.gif" alt="" class="hot-img"> Siêu dự án Waterpoint - cộng đồng thịnh vương <img
+                        src="img/hot-1.gif" alt="" class="hot-img">
+                </h2>
+
+                <h2 class="heading sub-heading">
+                    <img src="img/hot-1.gif" alt="" class="hot-img"> Mở bán giao đoạn 2 <img src="img/hot-1.gif" alt=""
+                                                                                             class="hot-img">
+                </h2>
+
+                <div class="hotline">
+                    hotline cđt: 0907.609.089 (24/7)
+                </div>
+
+                <div class="products">Các sản phẩm dự án Waterpoint</div>
+
+                <div class="product-list">
+                    <div class="product-item">
+                        <div class="label text-blue1">Nhà phố vườn</div>
+                        <div class="value text-red1">Giá dự kiến từ: 2,9 tỷ</div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="label text-blue1">Nhà phố thương mại</div>
+                        <div class="value text-red1">Giá dự kiến từ: 4,8 tỷ (đg 22m) - từ 5,6 tỷ (đường 36m)</div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="label text-blue1">Biệt thự song lập</div>
+                        <div class="value text-red1">Giá dự kiến từ: 4.7 tỷ</div>
+                    </div>
+
+                    <div class="product-item">
+                        <div class="label text-blue1">Biệt thự đơn lập</div>
+                        <div class="value text-red1">Giá dự kiến từ: 6.3 tỷ</div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Section Project Overview-->
+            <div class="section project-overview" id="tongquan">
+                <h2 class="heading">Tổng quan dự án waterpoint</h2>
+                <div class="seperate">
+                    <img src="img/title.png" alt="">
+                </div>
+
+                <div class="project-wrap">
+                    <div class="project-left">
+                        <div class="feature">
+                            <strong>Tên dự án: </strong> Khu đô thị Waterpoint
+                        </div>
+
+                        <div class="feature">
+                            <strong>Vị trí: </strong> Tỉnh lộ 830, An Thạnh, Bến Lức, Lông An
+                        </div>
+
+                        <div class="feature">
+                            <strong>Chủ đầu tư: </strong> Công ty CP ĐT Nam Long, NNR, JOIN, TBS Group, Tân Hiệp
+                        </div>
+
+                        <div class="feature">
+                            <strong>Quy mô: </strong> Tổng diện tích đến 355ha, giai đoạn 1 sẽ triển khai trước 165ha.
+                            <ul>
+                                <li>30ha diện tích mặt nước</li>
+                                <li>
+                                    32ha diện tích thương mại.
+                                </li>
+                                <li>
+                                    24ha đất giành cho giáo dục.
+                                </li>
+                                <li>
+                                    3ha giành cho công trình y tế.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="feature">
+                            <strong>Sản phẩm: </strong> Nhà phố vườn, Nhà phố thương mại, Biệt thự song lập, Biệt thự
+                            đơn lập, Đất nền Dinh thự (450m2-600m2).
+                        </div>
+
+                        <div class="feature">
+                            <strong>Pháp lý: </strong> Sổ hồng sở hữu lâu dài
+                        </div>
+                    </div>
+                    <div class="project-right">
+                        <img src="img/tongquan.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!--Section position-->
+            <div class="section position" id="vitri">
+                <h2 class="heading">Vị trí dự án waterpoint</h2>
+                <div class="seperate">
+                    <img src="img/title.png" alt="">
+                </div>
+                <div class="position-content">
+                    <div class="position-content__top">
+                        <div class="position-image">
+                            <img src="img/vitri.png" alt="">
+                        </div>
+                        <div class="position-content__right">
+                            <p>
+                                Nằm trên mặt tiền tỉnh lộ DT830 (Vành đai 4) thuộc xã An Thạnh, huyện Bến Lức, tỉnh Long
+                                An, dự án Waterpoint nằm ở vị trí đắc địa được bao bọc bởi dòng sông Vàm Cỏ Đông chạy
+                                xung quanh dự án, tạo nên một không gian sống tươi mát, trong lành, tự nhiên và tiện
+                                nghi.<strong>Waterpoint</strong> nằm nên trục đường nối dài từ thị trấn Đức Hòa đến cao
+                                tốc Hồ Chí Minh – Trung Lương và quốc lộ 1, trung tâm thị trấn Bến Lức sở hữu đầu mối
+                                giao thông thuận tiện cả về đường bộ, đường thủy. Kết nối trực tiếp giữa thành phố Hồ
+                                Chí Minh và đồng bằng sông Cửa Long.
+                            </p>
+                            <p>Waterpoint toạ lạc tại vị trí cực kỳ đắc địa nó sánh như vị trí vàng kết nối giao thông
+                                giúp thông thương kinh tế phát triển.</p>
+                            <p>Waterpoint là cửa ngõ của Tp.HCM và đồng bằng sông Cửu Long, nhìn ra sông Vàm Cỏ Đông,
+                                Waterpoint sẽ là một nam châm thu hút người dân ở cả thành phố Hồ Chí Minh và đồng bằng
+                                sông Cửu Long để ở trong một cộng đồng ven sông kiểu mới.</p>
+                        </div>
+                    </div>
+
+                    <div class="position-content__bottom">
+                        <div class="col">
+                            <h3 class="heading">Tỉnh lộ 830 (đường vành đai 4)</h3>
+                            <p>Kết nối 6 tỉnh thành rất quan trọng của sự phát triển kinh tế vùng Tp.HCM: Vũng Tàu –
+                                Đồng Nai – Bình Dương – Tây Ninh – Long An – TP.HCM</p>
+                        </div>
+                        <div class="col">
+                            <h3 class="heading">Đường cao tốc – Quốc lộ 1</h3>
+                            <p>Từ đây, chúng ta đễ dàng nhận thấy từ Long An về Tp.HCM hoặc đi các tỉnh phía Nam (Miền
+                                Tây) cực kỳ dễ dàng bởi tuyến cao tốc Tp.HCM – Bến Lức – Trung Lương song song đó là
+                                tuyến quốc lộ 1A. Cùng với tuyến đường Nguyễn Hữu Trí – chúng ta có 3 (ba) lựa chọn về
+                                Trung tâm Tp.HCM chỉ trong vòng 45 phút (Waterpoint – Chợ Bến Thành)</p>
+                        </div>
+                        <div class="col">
+                            <h3 class="heading">Kết nối đường hàng không</h3>
+                            <p>Nút giao quan trọng kết nối đường cao tốc Bến lức Long Thành ra sân bay quốc tế Long
+                                Thành trong nay mai – Ba mặt giáp sông là giao thương về đường thuỷ rất thuận lợi – nên
+                                về yếu tố phong thuỷ thì Waterpoint như một túi đụng tiền tài – sinh khí – thịnh vượng
+                                cho cư dân.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Section tien ich-->
+            <div id="tienich" class="section">
+                <h2 class="heading">Tiện ích dự án waterpoint</h2>
+                <div class="seperate">
+                    <img src="img/title.png" alt="">
+                </div>
+                <div class="tienich-banner">
+                    <img src="img/tienich.jpg" alt="">
+                </div>
+                <div class="new-list">
+                    <div class="news-item">
+                        <div class="news-image">
+                            <img src="img/tien-ich-cosohathangnoikhu_7625.png" alt="">
+                        </div>
+                        <h3 class="news-heading">
+                            <strong class="text-blue1">MẬT ĐỘ DÂN CƯ THẤP</strong>
+                        </h3>
+                        <p class="news-sapo">
+                            Hạn chế mật độ xây dựng ở các và khu vực khác nhau. Trong phát triển hạ tầng nhiều lớp tạo
+                            cảm giác nghỉ dưỡng với các khu vườn bên trong và không gian mở xanh. Các công viên ngoài
+                            trời có sức chứa hơn 30.000 cư dân – với khoảng 13.500 đơn vị dân cư trong toàn bộ diện tích
+                            355 ha
+                        </p>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-image">
+                            <img src="img/tien-ich-matdosongthap_3726.png" alt="">
+                        </div>
+                        <h3 class="news-heading">
+                            <strong class="text-blue1">CƠ SỞ HẠ TẦNG HOÀN CHỈNH</strong>
+                        </h3>
+                        <p class="news-sapo">
+                            Đại lộ rộng 36m – 48m, các đường nhánh rộng 22m giúp phân luồng giao thông thuận tiện cho
+                            các phương tiện giao thông nội khu (xe hơi, xe máy, xe đạp và người đi bộ) – kết nối đồng bộ
+                            với ngoại tuyến (phương tiện công cộng, xe buýt…). Hơn nữa, quy hoạch sẵn sàng đảm bảo nhu
+                            cầu đậu xe hơi ngày càng tăng trong tương lai.
+                        </p>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-image">
+                            <img src="img/tien-ich-moitruongsongxanh_4661.png" alt="">
+                        </div>
+                        <h3 class="news-heading">
+                            <strong class="text-blue1">MÔI TRƯỜNG SỐNG XANH MÁT</strong>
+                        </h3>
+                        <p class="news-sapo">
+                            Tận dụng tối đa hoá lợi thế sông nước với dòng chảy uốn lượn bao quanh ba mặt của dự án, nhà
+                            thiết kế đã tạo nên nhiều khu vực thể thao, giải trí, khu vực nghỉ dưỡng công cộng và các
+                            sản phẩm đặc thù hướng đến thiên nhiên xanh mát.
+                        </p>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-image">
+                            <img src="img/tien-ich-sutienloituyetvoi_9608.png" alt="">
+                        </div>
+                        <h3 class="news-heading">
+                            <strong class="text-blue1"><strong>TỐI ƯU TIỆN ÍCH CỘNG ĐỒNG</strong></strong>
+                        </h3>
+                        <p class="news-sapo">
+                            Tối ưu không gian công cộng cho các hoạt động chung của cộng đồng trong nhà ngoài trời như
+                            công viên, cảnh quan đô thị, trung tâm thể thao. Phát triển toàn diện các cơ sở tiện nghi
+                            trong sinh hoạt, học tập và giải trí (bao gồm các khu vực hỗn hợp, khu dân cư, khu kinh
+                            doanh – thương mại, trường học, bệnh viện và khu giải trí)
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!--Section mat bang-->
+            <div id="matbang" class="section">
+                <h2 class="heading">Mặt bằng dinh thự waterpoint</h2>
+                <div class="seperate">
+                    <img src="img/title.png" alt="">
+                </div>
+                <div class="matbang-image">
+                    <img src="img/matbang.jpg" alt="">
+                </div>
+            </div>
+
+            <!--Section thiet ke-->
+            <div id="thietke" class="section">
+                <h2 class="heading">Thiết kế dinh thự waterpoint</h2>
+                <div class="seperate">
+                    <img src="img/title.png" alt="">
+                </div>
+                <div class="slider_wrap">
+                    <h3 class="sub-heading">Thiết kế dinh thư vườn</h3>
+
+                    <div class="swiper-container slider-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/01.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/02.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/03.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/04.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/06.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/09.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/10.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/14.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/15.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="slider_wrap">
+                    <h3 class="sub-heading">Thiết kế dinh ven sông</h3>
+
+                    <div class="swiper-container slider-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/river-01.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/river-04.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/river-05b.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/river-05c.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="slider_wrap">
+                    <h3 class="sub-heading">Thiết kế nhà phố vườn</h3>
+
+                    <div class="swiper-container slider-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/nha-pho-vuon-waterpoint-1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/nha-pho-vuon-waterpoint-2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/nha-pho-vuon-waterpoint-4.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="slider_wrap">
+                    <h3 class="sub-heading">Thiết kế biệt thự song lập</h3>
+
+                    <div class="swiper-container slider-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/1-1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/2-1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/3-1.jpgo-vuon-waterpoint-4.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="slider_wrap">
+                    <h3 class="sub-heading">Thiết kế biệt thự đơn lập</h3>
+
+                    <div class="swiper-container slider-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/biet-thu-don-lap-waterpoint-1.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/biet-thu-don-lap-waterpoint-2.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/biet-thu-don-lap-waterpoint-4.jpg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="overlay"></div>
+
+<!--End of main content-->
+
+<!--Footer-->
+<div class="footer" id="lienhe">
+    <div class="container">
+        <div class="footer-left">
+            <h4 class="banner">
+                <img src="img/logo.jpg" alt="">
+            </h4>
+            <div class="info">Thông tin</div>
+
+            <div class="info_wrap">
+                <div class="item"><strong>Sàn giao dịch bất động sản Nam Long</strong></div>
+                <div class="item">94 - 96 Đường Nguyễn Du, Quận 1, TP.HCM</div>
+            </div>
+            <div class="contact">
+                <div class="left">
+                    Điện thoại: 0907.609.089
+                </div>
+                <div class="right">
+                    Email: thuthuy.nguyen@namlongreal.com
+                </div>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="contact-form">
+                <div class="contact-form__title">
+                    Đăng ký nhận tin
+                </div>
+
+                <div class="contact-form__inner">
+                    <input type="text" class="form-control" placeholder="Họ tên *">
+                    <input type="text" class="form-control" placeholder="Email">
+                    <input type="text" class="form-control" placeholder="Số điện thoại">
+                    <button class="register">Đăng ký</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End of footer-->
+
+<!--JS library-->
+<script src="js/index.js"></script>
+</body>
+</html>
