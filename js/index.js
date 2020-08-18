@@ -1,27 +1,5 @@
 jQuery(document).ready(function (e) {
-
-    // var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    // // header fixed
-    // $(window).scroll(function () {
-    //     var scroll = $(window).scrollTop();
-    //
-    //     if (width > 1024) {
-    //         if (scroll >= 100) {
-    //             $(".header").addClass("fixed");
-    //         } else {
-    //             $(".header").removeClass("fixed");
-    //         }
-    //     } else {
-    //         if (scroll >= 100) {
-    //             $(".header").hide();
-    //             $('.float-menu-icon').addClass('open');
-    //         } else {
-    //             $(".header").show();
-    //             $('.float-menu-icon').removeClass('open');
-    //         }
-    //     }
-    // });
-
+    
     $('#matbang1 .nav-item').click(function () {
         const data = $(this).attr('data-name');
         $('#matbang1 .nav-item').removeClass('active');
