@@ -1,4 +1,16 @@
 jQuery(document).ready(function (e) {
+
+    var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    // header fixed
+    $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+
+            if (scroll >= 100) {
+                $(".header").addClass("fixed");
+            } else {
+                $(".header").removeClass("fixed");
+            }
+    });
     
     $('#matbang1 .nav-item').click(function () {
         const data = $(this).attr('data-name');
