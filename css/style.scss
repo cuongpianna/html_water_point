@@ -4,7 +4,7 @@
 }
 
 /*=================VARIABLE===============*/
-$primary_font: GilroyLight;
+$primary_font: Mulish;
 $secondary_font: Roboto;
 $yellow1: #c99232;
 $blue1: #1e2842;
@@ -240,16 +240,6 @@ div img {
   //top: 0;
   left: 0;
 
-}
-
-.header.fixed {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background: #fff;
-  z-index: 100000;
-  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
-  height: 80px;
 }
 
 /*******BANNER********/
@@ -791,30 +781,6 @@ div img {
     padding-left: 4px;
     text-decoration: none;
   }
-}
-
-.float-menu-icon {
-  display: none;
-  width: 44px;
-  height: 44px;
-  margin: 0 !important;
-  background-color: rgba(0, 0, 0, 0.2);
-  top: 10px;
-  right: 10px;
-  position: fixed;
-  border-radius: 3px;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-
-  i {
-    color: #fff !important;
-    font-size: 24px;
-  }
-}
-
-.float-menu-icon.open {
-  display: inline-flex;
 }
 
 #scrollTop {
