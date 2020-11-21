@@ -1,6 +1,11 @@
 /*=================VARIABLE===============*/
-$primary_font: Arial;
-$secondary_font: Roboto;
+@font-face {
+  font-family: 'PingFangTC';
+  url: url("./font/PingFangTC-Medium.ttf")
+}
+
+$primary_font: PingFangTC;
+$secondary_font: PingFangTC;
 $red1: red;
 $blue1: #103e6c;
 
@@ -11,41 +16,34 @@ $blue1: #103e6c;
   box-sizing: border-box;
 }
 
-ul {
-  margin: 0;
-}
-
-.text-blue1{
-  color: $blue1;
-}
-
-.text-red1{
-  color: $red1;
-}
-
 body {
   position: relative;
   font-family: $primary_font;
+
+  a{
+    text-decoration: none;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  p{
+    line-height: 1.5;
+    color: #2d2d2d;
+    font-size: 16px;
+  }
+
 }
 
-.sub-heading{
-  font-size: 18px;
-  color: $blue1;
-  font-weight: 600;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-p{
-  line-height: 1.5;
-  color: #2d2d2d;
-  font-size: 16px;
+.big-container{
+  max-width: 1686px;
+  margin: 0 auto;
 }
 
 .container {
-  max-width: 1250px;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 0 40px;
 }
 
 .container-fluid {
@@ -59,540 +57,91 @@ p{
   }
 }
 
-.heading{
-  color: $blue1;
-  font-size: 24px;
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-.mobile-icon{
-  cursor: pointer;
-}
-
-.seperate{
-  text-align: center;
-  margin-bottom: 30px;
+.wrapper{
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
 }
 
 /*====================== Header ======================*/
 
 .header {
+  padding-top: 37px;
+  .logo{
+    width: 52px;
+    height: 52px;
+  }
 
-  .header__inner{
+  a{
     display: flex;
-    justify-content: space-between;
-    height: 80px;
     align-items: center;
 
-    .menu-icon{display: none}
-
-    .logo-box{
-      padding: 0 30px 0 15px;
-      img{
-        width: 140px;
-        max-height: 60px;
-      }
-    }
-
-    .main-menu{
-      margin: 0;
-      list-style-type: none;
-
-      li{
-        display: inline-block;
-        >a{
-          text-decoration: none;
-          margin: 18px 14px 18px 14px;
-          padding: 4px 0px 4px 0px;
-
-          span{
-            position: relative;
-            color: #0c2d4e;
-            text-transform: uppercase;
-            font-weight: 600;
-            font-size: 16px;
-
-            &:after {
-              display: block;
-              background-color: $blue1;
-              position: absolute;
-              bottom: -30%;
-              left: 0;
-              content: '';
-              width: 100%;
-              height: 2px;
-              visibility: hidden;
-              -moz-transform: scaleX(0);
-              -webkit-transform: scaleX(0);
-              transform: scaleX(0);
-              transform-origin: bottom left;
-              -webkit-transition: all 0.25s ease-out;
-              -moz-transition: all 0.25s ease-out;
-              -ms-transition: all 0.25s ease-out;
-              -o-transition: all 0.25s ease-out;
-              transition: all 0.25s ease-out;
-            }
-          }
-
-          &:hover{
-            span{
-              &:after{
-                visibility: visible;
-                transform: scaleX(1);
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .phone-box{
-      padding: 0 30px 0 20px;
-      i, span{
-        color: $blue1;
-      }
-
-      span{
-        font-weight: 600;
-        font-size: 16px;
-        margin-left: 5px;
-      }
-    }
-  }
-}
-
-/*====================== Main slider ======================*/
-
-.main-slider__wrap{
-  width: 100%;
-  img{
-    width: 100%;
-    max-height: 600px;
-  }
-}
-
-#main-content{
-  .content_inner{
-    padding: 50px 0;
-  }
-}
-
-/*=================== Slider ==========================*/
-.slider-container{
-  padding: 15px 0 30px !important;
-  margin-bottom: 20px;
-
-  img{
-    width: 100%;
-  }
-
-  .swiper-button-next, .swiper-button-prev{
-    &:after{
-      font-size: 16px;
-      color: #2d2d2d;
-    }
-  }
-
-  .swiper-pagination{
-    bottom: 0;
     span{
-      width: 12px;
-      height: 12px;
-      background: rgb(45, 45, 45);
-      cursor: pointer;
-    }
-
-    span.swiper-pagination-bullet-active{
-      background: #333333;
+      margin-left: 27px;
+      font-family: $primary_font;
+      font-size: 27px;
+      color: #000000;
+      letter-spacing: 1.12px;
+      line-height: 30px;
     }
   }
 }
 
-/*====================OVERVIEW=======================*/
-.section.overview{
-  .hotline{
-    text-transform: uppercase;
-    font-size: 24px;
-    color: $red1;
-    font-weight: 600;
-    text-align: center;
-    margin: 15px 0 30px;
-  }
-
-  .products{
-    text-transform: uppercase;
-    font-size: 24px;
-    color: $blue1;
-    font-weight: 600;
-    text-align: center;
-    margin: 0 0 30px 0;
-    text-decoration: underline;
-  }
-
-  .product-list{
+.overview{
+  margin-top: 78px;
+  .overview__content{
     display: flex;
+    justify-content: space-between;
+    .overview__left{
+      width: 725px;
 
-    .product-item{
-      padding: 0 20px;
-      flex-basis: 25%;
-      .label{
-        font-size: 18px;
-        text-transform: uppercase;
-        font-weight: 600;
-        text-align: center;
-        margin-bottom: 10px;
+      h1.title{
+        font-family: $primary_font;
+        font-size: 44px;
+        color: #000000;
+        letter-spacing: 1.83px;
+        line-height: 1;
       }
 
-      .value{
-        font-weight: 600;
-        font-size: 16px;
-        text-align: center;
-        line-height: 1.8;
+      h2{
+        font-family: PingFangSC-Semibold;
+        font-size: 57px;
+        color: #000000;
+        letter-spacing: 2.38px;
+        line-height: 1;
       }
-    }
-  }
-}
 
-/*=====================PROJECT OVERVIEW=======================*/
-.section.project-overview{
-  margin-top: 40px;
-  .project-wrap{
-    display: flex;
-  }
+      .shape{
+        background: #D4F0EF;
+        font-family: PingFangSC-Semibold;
+        font-size: 42px;
+        color: #009491;
+        letter-spacing: 1.75px;
+        padding-left: 90px;
+        width: 670px;
+        height: 93px;
+        display: inline-flex;
+        align-items: center;
+        position: relative;
 
-  .project-left, .project-right{
-    flex-basis: 50%;
-    padding: 0 20px;
-  }
-
-  .project-left{
-    .feature{
-      margin-bottom: 5px;
-      line-height: 1.5;
-
-      ul{
-        margin: 8px 15px;
-        li{
-          margin: 4px;
+        &:after{
+          position: absolute;
+          content: '';
+          display: inline-block;
+          width: 0;
+          height: 0;
+          border-top: 93px solid #D4F0EF;
+          border-right: 58px solid transparent;
+          right: -58px;
         }
       }
     }
-  }
-}
-
-/*=====================POSITION=======================*/
-.section.position {
-  margin-top: 40px;
-
-  .position-content{
-    .position-content__top{
-      display: flex;
-
-      .position-image{
-        flex-basis: 66.66%;
-        padding: 0 15px;
-        img{
-          width: 100%;
-        }
-      }
-
-      .position-content__right{
-        flex-basis: 33.33%;
-        padding: 0 15px;
-        p{
-          margin-bottom: 15px;
-          line-height: 1.5;
-        }
-      }
-    }
-
-    .position-content__bottom{
-      display: flex;
-      margin-top: 30px;
-
-      .col{
-        flex-basis: 33.33%;
-        padding: 0 15px;
-
-        h3{
-          text-transform: none;
-          text-align: center;
-          font-size: 24px;
-          font-weight: bold;
-          margin-bottom: 15px;
-        }
-
-        p{
-          line-height: 1.5;
-        }
-      }
+    .overview__right{
+      width: 718px;
     }
   }
 }
 
-/*=====================TIEN ICH=======================*/
-#tienich{
-  margin-top: 40px;
-
-  .new-list{
-    margin-top: 40px;
-    display: flex;
-
-    .news-item{
-      padding: 0 15px;
-      flex-basis: 25%;
-
-      img{
-        width: 100%;
-      }
-
-      h3.news-heading{
-        font-size: 18px;
-        margin: 15px 0 20px;
-        text-transform: uppercase;
-        text-align: center;
-      }
-
-      p{
-        font-size: 18px;
-      }
-    }
-  }
-}
-
-/*=====================MAT BANG=======================*/
-#matbang{
-  margin-top: 40px;
-}
-
-/*=====================THIET KE=======================*/
-#thietke{
-  margin-top: 40px;
-
-  .slider_wrap{
-    h3.sub-heading{
-      margin-bottom: 45px;
-    }
-  }
-}
-
-.mobile-menu{
-  position: fixed;
-  z-index: 1000;
-  height: 100%;
-  width: 80%;
-  padding: 30px 30px 0;
-  transition: all ease .2s;
-  background: white;
-  left: -2500px;
-
-  ul{
-    list-style-type: none;
-    margin-bottom: 25px;
-    li{
-      padding: 16px 30px 16px 0;
-      border-bottom: 1px solid #c6c6c6;
-      a{
-        text-decoration: none;
-        text-transform: uppercase;
-        color: $blue1;
-        font-weight: bold;
-      }
-
-      &:last-child{
-        border: navajowhite;
-      }
-    }
-  }
-
-  .phone-box{
-    font-size: 13px;
-    color: $blue1;
-    font-weight: bold;
-  }
-
-  .close-menu{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 30px;
-    height: 30px;
-    background: $blue1;
-    text-align: center;
-    line-height: 30px;
-    i{
-      color: #fff;
-    }
-  }
-}
-
-.mobile-menu.open{
-  display: block;
-  position: fixed;
-  //top: 0;
-  left: 0;
-
-}
-
-.header.fixed{
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background: #fff;
-  z-index: 100000;
-  box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.1);
-  height: 80px;
-}
-
-/*=================FOOTER======================*/
-.footer{
-  box-shadow: 0px 5px 2px #888, 0px -1px 4px #888;
-  padding: 60px 0;
-
-  .container{
-    display: flex;
-
-    .footer-left{
-      flex-basis: 50%;
-
-      h4.banner{
-        margin-bottom: 15px;
-      }
-
-      .info{
-        font-weight: bold;
-        font-size: 20px;
-      }
-
-      .info_wrap{
-        margin-top: 20px;
-
-        .item{
-          margin-bottom: 5px;
-        }
-      }
-
-      .contact{
-        margin-top: 15px;
-      }
-    }
-
-    .footer-right{
-      flex-basis: 50%;
-
-      .contact-form__title{
-        text-transform: uppercase;
-        font-size: 20px;
-        font-weight: 600;
-        text-align: center;
-        margin-bottom: 14px;
-        color: $blue1;
-      }
-
-      .contact-form__inner{
-        input{
-          margin-bottom: 10px;
-          border-radius: 3px;
-          font-weight: 400;
-          color: #7a7a7a;
-          border: 1px solid #818a91;
-          min-height: 40px;
-          font-size: 14px;
-          line-height: 1.8;
-          padding: 6px 12px;
-        }
-
-        button{
-          color: #fff;
-          font-size: 13px;
-          line-height: 40px;
-          letter-spacing: 1.53px;
-          cursor: pointer;
-          text-transform: uppercase;
-          font-weight: 500;
-          padding: 0 20px;
-          height: 40px;
-          border: none;
-          border-radius: 3px;
-          background: $blue1;
-          transition: all ease .5s;
-
-          &:hover{
-            background: #1e5d9c;
-          }
-        }
-      }
-    }
-  }
-}
-
-.matbang-image img{
-  width: 100%;
-}
-
-.float-menu-icon{
-  display: none;
-  width: 44px;
-  height: 44px;
-  margin: 0 !important;
-  background-color: rgba(0, 0, 0, 0.2);
-  top: 10px;
-  right: 10px;
-  position: fixed;
-  border-radius: 3px;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  i{
-    color: #fff !important;
-    font-size: 24px;
-  }
-}
-
-.float-menu-icon.open{
-  display: inline-flex;
-}
-
-.overlay{
-  position: fixed;
-  width: 0;
-  height: 100%;
-  background: #2d2d2de3;
-  z-index: 1;
-  transition: all ease .2s;
-  left: 0;
-  display: none;
-  //display: block;
-  top: 0;
-}
-
-.overlay.open{
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-#scrollTop{
-  display: none; /* Mặc định button sẽ được ẩn*/
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99; /* button được ưu tiên hiển thị đè lên các phần khác*/
-  border: none;
-  outline: none;
-  background-color: #2222226e;
-  transition: all ease .3s;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-
-  &:hover{
-    background: #222222bd;
-  }
-}
 
 /*================RESPONSIVE===================*/
 @media only screen and (max-width: 1024px) {
