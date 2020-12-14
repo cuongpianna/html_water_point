@@ -20,13 +20,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9bc9cb7-c72c-4c4c-b41d-2da321db541b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/coronavi.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/images/coronavi.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/review1.PNG" beforeDir="false" afterPath="$PROJECT_DIR$/images/review1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/129912099_780232152706079_1418896812010515582_n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3FDD1F4F-7557-4118-8D1D-E4A392DDC425.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/6B1BB882-13D9-4A73-B19D-373F4B55ABBE.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/attach.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/bg1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/bg5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/big_bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/car.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/cart-item.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/cart.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/cartt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/center.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/certificate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/coronavi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/covid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/data.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/doctor-tp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/doctor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/doctor2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/doctortpp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/fb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/flower.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/flower_copy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icon-right.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icon1.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/icon1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icon2.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/icon2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icon3.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/icon3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icon4.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/icon4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icon5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/img2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/img3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ins.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/ong1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/pdf.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/product1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/product2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/radiant.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/review1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/review2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/review3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/review4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/right-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/star.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/takesho.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/top_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/tw.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/index.js" afterDir="false" />
     </list>
@@ -68,6 +113,9 @@
       <workItem from="1607550250838" duration="2759000" />
       <workItem from="1607606512687" duration="5827000" />
       <workItem from="1607644007501" duration="391000" />
+      <workItem from="1607688211727" duration="880000" />
+      <workItem from="1607731881950" duration="1556000" />
+      <workItem from="1607866154972" duration="13213000" />
     </task>
     <servers />
   </component>
@@ -87,10 +135,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="732" y="275" key="FileChooserDialogImpl" timestamp="1607612192346">
+    <state x="732" y="275" key="FileChooserDialogImpl" timestamp="1607804958212">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="732" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607612192346" />
+    <state x="732" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1607804958212" />
     <state x="616" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1607436548397">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
