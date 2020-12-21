@@ -54,16 +54,25 @@ body {
     }
 
     .search-form{
+      position: relative;
+      margin-left: 30px;
       input{
         height: 50px;
-        width: 600px;
-        border: 1px solid red;
+        width: 580px;
+        border: 1px solid #E3E3E3;
         border-radius: 30px;
         padding: 0 12px;
 
         &:focus{
           outline: none;
         }
+      }
+
+      .search-icon{
+        position: absolute;
+        color: $blue;
+        top: 16px;
+        right: 25px;
       }
     }
 
@@ -85,10 +94,11 @@ body {
           display: flex;
           justify-content: center;
           align-items: center;
+          margin-bottom: 10px;
         }
 
         .text{
-          //font-family: Nunito;
+          font-family: $font;
           font-size: 16px;
           font-style: normal;
           font-weight: 700;
@@ -102,12 +112,42 @@ body {
           .icon{
             background: rgba(50, 148, 204, 0.1);
           }
+
+          .text{
+            color: $blue;
+          }
         }
 
         &:last-child{
           margin: 0;
         }
       }
+    }
+  }
+}
+
+.nav{
+  background: $blue;
+
+  .navigation{
+    height: 50px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+    &>li{
+      margin-right: 25px;
+    }
+
+    a{
+      color: #fff;
+      font-family: $font;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 22px;
+      letter-spacing: 0em;
+
     }
   }
 }
