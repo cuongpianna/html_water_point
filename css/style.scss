@@ -1,10 +1,8 @@
 /*=================VARIABLE===============*/
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
-$primary_font: PingFangTC;
-$secondary_font: PingFangTC;
 $pink: #E4138E;
 $blue: #3294cc;
-$blueNhat: #3294CC;
+$blueNhat: rgba(50, 148, 204, 0.1);
 $green: #ff6b00;
 $gray: #BEBEBE;
 $black: #333333;
@@ -15,6 +13,18 @@ $font:'Nunito Sans', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.heading-pink{
+  display: flex;
+  align-items: center;
+  .border{
+    background: $pink;
+    border-radius: 3px;
+    width: 9px;
+    height: 20px;
+    margin-right: 10px;
+  }
 }
 
 body {
@@ -108,6 +118,83 @@ body {
           margin: 0;
         }
       }
+    }
+  }
+}
+
+.top10-singers{
+  .top10-heading{
+    font-family: $font;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $black;
+
+    .pink{
+      color: $pink;
+      margin-right: 4px;
+    }
+  }
+
+  .top10-contents{
+    padding: 23px 31px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    align-items: center;
+
+    .item{
+      width: 58px;
+      height: 58px;
+      background-image: url('../images/circle_gray.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+
+      &.top1{
+        background-image: url('../images/circle_pink.png');
+      }
+
+      &.top2{
+        background-image: url('../images/circle_blue.png');
+      }
+
+      &.top3{
+        background-image: url('../images/circle_green.png');
+      }
+    }
+
+    .see-more{
+      cursor: pointer;
+      width: 88px;
+      height: 42px;
+      background: $blueNhat;
+      font-family: $font;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0em;
+      color: $blue;
+      border-radius: 10px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
     }
   }
 }
