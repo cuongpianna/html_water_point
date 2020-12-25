@@ -27,6 +27,13 @@ jQuery(document).ready(function (e) {
         $('.header-menu').slideToggle('fast');
     })
 
+    $('.item-action .wrap-right').mouseenter(function(){
+        $(this).find('path').attr('fill', '#3294CC')
+
+    }).mouseleave(function() {
+        $(this).find('path').attr('fill', '#666')
+        });
+
     $('.owl-carousel')
         .mouseenter(function() {
             $('.owl-prev').show(50);
