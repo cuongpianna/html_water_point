@@ -210,7 +210,7 @@ header {
     &:hover{
       .wrap-right{
         background: $blueNhat;
-      
+
       }
 
       span{
@@ -424,6 +424,33 @@ header {
   .trending-header {
     .text{
       display: flex;
+      color: #bebebe;
+      transition: all ease .2s;
+    }
+
+    .tab{
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      .icon{
+        margin-right: 8px;
+      }
+
+      &.right{
+        margin-left: 40px;
+      }
+    }
+
+    .tab.active{
+      .text{
+        color: #333;
+      }
+    }
+
+    .tab.hover{
+      .text{
+        color: #333;
+      }
     }
 
     .birthday {
@@ -644,7 +671,7 @@ header {
       right: 0;
       border-radius: 10px;
     }
-    
+
     &:hover{
       .overlay{
         opacity: .4;
@@ -1059,7 +1086,7 @@ header {
     }
 
     .item.active{
-      
+
       .icon{
         color: #fff !important;
       }
