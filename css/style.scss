@@ -3,7 +3,7 @@
 
 $primary_font: PingFangTC;
 $secondary_font: PingFangTC;
-$pink: #E4138E;
+$pink: #FD243F;
 $blue: #3294cc;
 $blueNhat: rgba(50, 148, 204, 0.1);
 $green: #3A9E50;
@@ -20,7 +20,7 @@ $font: 'Nunito', sans-serif;
   --blue-1: #3294CC;
   --black: #333333;
   --black-1: #666666;
-  --pink-1: #E4138E;
+  --pink-1: #FD243F;
   --gray-1: #E3E3E3;
   --gray-2: #BEBEBE;
   --green-1: #3A9E50;
@@ -82,7 +82,7 @@ $font: 'Nunito', sans-serif;
   display: flex;
 
   .border {
-    background: #E4138E;
+    background: #FD243F;
     border-radius: 3px;
     width: 9px;
     height: 20px;
@@ -205,7 +205,7 @@ header {
     max-width: 80px;
     text-align: center;
     cursor: pointer;
-    transform: all ease .3s;
+    transition: all ease .3s;
 
     &:hover{
       .wrap-right{
