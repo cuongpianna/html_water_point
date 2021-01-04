@@ -34,6 +34,7 @@ module.exports = function ( grunt ) {
 					'css/style.min.css'						: 'css/style.css',
 					'assets/horo/style.min.css'						: 'assets/css/horo.css',
 					'assets/css/detail.min.css'						: 'assets/css/detail.css',
+					'assets/css/career.min.css'						: 'assets/css/career.css',
 				}
 			}
 		},
@@ -50,6 +51,7 @@ module.exports = function ( grunt ) {
 					'css/style.css': 'css/style.scss',
 					'assets/css/horo.css': 'assets/css/horo.scss',
 					'assets/css/detail.css': 'assets/css/detail.scss',
+					'assets/css/career.css': 'assets/css/career.scss',
                 }
             },
             prod: { // This outputs the compressed css file
@@ -62,6 +64,7 @@ module.exports = function ( grunt ) {
 					'css/style.css': 'css/style.scss',
 					'assets/css/horo.css': 'assets/css/horo.scss',
 					'assets/css/detail.css': 'assets/css/detail.scss',
+					'assets/css/career.css': 'assets/css/career.scss',
                 }
             }
 		},

@@ -60,4 +60,33 @@ jQuery(document).ready(function (e) {
         }
     })
 
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        navText: ['<i class="fas fa-arrow-left"></i>', '<i class="fas fa-arrow-right"></i>'],
+        responsive: {
+            0: {
+                items: 2
+            },
+            768: {
+                items: 4
+            },
+            1024: {
+                items: 3,
+                margin: 30
+            },
+            1100: {
+                items: 3,
+                margin: 30
+            }
+        }
+    })
+
+    $('.collapse-btn').click(function (){
+        $('.wrap-collapse__content').slideToggle('fast');
+    })
+
+
 });
