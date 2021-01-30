@@ -426,6 +426,7 @@ body {
   height:50px;
   margin: 0 auto;
   font-size: 22px;
+  cursor: pointer;
 }
 .scroll-text span {
   z-index: 1000;
@@ -495,7 +496,6 @@ body {
   z-index: 1000;
   top: 0;
   left: 0;
-  background-color: rgb(0,0,0);
   background-color: #9e1f00;
   overflow-x: hidden;
   transition: 0.5s;
