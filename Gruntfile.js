@@ -32,7 +32,13 @@ module.exports = function ( grunt ) {
 			prod: {
 				files: {
 					'css/style.min.css'						: 'css/style.css',
-					'css/口コミ入力.min.css': 'css/口コミ入力.css'
+					'css/口コミ入力.min.css': 'css/口コミ入力.css',
+					'css/商品詳細・口コミ反映.min.css': 'css/商品詳細・口コミ反映.css',
+					'css/リスト.min.css': 'css/リスト.css',
+					'css/検索条件入力.min.css': 'css/検索条件入力.css',
+					'css/ロゴフォント3-キリギリス.min.css' : 'css/ロゴフォント3-キリギリス.css',
+					'css/ロゴフォント2-刻ゴシック.min.css': 'css/ロゴフォント2-刻ゴシック.css',
+					'css/ロゴフォント1-ことだま.min.css': 'css/ロゴフォント1-ことだま.css'
 				}
 			}
 		},
@@ -47,7 +53,13 @@ module.exports = function ( grunt ) {
                 },
                 files: {
 					'css/style.css': 'css/style.scss',
-					'css/口コミ入力.css': 'css/口コミ入力.scss'
+					'css/口コミ入力.css': 'css/口コミ入力.scss',
+					'css/商品詳細・口コミ反映.css': 'css/商品詳細・口コミ反映.scss',
+					'css/リスト.css': 'css/リスト.scss',
+					'css/検索条件入力.css': 'css/検索条件入力.scss',
+					'css/ロゴフォント3-キリギリス.css': 'css/ロゴフォント3-キリギリス.scss',
+					'css/ロゴフォント2-刻ゴシック.css': 'css/ロゴフォント2-刻ゴシック.scss',
+					'css/ロゴフォント1-ことだま.css': 'css/ロゴフォント1-ことだま.scss'
                 }
             },
             prod: { // This outputs the compressed css file
@@ -58,7 +70,13 @@ module.exports = function ( grunt ) {
                 },
                 files: {
 					'css/style.css': 'css/style.scss',
-					'css/口コミ入力.css': 'css/口コミ入力.scss'
+					'css/口コミ入力.css': 'css/口コミ入力.scss',
+					'css/商品詳細・口コミ反映.css': 'css/商品詳細・口コミ反映.scss',
+					'css/リスト.css': 'css/リスト.scss',
+					'css/検索条件入力.css': 'css/検索条件入力.scss',
+					'css/ロゴフォント3-キリギリス.css': 'css/ロゴフォント3-キリギリス.scss',
+					'css/ロゴフォント2-刻ゴシック.css': 'css/ロゴフォント2-刻ゴシック.scss',
+					'css/ロゴフォント1-ことだま.css': 'css/ロゴフォント1-ことだま.scss'
                 }
             }
 		},

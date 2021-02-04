@@ -1,6 +1,6 @@
 jQuery(document).ready(function (e) {
     AOS.init();
-    $('.product-images').owlCarousel({
+    $('#product-images').owlCarousel({
         loop: true,
         margin: 0,
         nav: false,
@@ -9,6 +9,36 @@ jQuery(document).ready(function (e) {
         dots: true,
         responsive: {
             0: {
+                items: 1,
+                dots: false
+            },
+            480: {
+              items: 1
+            },
+            768: {
+                items: 1
+            },
+            1024: {
+                items: 1
+            },
+            1100: {
+                items: 1
+            }
+        }
+    })
+
+    $('#product-images2').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: false,
+        items: 1,
+        transitionStyle: 'fade',
+        dots: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            480: {
                 items: 1
             },
             768: {
