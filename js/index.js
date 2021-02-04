@@ -1,6 +1,6 @@
 jQuery(document).ready(function (e) {
     AOS.init();
-    $('.owl-carousel').owlCarousel({
+    $('.product-images').owlCarousel({
         loop: true,
         margin: 0,
         nav: false,
@@ -23,11 +23,22 @@ jQuery(document).ready(function (e) {
         }
     })
 
-    $('.menu-button').click(function (){
-        document.getElementById("myNav").style.width = "100%";
+    $('#openMenu').click(function (){
+       $('.menu-wrap').addClass('show');
+       $('.badge').addClass('show');
+        $('body').addClass('no-scroll');
+    });
+
+    $('.badge').click(function (){
+        $('.menu-wrap').removeClass('show');
+        $('.badge').removeClass('show');
+        $('body').removeClass('no-scroll');
     })
 
-    $('.closebtn').click(function (){
-        document.getElementById("myNav").style.width = "0";
+    $('.close-menu').click(function (){
+        $('.menu-wrap').removeClass('show');
+        $('.badge').removeClass('show');
+        $('body').removeClass('no-scroll');
     })
+
 });

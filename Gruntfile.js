@@ -32,6 +32,7 @@ module.exports = function ( grunt ) {
 			prod: {
 				files: {
 					'css/style.min.css'						: 'css/style.css',
+					'css/口コミ入力.min.css': 'css/口コミ入力.css'
 				}
 			}
 		},
@@ -46,6 +47,7 @@ module.exports = function ( grunt ) {
                 },
                 files: {
 					'css/style.css': 'css/style.scss',
+					'css/口コミ入力.css': 'css/口コミ入力.scss'
                 }
             },
             prod: { // This outputs the compressed css file
@@ -56,6 +58,7 @@ module.exports = function ( grunt ) {
                 },
                 files: {
 					'css/style.css': 'css/style.scss',
+					'css/口コミ入力.css': 'css/口コミ入力.scss'
                 }
             }
 		},
