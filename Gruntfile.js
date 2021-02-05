@@ -38,7 +38,10 @@ module.exports = function ( grunt ) {
 					'css/検索条件入力.min.css': 'css/検索条件入力.css',
 					'css/ロゴフォント3-キリギリス.min.css' : 'css/ロゴフォント3-キリギリス.css',
 					'css/ロゴフォント2-刻ゴシック.min.css': 'css/ロゴフォント2-刻ゴシック.css',
-					'css/ロゴフォント1-ことだま.min.css': 'css/ロゴフォント1-ことだま.css'
+					'css/ロゴフォント1-ことだま.min.css': 'css/ロゴフォント1-ことだま.css',
+					'css/検索結果.min.css': 'css/検索結果.css',
+					'css/成分一覧.min.css': 'css/成分一覧.css',
+					'css/成分一覧–1.min.css': 'css/成分一覧–1.css'
 				}
 			}
 		},
@@ -59,7 +62,11 @@ module.exports = function ( grunt ) {
 					'css/検索条件入力.css': 'css/検索条件入力.scss',
 					'css/ロゴフォント3-キリギリス.css': 'css/ロゴフォント3-キリギリス.scss',
 					'css/ロゴフォント2-刻ゴシック.css': 'css/ロゴフォント2-刻ゴシック.scss',
-					'css/ロゴフォント1-ことだま.css': 'css/ロゴフォント1-ことだま.scss'
+					'css/ロゴフォント1-ことだま.css': 'css/ロゴフォント1-ことだま.scss',
+					'css/検索結果.css': 'css/検索結果.scss',
+					'css/成分一覧.css': 'css/成分一覧.scss',
+					'css/成分一覧–1.css': 'css/成分一覧–1.scss',
+
                 }
             },
             prod: { // This outputs the compressed css file
@@ -76,7 +83,11 @@ module.exports = function ( grunt ) {
 					'css/検索条件入力.css': 'css/検索条件入力.scss',
 					'css/ロゴフォント3-キリギリス.css': 'css/ロゴフォント3-キリギリス.scss',
 					'css/ロゴフォント2-刻ゴシック.css': 'css/ロゴフォント2-刻ゴシック.scss',
-					'css/ロゴフォント1-ことだま.css': 'css/ロゴフォント1-ことだま.scss'
+					'css/ロゴフォント1-ことだま.css': 'css/ロゴフォント1-ことだま.scss',
+					'css/検索結果.css': 'css/検索結果.scss',
+					'css/成分一覧.css': 'css/成分一覧.scss',
+					'css/成分一覧–1.css': 'css/成分一覧–1.scss',
+
                 }
             }
 		},

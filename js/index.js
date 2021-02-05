@@ -71,4 +71,11 @@ jQuery(document).ready(function (e) {
         $('body').removeClass('no-scroll');
     })
 
+
+    if($('.ingredient-item')){
+        let width = $('.ingredient-item').outerWidth();
+        $('.ingredient-item').css('height', `${width}px`);
+    }
+
+
 });
