@@ -1,5 +1,5 @@
 jQuery(document).ready(function (e) {
-    AOS.init();
+
     $('#product-images').owlCarousel({
         loop: true,
         margin: 0,
@@ -71,14 +71,10 @@ jQuery(document).ready(function (e) {
         $('body').removeClass('no-scroll');
     })
 
-<<<<<<< HEAD
 
     if($('.ingredient-item')){
         let width = $('.ingredient-item').outerWidth();
         $('.ingredient-item').css('height', `${width}px`);
     }
 
-
-=======
->>>>>>> .
 });

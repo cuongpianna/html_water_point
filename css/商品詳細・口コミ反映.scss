@@ -324,11 +324,6 @@ body {
     max-width: 95%;
   }
 
-  .content .section-product .product-comments .rating-box .rating span {
-    font-size: 30px;
-    color: #D0BC27;
-  }
-
   .header .header__inner{
     display: none;
   }
@@ -411,6 +406,11 @@ body {
         margin-right: 20px;
       }
     }
+  }
+
+  .content .section-product .product-comments .rating-box .rating span {
+    font-size: 30px;
+    color: #D0BC27;
   }
 
   .content .section-product .product-wrapper {
