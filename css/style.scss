@@ -1432,9 +1432,11 @@ body.page2 {
           align-items: center;
           .rate{
             margin-right: 40px;
+            display: flex;
+            align-items: center;
 
-            span.fa{
-              color: #D0BC27
+            .rate-star{
+              margin-right: 5px;
             }
           }
 
@@ -1536,6 +1538,14 @@ body.page2 {
             font-weight: bold;
             color: $yellow;
             font-family: $fontR;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .rate-star{
+              margin-right: 5px;
+            }
           }
 
           .meta-user{
@@ -2205,6 +2215,10 @@ body.page2 {
       .product-rate {
         display: flex;
         justify-content: space-between;
+
+        .rate{
+          display: flex;
+        }
       }
     }
 

@@ -77,4 +77,41 @@ jQuery(document).ready(function (e) {
         $('.ingredient-item').css('height', `${width}px`);
     }
 
+    $('.product-rate .rate .rate-star').starRating({
+        initialRating: 3.5,
+        starShape: 'rounded',
+        starSize: 20,
+        emptyColor: 'lightgray',
+        hoverColor: 'salmon',
+        activeColor: '#D0BC27',
+        useGradient: false,
+        readOnly: true
+    })
+
+    $('.meta-rate .rate-star').starRating({
+        initialRating: 3.5,
+        starShape: 'rounded',
+        starSize: 16,
+        emptyColor: 'lightgray',
+        hoverColor: 'salmon',
+        activeColor: '#D0BC27',
+        useGradient: false,
+        readOnly: true
+    })
+
+    $('.rating-box .rating').starRating({
+        initialRating: 0,
+        starShape: 'rounded',
+        starSize: 35,
+        emptyColor: 'lightgray',
+        hoverColor: '#D0BC27',
+        activeColor: '#D0BC27',
+        useGradient: false,
+        callback: function(currentRating, $el){
+            // make a server call here
+            console.log(currentRating);
+            console.log($el);
+        }
+    })
+
 });
