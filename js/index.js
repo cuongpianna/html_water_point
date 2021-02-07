@@ -114,4 +114,15 @@ jQuery(document).ready(function (e) {
         }
     })
 
+    $('.page_extend .rate-star').starRating({
+        initialRating: 3.5,
+        starShape: 'rounded',
+        starSize: 16,
+        emptyColor: 'lightgray',
+        hoverColor: 'salmon',
+        activeColor: '#D0BC27',
+        useGradient: false,
+        readOnly: true
+    })
+
 });

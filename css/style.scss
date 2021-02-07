@@ -1932,6 +1932,218 @@ body.page2 {
   }
 }
 
+.page_extend{
+  .content{
+    padding-top: 16px;
+    padding-bottom: 80px;
+  }
+
+  .filters{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 26px;
+
+    .filter_left{
+      font-size: 12px;
+      font-weight: bold;
+      font-family: fontR;
+      color: #534343;
+
+      i{
+        color: $yellow;
+        margin-right: 4px;
+      }
+    }
+
+    .filter_right{
+      select {
+        height: 36px;
+        min-width: 107px;
+        border: none;
+        font-size: 12px;
+        padding: 0 12px;
+        color: #534343;
+
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url("data:image/svg+xml;utf8,<svg fill='%23D0BC28' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+        background-repeat: no-repeat;
+        background-position-x: 98%;
+        background-position-y: 5px;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  .product-list__wrap{
+    margin-bottom: 40px;
+    &:last-child{
+
+    }
+    .product-time{
+      margin-bottom: 12px;
+      font-size: 12px;
+      font-family: $fontR;
+      color: #000000;
+      i{
+        color: $yellow;
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .product-content{
+    display: flex;
+    background: #FFFCF4;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.04);
+
+    .product-image{
+      width: 90px;
+      height: 90px;
+      img{
+        border-radius: 8px;
+      }
+    }
+
+    .product-detail{
+      padding-top: 6px;
+      padding-left: 16px;
+      .product-text{
+        font-size: 11px;
+        font-weight: normal;
+        font-family: $fontR;
+        color: #958480;
+        margin-bottom: 6px;
+      }
+
+      h3{
+        font-size: 12px;
+        font-weight: bold;
+        font-family: $fontR;
+        color: #534343;
+        margin-bottom: 4px;
+      }
+
+      .product-price{
+        .primary-price{
+          font-size: 11px;
+          font-weight: bold;
+          font-family: $fontR;
+          color: $green;
+          margin-right: 6px;
+        }
+
+        .secondary-price{
+          font-size: 11px;
+          font-weight: normal;
+          font-family: $fontR;
+          color: #958480;
+        }
+      }
+    }
+  }
+
+  .product-line{
+    width: 100%;
+    display: flex;
+    height: 12px;
+    //background: red;
+
+    .left{
+      height: 100%;
+      flex-basis: 50%;
+      border-right: 4px solid #FFFCF4;
+    }
+
+    .right{
+      flex-basis: 50%;
+    }
+  }
+
+  .product-meta{
+    background: #FFFCF4;
+    padding: 20px 16px;
+    border-radius: 8px;
+
+    .meta__header{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 16px;
+
+      .rating{
+        display: flex;
+        align-items: center;
+        .rate-num{
+          font-size: 13px;
+          font-weight: bold;
+          color: $yellow;
+          margin-left: 3px;
+          font-family: $fontR;
+        }
+      }
+
+      .text{
+        font-family: $fontR;
+        font-size: 13px;
+        font-weight: bold;
+        color: $green;
+
+        i{
+          margin-right: 4px;
+        }
+      }
+    }
+
+    .meta-body{
+      font-size: 13px;
+      font-family: $fontR;
+      color: #534343;
+    }
+  }
+
+}
+
+.page_term{
+  .content{
+    padding-top: 24px;
+    padding-bottom: 83px;
+  }
+
+  h2.page-title{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: $fontR;
+    color: #534343;
+    margin-bottom: 31px;
+  }
+
+  h3.sub-title{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: $fontR;
+    color: #534343;
+    margin-bottom: 14px;
+  }
+
+  .desc{
+    font-size: 12px;
+    font-family: $fontR;
+    color: #534343;
+    margin-bottom: 25px;
+  }
+
+  .page-content{
+    font-size: 12px;
+    font-family: $fontR;
+    color: #534343;
+    margin-bottom: 8px;
+  }
+
+}
+
 /*================RESPONSIVE===================*/
 @media only screen and (max-width: 1024px) {
   .header .header__inner{
