@@ -65,8 +65,23 @@ jQuery(document).ready(function (e) {
         readOnly: true
     })
 
+    $('.rate-form__row .star-num').starRating({
+        initialRating: 0,
+        starShape: 'rounded',
+        starSize: 24,
+        emptyColor: 'lightgray',
+        hoverColor: '#D0BC27',
+        activeColor: '#D0BC27',
+        useGradient: false,
+        callback: function(currentRating, $el){
+            // make a server call here
+            console.log(currentRating);
+            console.log($el);
+        }
+    })
 
-    $('.rating-box .rating').starRating({
+
+    $('.rate-form__row.main-row .star-num').starRating({
         initialRating: 0,
         starShape: 'rounded',
         starSize: 35,
@@ -81,5 +96,7 @@ jQuery(document).ready(function (e) {
         }
     })
 
-
+    function onSubmit(token) {
+        document.getElementById("demo-form").submit();
+    }
 });
