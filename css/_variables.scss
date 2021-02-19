@@ -1,8 +1,13 @@
 /*=================VARIABLE===============*/
-$fontR: fot-tsukuardgothic-std, sans-serif;
+@font-face {
+  font-family: yumin;
+  src: url('../font/yumin.ttf');
+}
+
+$fontR: yumin;
 
 $textYellow: #d49100;
 $black: #000;
-$textGreen: #0ab8ec;
+$textGreen: #017812;
 $yellow: #ffdf00;
 $mainColor: #62593c;
