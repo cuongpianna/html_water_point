@@ -1,0 +1,47 @@
+@import "variables";
+
+/*================COMMON=================*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1400px;
+  margin: auto;
+}
+
+body {
+  background: #fff;
+  overflow-x: hidden;
+  position: relative;
+  font-family: $fontR;
+
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    margin: 0;
+  }
+
+  p {
+    line-height: 1.5;
+    color: $black;
+  }
+
+}
+
+.only-mobile {
+  display: none;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+.header-mobile {
+  display: none;
+}
+
