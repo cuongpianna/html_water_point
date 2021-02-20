@@ -1719,11 +1719,295 @@
   }
 }
 
+.laser-page{
+  .page-crumb{
+    border-bottom: 1px dotted #000;
+  }
+  img{
+    width: 100%;
+  }
+
+  .banner{
+    background-image: url("../images/banner_laser.png");
+  }
+  .text{
+    p{
+      font-size: 14px;
+      color: $brown;
+      font-family: $fontMeiryo;
+    }
+  }
+
+  .box-content1{
+    padding: 70px 0;
+    background: $bgYellow;
+
+    .title-dot{
+      color: #62593a;
+      font-size: 18px;
+      font-weight: bold;
+      padding-left: 15px;
+      position: relative;
+      &:after{
+        position: absolute;
+        display: block;
+        content: "";
+        width: 7px;
+        height: 7px;
+        background: #62593a;
+        left: 0;
+        top: 18%;
+      }
+    }
+
+    .box-button{
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 90px;
+      button{
+        height: 56px;
+        flex-basis: calc((1040px - 72px) /  4);
+        margin-right: 24px;
+        margin-bottom: 24px;
+
+        &:nth-child(4n) {
+          margin-right: 0;
+        }
+      }
+    }
+    h2.page-title{
+      margin-bottom: 70px;
+      text-align: center;
+      font-size: 30px;
+      line-height: 1;
+      color: #62593a;
+
+      span{
+        position: relative;
+
+        img{
+          position: absolute;
+          top: 0;
+
+          &.fl-left{
+            left: -190px;
+          }
+
+          &.fl-right{
+            right: -190px;
+          }
+        }
+      }
+    }
+
+    .box-flex{
+      .left{
+        img{
+          width: 100%;
+        }
+      }
+
+      h2{
+        margin-bottom: 30px;
+        .sm{
+          color: #938850;
+          margin-top: 8px;
+        }
+      }
+
+      p{
+        font-size: 14px;
+        color: $brown;
+        font-family: $fontMeiryo;
+      }
+    }
+
+    .text-wrap{
+      padding: 30px 0;
+      border-bottom: 1px solid $mainColor;
+      .text-green{
+        font-weight: 600;
+      }
+
+      .item{
+        color: #5a5132;
+        font-size: 14px;
+        font-family: $fontMeiryo;
+      }
+
+      .bold{
+        font-weight: 600;
+        font-size: 18px;
+        color: #938850;
+        line-height: 1;
+        margin-bottom: 15px;
+      }
+
+      .text{
+        p{
+          font-size: 14px;
+          color: $brown;
+          font-family: $fontMeiryo;
+        }
+      }
+    }
+
+    .flex-text{
+      display: flex;
+      justify-content: space-between;
+      .left{
+        flex-basis: 60%;
+      }
+
+      .right{
+        flex-basis: calc(40% - 30px);
+        img{
+          width: 100%;
+        }
+      }
+    }
+
+    .button-wrap{
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+  }
+
+  .box-flex{
+    padding-bottom: 30px;
+    border-bottom: 1px solid $mainColor;
+    display: flex;
+    justify-content: space-between;
+
+    .left, .right{
+      flex-basis: calc(50% - 30px);
+    }
+  }
+
+  .box-text__wrap{
+    padding: 30px 0;
+    border-bottom: 1px solid $mainColor;
+    .text-row{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .left, .right{
+      flex-basis: calc(50% - 30px);
+      .title-dot{
+        padding-left: 15px;
+        font-size: 18px;
+        color: #938850;
+        position: relative;
+        font-family: $fontR;margin-bottom: 10px;
+        font-weight: 600;
+        &:after{
+         position: absolute;
+          width: 7px;
+          height: 7px;
+          display: block;
+          content: "";
+          background: $mainColor;
+          left: 0;
+
+          top: 30%;
+        }
+      }
+    }
+  }
+
+  .box-end{
+    padding: 70px 0;
+    background: linear-gradient(to right,  #fefbe7 0%,#fefbe7 50%,#b0aa91 50%,#b0aa91 100%);
+    .end_wrap{
+      display: flex;
+      justify-content: space-between;
+      .left{
+        flex-basis: calc(50% - 30px);
+        .text-title{
+          font-weight: bold;
+          font-family: $fontMeiryo;
+          font-size: 18px;
+          margin-bottom: 20px;
+          color: #62593c;
+        }
+
+        .txt-blue{
+        color: #0106d2;
+        }
+
+        .button-wrap{
+          display: flex;
+          justify-content: center;
+          margin-top: 50px;
+          width: 300px;
+          height: 56px;
+        }
+      }
+
+      .right{
+        flex-basis: calc(50% - 30px);
+        .text-title{
+          font-weight: bold;
+          font-family: $fontMeiryo;
+          font-size: 18px;
+          margin-bottom: 20px;
+          color: #fff;
+        }
+
+        .table-row{
+          display: flex;
+          border-bottom: 1px solid #f6f4e3;
+          font-size: 14px;
+          &:last-child{
+            border-bottom: none;
+          }
+
+          .left{
+            display: flex;
+            align-items: center;
+            flex-basis: 30%;
+            background: #817a62;
+            padding: 20px;
+            color: #fff;
+            font-weight: 500;
+            font-family: $fontMeiryo;
+            font-size: 14px;
+          }
+
+          .right{
+            font-family: $fontMeiryo;
+            color: #62593a;
+            font-weight: 500;
+            padding: 20px;
+            padding-right: 10px;
+            flex-basis: 70%;
+            background: #fefefc;
+          }
+        }
+      }
+    }
+  }
+}
+
 /*================RESPONSIVE===================*/
 @media only screen and (max-width: 1024px) {
   .home-page .box-contact .contact-wrap{
     max-width: 90%;
     margin: auto;
+  }
+
+  .laser-page{
+    .box-content1 .box-button button{
+      &:nth-child(3n){
+        margin-right: 0;
+      }
+
+      &:nth-child(4){
+        margin-right: 24px;
+      }
+    }
   }
 }
 
@@ -1742,6 +2026,19 @@
     }
   }
 
+  .laser-page{
+    .box-content1 .box-button button{
+      flex-basis: calc(50% - 24px);
+
+      &:nth-child(1n){
+        margin-right: 24px;
+      }
+
+      &:nth-child(2n){
+        margin-right: 0px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -2030,6 +2327,30 @@
       display: block !important;
       .right{
         margin-top: 20px;
+      }
+    }
+  }
+
+  .laser-page{
+    .box-content1 .box-button button{
+      flex-basis: calc(100%);
+      margin-right: 0 !important;
+    }
+
+    .box-flex, .flex-text, .text-row, .end_wrap{
+      display: block !important;
+
+      .right{
+        margin-top: 20px;
+      }
+    }
+
+    .box-end{
+      background: #fefbe7 !important;
+      .table-row{
+        .right{
+          margin-top: 0;
+        }
       }
     }
   }
