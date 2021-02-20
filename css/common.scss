@@ -58,6 +58,10 @@ body {
   display: none;
 }
 
+.no-scroll{
+  overflow: hidden;
+}
+
 .wrapper {
   overflow: hidden;
 }
@@ -136,23 +140,39 @@ h3.sub-heading{
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
-  img{
+  transition: all ease .3s;
+  i{
     margin-right: 15px;
+    font-size: 14px;
+  }
+
+  &:hover{
+    color: #62593c;
+    background: #fff;
+    border: 2px solid #62593c;
   }
 }
 
 .btn-ghost{
   padding: 0 22px;
-  color: #62593c;
-  background: #fff;
-  border: 2px solid #62593c;
-  cursor: pointer;
+  color: #fefbe7;
+  background: #62593c;
+  border: none;
   display: flex;
   align-items: center;
   font-size: 14px;
   font-weight: 500;
-  img{
+  cursor: pointer;
+  transition: all ease .3s;
+  i{
     margin-right: 15px;
+    font-size: 14px;
+  }
+
+  &:hover{
+    color: #62593c;
+    background: #fff;
+    border: 2px solid #62593c;
   }
 }
 
@@ -211,5 +231,94 @@ h3.sub-heading{
   display: flex;
   align-items: center;
   background: #fefbe7;
+}
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+  .banner{
+    .page-heading{
+      z-index: 2;
+      position: relative;
+      h1{
+        font-size: 40px;
+        line-height: 1;
+        margin-bottom: 20px;
+      }
+      img{
+        position: absolute;
+      }
+
+      .img-left{
+        left: -110px;
+      }
+
+      .img-right{
+        right: -110px;
+      }
+
+      h2{
+        line-height: 1;
+        font-size: 20px;
+      }
+    }
+  }
+
+  h2.b-heading{
+
+    div{
+      line-height: 1;
+    }
+
+    .big{
+
+      font-size: 20px;
+      color: #62593c;
+      margin-bottom: 13px;
+    }
+
+    .sm{
+      position: relative;
+      font-size: 14px;
+      color: #938754;
+    }
+
+    .line{
+      content: "";
+      display: inline-block;
+      width: 50px;
+      height: 4px;
+      background: #62593c;
+    }
+
+    .bottom{
+      font-size: 20px;
+      color: #938850;
+      margin-top: 30px;
+    }
+  }
+
+  h2.l-heading{
+    .big{
+      font-size: 20px;
+    }
+
+    .sm{
+      font-size: 14px;
+    }
+
+  }
+
+  h3.sub-heading img{
+    width: 90%;
+  }
+
 }
 

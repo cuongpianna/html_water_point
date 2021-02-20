@@ -1,4 +1,12 @@
 @import "variables";
+.nav-button_wrap{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100000000001;
+  display: none;
+}
+
 header{
   .header__inner{
     height: 65px;
@@ -88,6 +96,48 @@ header{
     .container{
       max-width: 100%;
     }
+
+    .header__inner{
+      .nav-button_wrap{
+        display: block;
+      }
+
+      .header__left{
+        padding-left: 20px;
+      }
+
+      ul.navigation{
+        transition: all ease .3s;
+      }
+
+      ul.navigation.mobile{
+        right: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10000000000;
+        background: #00000094;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        //transform: translateY(50%);
+        transition: all ease .2s;
+
+        li{
+          padding: 10px 0;
+          a{
+            color: #fff;
+            font-size: 30px;
+            border: none;
+          }
+        }
+      }
+
+
+    }
   }
 
   .header__inner{
@@ -157,6 +207,7 @@ header{
   .small-container{
     max-width: 80%;
   }
+
 }
 
 @media only screen and (max-width: 768px) {
