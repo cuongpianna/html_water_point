@@ -128,11 +128,18 @@ header{
 
         li{
           padding: 10px 0;
+          &:after{
+            display: none !important;
+          }
           a{
             color: #fff;
             font-size: 30px;
             border: none;
           }
+        }
+
+        .contact-wrap span, div{
+          color: #fff !important;
         }
       }
 

@@ -1,0 +1,388 @@
+@import "variables";
+
+.contact-page {
+  .page-crumb {
+    border-bottom: 1px dotted #000;
+  }
+
+  .banner {
+    background-image: url("../images/banner_contact.png");
+  }
+
+  .box-contact {
+    padding: 100px 0 70px;
+    background: $bgYellow;
+
+    h2 {
+      text-align: center;
+      line-height: 1;
+
+      .big {
+        margin-bottom: 9px !important;
+      }
+    }
+
+    .card-contact {
+      height: 180px;
+      display: flex;
+      align-items: center;
+      background: $mainColor;
+      color: #fff;
+      margin-top: 30px;
+
+      .card-left {
+        padding-right: 35px;
+        display: flex;
+        flex-basis: 50%;
+        justify-content: flex-end;
+
+        .text-wrap {
+          display: flex;
+          flex-direction: column;
+
+          .big {
+            font-size: 24px;
+            text-align: center;
+          }
+
+          .sm {
+            text-align: center;
+            font-size: 18px;
+          }
+        }
+      }
+
+      .card-right {
+        padding-left: 35px;
+        flex-basis: 50%;
+        display: flex;
+        align-items: flex-end;
+        line-height: 1;
+
+        .tel {
+          font-size: 24px;
+          margin-right: 5px;
+          line-height: 1;
+        }
+
+        .num {
+          line-height: 1;
+          font-size: 48px;
+        }
+      }
+    }
+  }
+
+  .box-form {
+    h2 {
+      margin-bottom: 20px;
+      text-align: center;
+      line-height: 1;
+
+      .big {
+        margin-bottom: 9px !important;
+      }
+    }
+  }
+
+  .box-form {
+    background: #f6f4e4;
+    padding: 70px 0;
+
+    .form-text {
+      line-height: 1;
+      margin-bottom: 15px;
+      font-family: $fontMeiryo;
+      color: #5a5132;
+      font-size: 14px;
+    }
+
+    .form-row {
+      display: flex;
+      border-bottom: 1px solid #f5f2e2;
+
+      .form-left {
+        align-items: center;
+        min-height: 60px;
+        padding: 20px;
+        display: flex;
+        background: #62593a;
+        flex-basis: 35%;
+
+        .text {
+          font-size: 16px;
+          font-family: $fontMeiryo;
+          color: #fff;
+        }
+
+        .text-tag {
+          font-size: 16px;
+          font-family: $fontMeiryo;
+          color: #fff;
+          position: relative;
+
+          &:after {
+            content: '必須';
+            font-size: 12px;
+            display: flex;
+            position: absolute;
+            right: -60px;
+            top: 0px;
+            width: 50px;
+            background: #b22222;
+            height: 20px;
+            border-radius: 3px;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+
+      .form-right {
+        padding: 20px 40px;
+        background: #fff;
+        flex-basis: 65%;
+
+        .checkbox-wrap {
+          display: flex;
+          align-items: center;
+          margin-top: 15px;
+
+          input {
+            margin-right: 15px;
+          }
+        }
+
+        textarea.full-control {
+          padding: 0 10px;
+          outline: none;
+          width: 100%;
+          font-size: 14px;
+          color: $brown;
+          border: 1px solid $brown;
+          height: 200px;
+        }
+
+        .text-input {
+          margin-bottom: 20px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .full-control {
+            padding: 0 10px;
+            outline: none;
+            width: 100%;
+            height: 40px;
+            border: 1px solid $brown;
+          }
+        }
+
+        .flex {
+          display: flex;
+          align-items: center;
+          margin-bottom: 30px;
+
+          .text {
+            margin-right: 20px;
+            padding: 0;
+          }
+
+          select {
+            outline: none;
+            padding: 0 8px;
+            width: 100px;
+            height: 40px;
+          }
+
+          .text2 {
+            padding: 0;
+            margin-left: 10px;
+            margin-right: 30px;
+          }
+
+          input {
+            padding: 0 10px;
+            outline: none;
+            width: 160px;
+            height: 40px;
+            border: 1px solid $brown;
+          }
+
+          button {
+            font-size: 16px;
+            color: #fff;
+            font-family: $fontMeiryo;
+            width: 110px;
+            height: 40px;
+            background: #62593a;
+            border-radius: 6px;
+            cursor: pointer;
+            border: none;
+          }
+        }
+
+        .text {
+          font-size: 14px;
+          color: $brown;
+          padding: 6px 0;
+          font-family: $fontMeiryo;
+        }
+
+        .sm-control {
+          padding: 0 10px;
+          outline: none;
+          width: 400px;
+          height: 40px;
+          border: 1px solid $brown;
+        }
+
+        .form-control {
+          padding: 0 10px;
+          outline: none;
+          width: 90%;
+          height: 40px;
+          border: 1px solid $brown;
+        }
+
+        .radio-wrapper {
+          display: flex;
+
+          .radio-wrap {
+            margin-right: 50px;
+            font-size: 16px;
+            color: #524332;
+          }
+        }
+      }
+    }
+  }
+}
+
+.form-actions{
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+
+  button{
+    height: 56px;
+    width: 270px;
+
+    &.btn-primary{
+      i{
+        margin-right: 80px;
+      }
+    }
+  }
+
+  .button-ghost{
+    cursor: pointer;
+    margin-right: 70px;
+    font-size: 14px;
+    background: #fff;
+    color: #62593c;
+    border: 2px solid #62593c;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .box-contact {
+    .small-container {
+      max-width: 90%;
+
+      .card-contact {
+        .big {
+          font-size: 20px !important;
+        }
+
+        .sm {
+          font-size: 16px !important;
+        }
+
+        .tel {
+          font-size: 20px !important;
+        }
+
+        .num {
+          font-size: 36px !important;
+        }
+      }
+    }
+  }
+
+  .sm-control {
+    width: 100% !important;
+  }
+
+  .form-control {
+    width: 100% !important;
+  }
+
+.box-form{
+  .small-container{
+    max-width: 90% !important;
+  }
+}
+
+  .radio-wrapper{
+    display: block !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .contact-page .box-contact .card-contact{
+    display: flex;
+    flex-direction: column;
+
+    .card-left{
+      padding: 0;
+      align-items: center;
+    }
+
+    .card-right{
+      align-items: center;
+      padding: 0;
+    }
+  }
+
+  .radio-wrap{
+    margin-right: 0 !important;
+  }
+
+  .contact-page .box-form .form-row .form-left {
+    align-items: center;
+    min-height: 60px;
+    padding: 10px;
+    display: flex;
+    background: #62593a;
+    flex-basis: 35%;
+
+    .text-tag{
+      font-size: 13px;
+
+      &:after{
+        font-size: 10px;
+        width: 40px;
+        height: 18px;
+        right: -45px;
+      }
+    }
+  }
+
+  .contact-page .box-form{
+    .form-row{
+      .form-right{
+        padding: 20px;
+      }
+    }
+  }
+
+  .flex.rich{
+    flex-wrap: wrap;
+    .text2{
+      margin-top: 14px;
+    }
+  }
+
+}
