@@ -2425,6 +2425,422 @@
   }
 }
 
+.wrinkle-page{
+  .page-crumb{
+    border-bottom: 1px dotted #000;
+  }
+
+  h2.l-heading{
+    .sm{
+      margin-top: 8px;
+      color: #938850;
+      margin-bottom: 30px;
+    }
+  }
+
+  .banner{
+    background-image: url("../images/banner_wrinkles.png");
+  }
+  .box-content{
+    padding: 70px 0;
+    background: $bgYellow;
+
+    .box-flex{
+      margin-top: 70px;
+    }
+
+    .title-dot{
+      position: relative;
+      font-weight: bold;
+      padding-left: 15px;
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: $brown;
+      line-height: 1;
+      &:after{
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        display: block;
+        content: "";
+        background: $brown;
+        left: 0;
+
+        top: 30%;
+      }
+    }
+
+    .text-wrap{
+      .text-green{
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+
+      .bold{
+        color: #938850;
+        font-size: 18px;
+      }
+
+      .text{
+        margin-bottom: 30px;
+        &:last-child{
+          margin-bottom: 0;
+        }
+        p{
+          font-size: 14px;
+          font-family: $fontMeiryo;
+          color: $brown;
+        }
+      }
+    }
+  }
+
+  .box-flex{
+    padding-bottom: 30px;
+    border-bottom: 1px solid $mainColor;
+    img{
+      width: 100%;
+    }
+    display: flex;
+    justify-content: space-between;
+    .left, .right{
+      flex-basis: calc(50% - 30px);
+    }
+
+    .text{
+      p{
+        font-size: 14px;
+        color: $brown;
+        font-family: $fontMeiryo;
+        line-height: 1.6;
+      }
+    }
+  }
+
+  .wrapper .text-wrap{
+    padding: 30px 0;
+    border-bottom: 1px solid $mainColor;
+  }
+
+  .wrapper .text-wrap{
+    .text-green{
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+
+    .text-row{
+      margin-bottom: 25px;
+      .text-num{
+        font-family: $fontR;
+        font-size: 16px;
+        color: #62593a;
+        font-weight: 600;
+      }
+
+      .text{
+        p{
+          padding-left: 24px;
+          font-size: 14px;
+          font-family: $fontMeiryo;
+          color: #62593a;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .bold{
+      color: #938850;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    .text{
+      margin-bottom: 30px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      p{
+        font-size: 14px;
+        font-family: $fontMeiryo;
+        color: $brown;
+      }
+    }
+  }
+
+  .button-wrap{
+    display: flex;padding-top: 50px;
+    justify-content: center;
+  }
+
+  .box-hyaluronic{
+    padding: 70px 0;
+    background: #f6f3e3;
+  }
+
+  .box-end{
+    padding: 70px 0;
+    background: linear-gradient(to right,  #fefbe7 0%,#fefbe7 50%,#b0aa91 50%,#b0aa91 100%);
+    .end_wrap{
+      display: flex;
+      justify-content: space-between;
+      .left{
+        flex-basis: calc(50% - 30px);
+        .text-title{
+          font-weight: bold;
+          font-family: $fontMeiryo;
+          font-size: 18px;
+          margin-bottom: 20px;
+          color: #62593c;
+        }
+
+        .txt-blue{
+          color: #0106d2;
+        }
+
+        .button-wrap{
+          display: flex;
+          justify-content: center;
+          margin-top: 50px;
+          width: 300px;
+          height: 56px;
+        }
+
+        p{
+          font-family: $fontMeiryo;
+        }
+      }
+
+      .right{
+        flex-basis: calc(50% - 30px);
+        .text-title{
+          font-weight: bold;
+          font-family: $fontMeiryo;
+          font-size: 18px;
+          margin-bottom: 20px;
+          color: #fff;
+        }
+
+        .table-row{
+          display: flex;
+          border-bottom: 1px solid #f6f4e3;
+          font-size: 14px;
+          &:last-child{
+            border-bottom: none;
+          }
+
+          .left{
+            display: flex;
+            align-items: center;
+            flex-basis: 30%;
+            background: #817a62;
+            padding: 20px;
+            color: #fff;
+            font-weight: 500;
+            font-family: $fontMeiryo;
+            font-size: 14px;
+          }
+
+          .right{
+            font-family: $fontMeiryo;
+            color: #62593a;
+            font-weight: 500;
+            padding: 20px;
+            padding-right: 10px;
+            flex-basis: 70%;
+            background: #fefefc;
+          }
+        }
+      }
+    }
+
+    .button-wrap{
+      padding: 0;
+      margin-top: 80px;
+      display: flex;
+      justify-content: center;
+      width: 100% !important;
+    }
+  }
+}
+
+.wrinkles-page{
+  .page-crumb{
+    border-bottom: 1px dotted #000;
+  }
+
+  h2.l-heading{
+    .sm{
+      margin-top: 8px;
+      color: #938850;
+      margin-bottom: 30px;
+    }
+  }
+
+  .banner{
+    background-image: url("../images/banner_wrinkless.png");
+  }
+
+  .box-banner{
+    padding: 70px 0;
+    background-image: url("../images/wrink_layer.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    .overlay{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      background: #ffffff26;
+    }
+
+    h2.b-heading{
+      line-height: 1;
+      margin-bottom: 25px;
+
+      .big{
+        line-height: 1;
+      }
+
+      .line{
+        width: 30px;
+      }
+    }
+
+    .small-container{
+      position: relative;
+      z-index: 24;
+      text-align: center;
+    }
+
+    .bold{
+      font-size: 18px;
+      font-weight: 600;
+      color: #938850;
+      margin-bottom: 25px;
+    }
+
+    p{
+      font-size: 14px;
+      font-family: $fontMeiryo;
+      color: $brown;
+      line-height: 1.8;
+    }
+
+    .img-wrap{
+      margin-top: 50px;
+    }
+  }
+
+  .box-eyes{
+    padding: 70px 0;
+    background: #fefbe7;
+  }
+
+  .wrapper{
+    .text{
+      p{
+        color: $brown;
+        font-size: 14px;
+        font-family: $fontMeiryo;
+      }
+    }
+  }
+
+  .box-flex{
+    img{
+      width: 100%;
+    }
+    padding-bottom: 30px;
+    border-bottom: 1px solid $mainColor;
+    display: flex;
+    justify-content: space-between;
+    .left, .right{
+      flex-basis: calc(50% - 30px);
+    }
+
+    .text-green{
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    .text-wrap{
+      margin-bottom: 40px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+    }
+  }
+
+  .box-text_wrap{
+    padding: 30px 0;
+    border-bottom: 1px solid $mainColor;
+    .title-dot {
+      padding-left: 15px;
+      position: relative;
+      color: #5a5132;
+      font-size: 18px;
+      line-height: 1;
+      margin-bottom: 20px;
+      font-weight: bold;
+
+      &:after {
+        position: absolute;
+        width: 7px;
+        height: 7px;
+        left: 0;
+        top: 17%;
+        content: "";
+        display: block;
+        background: #5a5132;
+      }
+    }
+
+    p{
+      font-size: 14px;
+      color: $brown;
+      font-family: $fontMeiryo;
+      margin-bottom: 20px;
+      line-height: 1.8;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .button-wrap{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .section{
+    padding: 70px 0;
+  }
+
+  .box-head{
+    background: #f6f4e4;
+  }
+
+  .box-temple{
+    background: #fefbe7;
+  }
+
+  .box-depression{
+    background: #f6f4e4;
+  }
+
+
+}
+
 /*================RESPONSIVE===================*/
 @media only screen and (max-width: 1024px) {
   .home-page .box-contact .contact-wrap{
@@ -2884,4 +3300,49 @@
     }
   }
 
+  .wrinkle-page{
+    .box-end{
+      background: #fefbe7 !important;
+      .table-row{
+        .right{
+          margin-top: 0;
+        }
+      }
+    }
+
+    .box-flex{
+      display: block !important;
+      .right{
+        margin-top: 20px;
+      }
+    }
+
+    .end_wrap{
+      display: block !important;
+
+      .right{
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .img-wrap{
+    img{
+      width: 100%;
+    }
+  }
+
+  .wrinkles-page{
+    .btn-orange2{
+      font-size: 12px;
+    }
+
+    .box-flex{
+      display: block !important;
+
+      .right{
+        margin-top: 15px;
+      }
+    }
+  }
 }

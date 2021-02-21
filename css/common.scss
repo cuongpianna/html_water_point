@@ -163,6 +163,8 @@ h2.l-heading{
   line-height: 1;
   .big{
     font-size: 30px;
+    font-family: $fontR;
+    font-weight: 600;
   }
 
   .sm{
@@ -307,6 +309,7 @@ h3.sub-heading{
     h2{
       line-height: 1;
       font-size: 24px;
+      font-family: $fontMeiryo;
     }
   }
 }
@@ -394,6 +397,7 @@ h3.sub-heading{
   h2.l-heading{
     .big{
       font-size: 20px;
+
     }
 
     .sm{
@@ -406,5 +410,11 @@ h3.sub-heading{
     width: 90%;
   }
 
+
+  h2.page-title{
+    img{
+      display: none !important;
+    }
+  }
 }
 
