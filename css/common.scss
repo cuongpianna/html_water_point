@@ -132,9 +132,33 @@ body {
   display: none;
 }
 
+h2.page-title{
+  text-align: center;
+  font-size: 30px;
+  line-height: 1;
+  color: #62593a;
+
+  span{
+    position: relative;
+
+    img{
+      position: absolute;
+      top: 0;
+
+      &.fl-left{
+        left: -190px;
+      }
+
+      &.fl-right{
+        right: -190px;
+      }
+    }
+  }
+}
+
 h2.l-heading{
   color: $mainColor;
-  padding-left: 10px;
+  padding-left: 15px;
   border-left: 3px solid $mainColor;
   line-height: 1;
   .big{

@@ -1991,6 +1991,440 @@
   }
 }
 
+.price-page{
+  .page-crumb{
+    border-bottom: 1px dotted #000;
+  }
+
+  .banner{
+    background-image: url("../images/banner_price.png");
+  }
+
+  .box-content{
+    background: $bgYellow;
+    padding: 70px 0;
+
+    .box-button{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      .btn-primary{
+        background: #fff;
+        border: 2px solid #62593a;
+        color: #62593a;
+
+        &.active{
+          background: #62593a;
+          border-color: #62593a;
+          color: #fff;
+        }
+
+        &:hover{
+          background: #62593a;
+          border-color: #62593a;
+          color: #fff;
+        }
+      }
+
+      button{
+        height: 56px;
+        flex-basis: calc((1040px - (12px * 6)) / 7);
+      }
+    }
+
+    .box-button2{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      .btn-primary{
+        background: #fff;
+        border: 2px solid #62593a;
+        color: #62593a;
+
+        &.active{
+          background: #62593a;
+          border-color: #62593a;
+          color: #fff;
+        }
+
+        &:hover{
+          background: #62593a;
+          border-color: #62593a;
+          color: #fff;
+        }
+      }
+
+      button{
+        height: 56px;
+        flex-basis: calc((1040px - (12px * 5)) / 6);
+      }
+    }
+
+    h2.page-title{
+      margin-top: 90px;
+      margin-bottom: 70px;
+    }
+
+    .text-center{
+      font-size: 14px;
+      font-family: $fontMeiryo;
+      color: $brown;
+      text-align: center;
+      line-height: 1.7;
+      font-weight: 500;
+      margin-bottom: 50px;
+    }
+
+    .price-board{
+      display: flex;
+      justify-content: center;
+      max-height: 160px;
+      margin-bottom: 50px;
+      .inner{
+        background: #f7f7f7;
+        width: 600px;
+        max-width: 90%;
+        padding: 50px 160px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 14px;
+        color: $brown;
+        font-family: $fontMeiryo;
+
+        .price-row{
+          display: flex;
+          justify-content: center;
+          line-height: 1;
+          &:first-child{
+            margin-bottom: 40px;
+          }
+        }
+      }
+    }
+
+    .price-table__wrap{
+      margin-bottom: 50px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+      .price-title{
+        text-align: center;
+        font-size: 24px;
+        color: #62593a;
+        line-height: 1;
+        &:after{
+          display: flex;
+          justify-content: center;
+          margin: 20px auto 30px;
+          content: "";
+          width: 20px;
+          height: 2px;
+          background: #62593a;
+          text-align: center;
+        }
+      }
+
+      .price-row{
+        display: flex;
+        background: #fff;
+        margin-top: -1px;
+        .left{
+          flex-basis: 50%;
+          padding: 15px 15px 15px 40px;
+          border: 1px solid $mainColor;
+          font-family: $fontR;
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+        .right{
+          flex-basis: 50%;
+          padding: 15px 15px 15px 40px;
+          border: 1px solid $mainColor;
+          border-left: none;
+          font-family: $fontMeiryo;
+          font-size: 14px;
+        }
+      }
+
+      .price-rows{
+        display: flex;
+        background: #fff;
+        margin-top: -1px;
+        padding: 15px 15px 15px 40px;
+        border: 1px solid $mainColor;
+        font-family: $fontR;
+        font-size: 16px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.stain-page{
+  .page-crumb{
+    border-bottom: 1px dotted #000;
+  }
+
+  .banner{
+    background-image: url("../images/banner_stain.png");
+  }
+
+  h2.l-heading{
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    img{
+      position: absolute;
+      right: -140px;
+      top: -25px;
+    }
+  }
+
+  .title-dot{
+    line-height: 1;
+    font-size: 18px;
+    color: #62593a;
+    padding-left: 15px;
+    position: relative;
+    font-weight: 500;
+    font-family: $fontMeiryo;
+    &:after{
+      position: absolute;
+      width: 7px;
+      height: 7px;
+      display: block;
+      background: $mainColor;
+      content: "";
+      left: 0;
+      top: 4px;
+    }
+  }
+
+  .box-flex{
+    padding-bottom: 30px;
+    border-bottom: 1px solid $mainColor;
+    display: flex;
+    justify-content: space-between;
+
+    img{
+      width: 100%;
+    }
+
+    .left, .right{
+      flex-basis: calc(50% - 30px);
+    }
+
+    h2.l-heading{
+      margin-bottom: 30px;
+      .sm{
+        margin-top: 8px;
+        color: #938850;
+      }
+    }
+
+    .title-dot{
+      margin-bottom: 15px;
+    }
+
+    .text{
+      p{
+        color: $brown;
+        font-family: $fontMeiryo;
+        font-size: 14px;
+        margin-bottom: 30px;
+
+        &:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .box-stain{
+    background: $bgYellow;
+    padding: 70px 0;
+
+    .text-button__wrap{
+      padding: 30px 0;
+      border-bottom: 1px solid $mainColor;
+      justify-content: space-between;
+      display: flex;
+      .text-green{
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      .text-wrap{
+        flex-basis: calc(100% - 310px);
+      }
+
+      button{
+        height: 55px;
+        width: 270px;
+        margin-left: 40px;
+        i{
+          margin-right: 35px;
+        }
+      }
+
+      p{
+        font-size: 14px;
+        font-weight: 500;
+        color: $brown;
+        font-family: $fontMeiryo;
+      }
+
+    }
+
+    .text-wrap{
+      padding: 30px 0;
+      border-bottom: 1px solid $mainColor;
+      .text-green{
+        font-weight: 600;
+        margin-bottom: 15px;
+      }
+
+      .title-dot{
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+
+      p{
+        font-size: 14px;
+        font-weight: 500;
+        color: $brown;
+        font-family: $fontMeiryo;
+      }
+    }
+
+    .button-wrap{
+      display: flex;
+      justify-content: center;padding-top: 50px;
+      button{
+        width: 480px;
+        max-width: 80%;
+      }
+    }
+  }
+
+  .box-wart{
+    background-image: url("../images/warn.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    padding: 70px 0;
+
+    .overlay{
+      background: #00000040;
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    .small-container{
+      position: relative;
+      z-index: 200;
+
+      .img-flower{
+        position: absolute;
+        right: -140px;
+        bottom: -50px;
+      }
+
+      h2{
+        line-height: 1;
+        text-align: center;
+
+        .big, .sm{
+          color: #fff !important;
+        }
+
+        .sm{
+          font-weight: 500;
+        }
+
+        .line{
+          background: #fff;
+          width: 30px;
+        }
+      }
+
+      .text-button__wrap{
+        padding-bottom: 30px;
+        margin-top: 40px;
+        display: flex;
+        color: #fff;
+        justify-content: space-between;
+        border-bottom: 1px solid #fff;
+
+        .btn-ghost{
+         width: 270px;
+          height: 56px;
+          background: #fff;
+          color: #72694e;
+          border: 2px solid #72694e;
+          display: flex;
+          justify-content: center;
+          font-family: $fontMeiryo;
+          font-size: 14px;
+          position: relative;
+
+          &:after{
+            top: 40%;
+            font-weight: 900;
+            content: "\f054";
+            font-family: "Font Awesome 5 Free";
+            position: absolute;
+            color: #fff;
+            display: block;
+            z-index: 5;
+            left: 20px;
+            font-size: 14px;
+          }
+        }
+
+        .bold{
+          margin-bottom: 20px;
+          font-size: 24px;
+          line-height: 1;
+        }
+
+        p{
+          color: #fff;
+          font-size: 14px;
+        }
+      }
+
+      .button-wrap{
+        display: flex;justify-content: center;
+        padding-top: 50px;
+      }
+    }
+  }
+
+  .box-placenta{
+    background: $bgYellow;
+    padding: 70px 0;
+    .no-border{
+      padding-bottom: 20px;
+      border: none;
+    }
+
+    .button-wrap{
+      display: flex;
+      justify-content: center;
+      padding-top: 50px;
+    }
+  }
+}
+
 /*================RESPONSIVE===================*/
 @media only screen and (max-width: 1024px) {
   .home-page .box-contact .contact-wrap{
@@ -2007,6 +2441,22 @@
       &:nth-child(4){
         margin-right: 24px;
       }
+    }
+  }
+
+  .price-page .box-content{
+    .box-button button {
+      height: 56px;
+      flex-basis: calc((819px - (12px * 6)) / 7);
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .box-button2 button{
+      height: 56px;
+      flex-basis: calc((819px - (12px * 5)) / 6);
+      padding-left: 10px;
+      padding-right: 10px;
     }
   }
 }
@@ -2037,6 +2487,23 @@
       &:nth-child(2n){
         margin-right: 0px;
       }
+    }
+  }
+
+  .price-page .box-content{
+    .box-button button {
+      height: 56px;
+      flex-basis: calc((615px - (12px * 6)) / 7);
+      padding-left: 6px;
+      padding-right: 6px;
+      font-size: 12px;
+    }
+
+    .box-button2 button{
+      font-size: 12px;
+      height: unset;
+      flex-basis: calc((615px - (12px * 5)) / 6);
+      padding: 6px;
     }
   }
 }
@@ -2354,4 +2821,67 @@
       }
     }
   }
+
+  .price-page .box-content{
+    .price-board .inner {
+      padding: 30px 20px;
+    }
+
+    .price-table__wrap .price-row .left {
+      padding: 15px 15px 15px 15px;
+      font-size: 14px;
+    }
+
+    .price-table__wrap .price-row .right {
+      padding: 15px 15px 15px 10px;
+      font-size: 11px;
+    }
+
+    .box-button {
+      flex-wrap: wrap;
+      button {
+        flex-basis: calc(50% - 12px);
+        margin-bottom: 12px;
+        &:nth-child(2n){
+          margin-right: 0 !important;
+        }
+      }
+    }
+
+    .box-button2{
+      flex-wrap: wrap;
+      button{
+        flex-basis: calc(50% - 12px);
+        margin-bottom: 12px;
+        &:nth-child(2n){
+          margin-right: 0 !important;
+        }
+      }
+    }
+  }
+
+  .stain-page{
+    .box-flex{
+      display: block !important;
+      .right{
+        margin-top: 20px;
+      }
+
+    }
+
+    h2.l-heading{
+      img{
+        display: none;
+      }
+    }
+
+    .text-button__wrap{
+      display: block !important;
+
+      .btn-primary, .btn-ghost{
+        margin: 20px auto 0 !important;
+      }
+    }
+  }
+
 }
