@@ -33,8 +33,6 @@ module.exports = function ( grunt ) {
 				files: {
 					'css/style.min.css'						: 'css/style.css',
 					'css/common.min.css'						: 'css/common.css',
-					'css/contact.min.css'						: 'css/contact.css',
-					'css/footer.min.css'						: 'css/footer.css',
 					'css/header.min.css'						: 'css/header.css',
 				}
 			}
@@ -51,8 +49,6 @@ module.exports = function ( grunt ) {
                 files: {
 					'css/style.css': 'css/style.scss',
 					'css/common.css': 'css/common.scss',
-					'css/contact.css': 'css/contact.scss',
-					'css/footer.css': 'css/footer.scss',
 					'css/header.css': 'css/header.scss',
                 }
             },
@@ -65,8 +61,6 @@ module.exports = function ( grunt ) {
                 files: {
 					'css/style.css': 'css/style.scss',
 					'css/common.css': 'css/common.scss',
-					'css/contact.css': 'css/contact.scss',
-					'css/footer.css': 'css/footer.scss',
 					'css/header.css': 'css/header.scss',
 
                 }
