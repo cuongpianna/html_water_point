@@ -9,29 +9,611 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.min.css">
-
+    <link rel="stylesheet" href="libs/toggle/minitoggle.css">
     <script src="js/jquery.js"></script>
+    <script src="libs/toggle/minitoggle.js"></script>
     <script src="libs/bootstrap/bootstrap.js"></script>
 </head>
 <body class="home-page">
 <div class="wrapper">
     <header>
-        <div class="header-left"></div>
-        <ul class="menu">
-            <li>
-                <a>Trang chủ</a>
-            </li>
-            <li>
-                <a>Bản đồ</a>
-            </li>
-            <li>
-                <a>Văn bản</a>
-            </li>
-            <li>
-                <a>Góp ý</a>
-            </li>
-        </ul>
+        <div class="header-left">
+            <img src="images/Logo_Tra_Vinh.png" alt="">
+            <h1 class="brand"><a href="">SAMPLE TEXT</a></h1>
+        </div>
+        <div class="header-right">
+            <ul class="menu">
+                <li>
+                    <a>Trang chủ</a>
+                </li>
+                <li>
+                    <a>Bản đồ</a>
+                </li>
+                <li>
+                    <a>Văn bản</a>
+                </li>
+                <li>
+                    <a>Góp ý</a>
+                </li>
+            </ul>
+        </div>
     </header>
+    <div class="content">
+        <div class="actions-bar">
+            <button class="btn-round">
+                <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.125 7C8.0582 7 9.625 5.4332 9.625 3.5C9.625 1.5668 8.0582 0 6.125 0C4.1918 0 2.625 1.5668 2.625 3.5C2.625 5.4332 4.1918 7 6.125 7ZM8.575 7.875H8.11836C7.51133 8.15391 6.83594 8.3125 6.125 8.3125C5.41406 8.3125 4.74141 8.15391 4.13164 7.875H3.675C1.64609 7.875 0 9.52109 0 11.55V12.6875C0 13.4121 0.587891 14 1.3125 14H10.9375C11.6621 14 12.25 13.4121 12.25 12.6875V11.55C12.25 9.52109 10.6039 7.875 8.575 7.875Z"
+                          fill="#464646"/>
+                </svg>
+
+            </button>
+
+            <button id="btn-classDiagram">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.4746 2.25062L12.7843 2.94101L12.1169 3.60835L11.2671 4.45821C11.0365 4.47355 10.8053 4.43944 10.589 4.35815C10.3727 4.27686 10.1762 4.15027 10.0128 3.98686C9.84943 3.82346 9.72284 3.62701 9.64155 3.4107C9.56026 3.19438 9.52615 2.96318 9.54149 2.7326L10.3913 1.88275L11.0587 1.2154L11.7491 0.52502C11.7706 0.503428 11.7827 0.474175 11.7827 0.443678C11.7827 0.41318 11.7706 0.383928 11.7491 0.362335C11.7408 0.354121 11.731 0.34912 11.7214 0.343942L11.7215 0.343763L11.7198 0.343049C11.7139 0.339975 11.7078 0.337406 11.7015 0.33537C11.2102 0.114852 10.6778 0.000569824 10.1392 0C8.00717 0 6.27873 1.72846 6.27873 3.8605C6.27873 4.26766 6.34266 4.65964 6.45945 5.02805L2.43345 9.05428C1.0861 9.07606 0 10.1734 0 11.5262C0 12.8923 1.10771 14 2.47381 14C3.82635 14 4.92388 12.9137 4.94566 11.5663L8.97184 7.54011C9.34948 7.65996 9.74334 7.72092 10.1395 7.72083C12.2716 7.72083 14 5.99237 14 3.86033C14 3.30352 13.8775 2.77707 13.6648 2.2992C13.6626 2.29187 13.6596 2.28481 13.6559 2.27812L13.652 2.26884L13.6507 2.27009C13.6464 2.26348 13.6434 2.25616 13.6375 2.25026C13.6158 2.22876 13.5865 2.21673 13.556 2.2168C13.5255 2.21686 13.4962 2.22903 13.4746 2.25062ZM3.49598 11.5262C3.49598 11.7973 3.38828 12.0573 3.19657 12.249C3.00486 12.4407 2.74484 12.5484 2.47372 12.5484C2.2026 12.5484 1.94259 12.4407 1.75088 12.249C1.55917 12.0573 1.45147 11.7973 1.45147 11.5262C1.45147 11.255 1.55917 10.995 1.75088 10.8033C1.94259 10.6116 2.2026 10.5039 2.47372 10.5039C2.74484 10.5039 3.00486 10.6116 3.19657 10.8033C3.38828 10.995 3.49598 11.255 3.49598 11.5262Z"
+                          fill="#464646"/>
+                </svg>
+
+            </button>
+
+            <button id="btn-Tool">
+                <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.79444 0.364139C6.85774 0.330434 6.92835 0.312805 7.00006 0.312805C7.07178 0.312805 7.14239 0.330434 7.20569 0.364139L13.7682 3.86414C13.8381 3.90148 13.8965 3.9571 13.9373 4.02506C13.978 4.09302 13.9995 4.17077 13.9995 4.25001C13.9995 4.32925 13.978 4.407 13.9373 4.47496C13.8965 4.54293 13.8381 4.59855 13.7682 4.63589L7.20569 8.13589C7.14239 8.16959 7.07178 8.18722 7.00006 8.18722C6.92835 8.18722 6.85774 8.16959 6.79444 8.13589L0.231939 4.63589C0.16205 4.59855 0.103615 4.54293 0.0628729 4.47496C0.0221304 4.407 0.000610352 4.32925 0.000610352 4.25001C0.000610352 4.17077 0.0221304 4.09302 0.0628729 4.02506C0.103615 3.9571 0.16205 3.90148 0.231939 3.86414L6.79444 0.364139Z" fill="#464646"/>
+                    <path d="M1.85944 6.49612L0.231939 7.36412C0.16205 7.40146 0.103615 7.45709 0.0628729 7.52505C0.0221304 7.59301 0.000610352 7.67076 0.000610352 7.75C0.000610352 7.82924 0.0221304 7.90699 0.0628729 7.97495C0.103615 8.04291 0.16205 8.09853 0.231939 8.13587L6.79444 11.6359C6.85774 11.6696 6.92835 11.6872 7.00006 11.6872C7.07178 11.6872 7.14239 11.6696 7.20569 11.6359L13.7682 8.13587C13.8381 8.09853 13.8965 8.04291 13.9373 7.97495C13.978 7.90699 13.9995 7.82924 13.9995 7.75C13.9995 7.67076 13.978 7.59301 13.9373 7.52505C13.8965 7.45709 13.8381 7.40146 13.7682 7.36412L12.1407 6.49612L7.61694 8.90762C7.42704 9.00874 7.2152 9.06162 7.00006 9.06162C6.78493 9.06162 6.57309 9.00874 6.38319 8.90762L1.85944 6.49612Z" fill="#464646"/>
+                </svg>
+            </button>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14898.698347711335!2d105.74685394999999!3d21.005677549999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1614739314815!5m2!1svi!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <div id="classDiagram" class="left__sidebar">
+            <div class="left-sidebar__header">
+                <div class="left">
+                    <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.79438 0.364139C6.85768 0.330434 6.9283 0.312805 7.00001 0.312805C7.07172 0.312805 7.14233 0.330434 7.20563 0.364139L13.7681 3.86414C13.838 3.90148 13.8965 3.9571 13.9372 4.02506C13.9779 4.09302 13.9995 4.17077 13.9995 4.25001C13.9995 4.32925 13.9779 4.407 13.9372 4.47496C13.8965 4.54293 13.838 4.59855 13.7681 4.63589L7.20563 8.13589C7.14233 8.16959 7.07172 8.18722 7.00001 8.18722C6.9283 8.18722 6.85768 8.16959 6.79438 8.13589L0.231883 4.63589C0.161994 4.59855 0.103559 4.54293 0.0628168 4.47496C0.0220744 4.407 0.000554323 4.32925 0.000554323 4.25001C0.000554323 4.17077 0.0220744 4.09302 0.0628168 4.02506C0.103559 3.9571 0.161994 3.90148 0.231883 3.86414L6.79438 0.364139Z" fill="#464646"/>
+                        <path d="M1.85938 6.49612L0.231883 7.36412C0.161994 7.40146 0.103559 7.45709 0.0628168 7.52505C0.0220744 7.59301 0.000554323 7.67076 0.000554323 7.75C0.000554323 7.82924 0.0220744 7.90699 0.0628168 7.97495C0.103559 8.04291 0.161994 8.09853 0.231883 8.13587L6.79438 11.6359C6.85768 11.6696 6.9283 11.6872 7.00001 11.6872C7.07172 11.6872 7.14233 11.6696 7.20563 11.6359L13.7681 8.13587C13.838 8.09853 13.8965 8.04291 13.9372 7.97495C13.9779 7.90699 13.9995 7.82924 13.9995 7.75C13.9995 7.67076 13.9779 7.59301 13.9372 7.52505C13.8965 7.45709 13.838 7.40146 13.7681 7.36412L12.1406 6.49612L7.61688 8.90762C7.42699 9.00874 7.21515 9.06162 7.00001 9.06162C6.78487 9.06162 6.57303 9.00874 6.38313 8.90762L1.85938 6.49612Z" fill="#464646"/>
+                    </svg>
+
+                    Lớp bản đồ
+                </div>
+                <button id="close-classDiagram" class="btn-close">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 5L5 15" stroke="#464646" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5 5L15 15" stroke="#464646" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                </button>
+            </div>
+            <div class="class-diagram__body">
+                <div class="class-diagram__board">
+                    <div class="board-header">
+                        Nhóm dữ liệu nền
+                    </div>
+                    <div class="board-content">
+                        <div class="class-item">
+                            <div class="class-header">
+                                <div class="left">1. Cơ sở đo đạc</div>
+                                <button class="btn-toggle">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <div class="class-lv1">
+                                <div class="class-lv1__item">
+                                    <div class="slide-wrap">
+                                        <div class="slide-wrap__top">
+                                            <div class="left">
+                                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.6 0C5.26863 0 5 0.268629 5 0.6V1.4C5 1.73137 5.26863 2 5.6 2H13.4C13.7314 2 14 1.73137 14 1.4V0.6C14 0.268629 13.7314 0 13.4 0L5.6 0ZM5 9.4C5 9.73137 5.26863 10 5.6 10H13.4C13.7314 10 14 9.73137 14 9.4V8.6C14 8.26863 13.7314 8 13.4 8H5.6C5.26863 8 5 8.26863 5 8.6V9.4ZM5 5.4C5 5.73137 5.26863 6 5.6 6H13.4C13.7314 6 14 5.73137 14 5.4V4.6C14 4.26863 13.7314 4 13.4 4H5.6C5.26863 4 5 4.26863 5 4.6V5.4ZM0 1.4C0 1.73137 0.268629 2 0.6 2H3.4C3.73137 2 4 1.73137 4 1.4V0.6C4 0.268629 3.73137 0 3.4 0H0.6C0.268629 0 0 0.268629 0 0.6V1.4ZM0 9.4C0 9.73137 0.268629 10 0.6 10H3.4C3.73137 10 4 9.73137 4 9.4V8.6C4 8.26863 3.73137 8 3.4 8H0.6C0.268629 8 0 8.26863 0 8.6V9.4ZM0 5.4C0 5.73137 0.268629 6 0.6 6H3.4C3.73137 6 4 5.73137 4 5.4V4.6C4 4.26863 3.73137 4 3.4 4H0.6C0.268629 4 0 4.26863 0 4.6V5.4Z" fill="#9B9B9B"/>
+                                                </svg>
+                                                Điểm cơ sở quốc gia
+                                            </div>
+                                            <label class="switch ">
+                                                <input type="checkbox" class="primary">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                        <div class="range-wrap">
+                                            <input type="range" class="form-control form-range" id="customRange1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="class-item">
+                            <div class="class-header">
+                                <div class="left">2. Biên giới địa giới</div>
+                                <button class="btn-toggle">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <div class="class-lv1">
+                                <div class="class-lv1__item">
+                                    <div class="slide-wrap">
+                                        <div class="slide-wrap__top">
+                                            <div class="left">
+                                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.6 0C5.26863 0 5 0.268629 5 0.6V1.4C5 1.73137 5.26863 2 5.6 2H13.4C13.7314 2 14 1.73137 14 1.4V0.6C14 0.268629 13.7314 0 13.4 0L5.6 0ZM5 9.4C5 9.73137 5.26863 10 5.6 10H13.4C13.7314 10 14 9.73137 14 9.4V8.6C14 8.26863 13.7314 8 13.4 8H5.6C5.26863 8 5 8.26863 5 8.6V9.4ZM5 5.4C5 5.73137 5.26863 6 5.6 6H13.4C13.7314 6 14 5.73137 14 5.4V4.6C14 4.26863 13.7314 4 13.4 4H5.6C5.26863 4 5 4.26863 5 4.6V5.4ZM0 1.4C0 1.73137 0.268629 2 0.6 2H3.4C3.73137 2 4 1.73137 4 1.4V0.6C4 0.268629 3.73137 0 3.4 0H0.6C0.268629 0 0 0.268629 0 0.6V1.4ZM0 9.4C0 9.73137 0.268629 10 0.6 10H3.4C3.73137 10 4 9.73137 4 9.4V8.6C4 8.26863 3.73137 8 3.4 8H0.6C0.268629 8 0 8.26863 0 8.6V9.4ZM0 5.4C0 5.73137 0.268629 6 0.6 6H3.4C3.73137 6 4 5.73137 4 5.4V4.6C4 4.26863 3.73137 4 3.4 4H0.6C0.268629 4 0 4.26863 0 4.6V5.4Z" fill="#9B9B9B"/>
+                                                </svg>
+                                                Địa phận tỉnh
+                                            </div>
+                                            <label class="switch ">
+                                                <input type="checkbox" class="primary">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="slide-wrap">
+                                        <div class="slide-wrap__top">
+                                            <div class="left">
+                                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.6 0C5.26863 0 5 0.268629 5 0.6V1.4C5 1.73137 5.26863 2 5.6 2H13.4C13.7314 2 14 1.73137 14 1.4V0.6C14 0.268629 13.7314 0 13.4 0L5.6 0ZM5 9.4C5 9.73137 5.26863 10 5.6 10H13.4C13.7314 10 14 9.73137 14 9.4V8.6C14 8.26863 13.7314 8 13.4 8H5.6C5.26863 8 5 8.26863 5 8.6V9.4ZM5 5.4C5 5.73137 5.26863 6 5.6 6H13.4C13.7314 6 14 5.73137 14 5.4V4.6C14 4.26863 13.7314 4 13.4 4H5.6C5.26863 4 5 4.26863 5 4.6V5.4ZM0 1.4C0 1.73137 0.268629 2 0.6 2H3.4C3.73137 2 4 1.73137 4 1.4V0.6C4 0.268629 3.73137 0 3.4 0H0.6C0.268629 0 0 0.268629 0 0.6V1.4ZM0 9.4C0 9.73137 0.268629 10 0.6 10H3.4C3.73137 10 4 9.73137 4 9.4V8.6C4 8.26863 3.73137 8 3.4 8H0.6C0.268629 8 0 8.26863 0 8.6V9.4ZM0 5.4C0 5.73137 0.268629 6 0.6 6H3.4C3.73137 6 4 5.73137 4 5.4V4.6C4 4.26863 3.73137 4 3.4 4H0.6C0.268629 4 0 4.26863 0 4.6V5.4Z" fill="#9B9B9B"/>
+                                                </svg>
+                                                Địa phận huyện
+                                            </div>
+                                            <label class="switch ">
+                                                <input type="checkbox" class="primary">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="slide-wrap">
+                                        <div class="slide-wrap__top">
+                                            <div class="left">
+                                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.6 0C5.26863 0 5 0.268629 5 0.6V1.4C5 1.73137 5.26863 2 5.6 2H13.4C13.7314 2 14 1.73137 14 1.4V0.6C14 0.268629 13.7314 0 13.4 0L5.6 0ZM5 9.4C5 9.73137 5.26863 10 5.6 10H13.4C13.7314 10 14 9.73137 14 9.4V8.6C14 8.26863 13.7314 8 13.4 8H5.6C5.26863 8 5 8.26863 5 8.6V9.4ZM5 5.4C5 5.73137 5.26863 6 5.6 6H13.4C13.7314 6 14 5.73137 14 5.4V4.6C14 4.26863 13.7314 4 13.4 4H5.6C5.26863 4 5 4.26863 5 4.6V5.4ZM0 1.4C0 1.73137 0.268629 2 0.6 2H3.4C3.73137 2 4 1.73137 4 1.4V0.6C4 0.268629 3.73137 0 3.4 0H0.6C0.268629 0 0 0.268629 0 0.6V1.4ZM0 9.4C0 9.73137 0.268629 10 0.6 10H3.4C3.73137 10 4 9.73137 4 9.4V8.6C4 8.26863 3.73137 8 3.4 8H0.6C0.268629 8 0 8.26863 0 8.6V9.4ZM0 5.4C0 5.73137 0.268629 6 0.6 6H3.4C3.73137 6 4 5.73137 4 5.4V4.6C4 4.26863 3.73137 4 3.4 4H0.6C0.268629 4 0 4.26863 0 4.6V5.4Z" fill="#9B9B9B"/>
+                                                </svg>
+                                                Địa phận xã
+                                            </div>
+                                            <label class="switch ">
+                                                <input type="checkbox" class="primary">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="slide-wrap">
+                                        <div class="slide-wrap__top">
+                                            <div class="left">
+                                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.6 0C5.26863 0 5 0.268629 5 0.6V1.4C5 1.73137 5.26863 2 5.6 2H13.4C13.7314 2 14 1.73137 14 1.4V0.6C14 0.268629 13.7314 0 13.4 0L5.6 0ZM5 9.4C5 9.73137 5.26863 10 5.6 10H13.4C13.7314 10 14 9.73137 14 9.4V8.6C14 8.26863 13.7314 8 13.4 8H5.6C5.26863 8 5 8.26863 5 8.6V9.4ZM5 5.4C5 5.73137 5.26863 6 5.6 6H13.4C13.7314 6 14 5.73137 14 5.4V4.6C14 4.26863 13.7314 4 13.4 4H5.6C5.26863 4 5 4.26863 5 4.6V5.4ZM0 1.4C0 1.73137 0.268629 2 0.6 2H3.4C3.73137 2 4 1.73137 4 1.4V0.6C4 0.268629 3.73137 0 3.4 0H0.6C0.268629 0 0 0.268629 0 0.6V1.4ZM0 9.4C0 9.73137 0.268629 10 0.6 10H3.4C3.73137 10 4 9.73137 4 9.4V8.6C4 8.26863 3.73137 8 3.4 8H0.6C0.268629 8 0 8.26863 0 8.6V9.4ZM0 5.4C0 5.73137 0.268629 6 0.6 6H3.4C3.73137 6 4 5.73137 4 5.4V4.6C4 4.26863 3.73137 4 3.4 4H0.6C0.268629 4 0 4.26863 0 4.6V5.4Z" fill="#9B9B9B"/>
+                                                </svg>
+                                                Địa giới tỉnh
+                                            </div>
+                                            <label class="switch ">
+                                                <input type="checkbox" class="primary">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="slide-wrap">
+                                        <div class="slide-wrap__top">
+                                            <div class="left">
+                                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.6 0C5.26863 0 5 0.268629 5 0.6V1.4C5 1.73137 5.26863 2 5.6 2H13.4C13.7314 2 14 1.73137 14 1.4V0.6C14 0.268629 13.7314 0 13.4 0L5.6 0ZM5 9.4C5 9.73137 5.26863 10 5.6 10H13.4C13.7314 10 14 9.73137 14 9.4V8.6C14 8.26863 13.7314 8 13.4 8H5.6C5.26863 8 5 8.26863 5 8.6V9.4ZM5 5.4C5 5.73137 5.26863 6 5.6 6H13.4C13.7314 6 14 5.73137 14 5.4V4.6C14 4.26863 13.7314 4 13.4 4H5.6C5.26863 4 5 4.26863 5 4.6V5.4ZM0 1.4C0 1.73137 0.268629 2 0.6 2H3.4C3.73137 2 4 1.73137 4 1.4V0.6C4 0.268629 3.73137 0 3.4 0H0.6C0.268629 0 0 0.268629 0 0.6V1.4ZM0 9.4C0 9.73137 0.268629 10 0.6 10H3.4C3.73137 10 4 9.73137 4 9.4V8.6C4 8.26863 3.73137 8 3.4 8H0.6C0.268629 8 0 8.26863 0 8.6V9.4ZM0 5.4C0 5.73137 0.268629 6 0.6 6H3.4C3.73137 6 4 5.73137 4 5.4V4.6C4 4.26863 3.73137 4 3.4 4H0.6C0.268629 4 0 4.26863 0 4.6V5.4Z" fill="#9B9B9B"/>
+                                                </svg>
+                                                Địa giới huyện
+                                            </div>
+                                            <label class="switch ">
+                                                <input type="checkbox" class="primary">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="slide-wrap">
+                                        <div class="slide-wrap__top">
+                                            <div class="left">
+                                                <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.6 0C5.26863 0 5 0.268629 5 0.6V1.4C5 1.73137 5.26863 2 5.6 2H13.4C13.7314 2 14 1.73137 14 1.4V0.6C14 0.268629 13.7314 0 13.4 0L5.6 0ZM5 9.4C5 9.73137 5.26863 10 5.6 10H13.4C13.7314 10 14 9.73137 14 9.4V8.6C14 8.26863 13.7314 8 13.4 8H5.6C5.26863 8 5 8.26863 5 8.6V9.4ZM5 5.4C5 5.73137 5.26863 6 5.6 6H13.4C13.7314 6 14 5.73137 14 5.4V4.6C14 4.26863 13.7314 4 13.4 4H5.6C5.26863 4 5 4.26863 5 4.6V5.4ZM0 1.4C0 1.73137 0.268629 2 0.6 2H3.4C3.73137 2 4 1.73137 4 1.4V0.6C4 0.268629 3.73137 0 3.4 0H0.6C0.268629 0 0 0.268629 0 0.6V1.4ZM0 9.4C0 9.73137 0.268629 10 0.6 10H3.4C3.73137 10 4 9.73137 4 9.4V8.6C4 8.26863 3.73137 8 3.4 8H0.6C0.268629 8 0 8.26863 0 8.6V9.4ZM0 5.4C0 5.73137 0.268629 6 0.6 6H3.4C3.73137 6 4 5.73137 4 5.4V4.6C4 4.26863 3.73137 4 3.4 4H0.6C0.268629 4 0 4.26863 0 4.6V5.4Z" fill="#9B9B9B"/>
+                                                </svg>
+                                                Địa giới xã
+                                            </div>
+                                            <label class="switch ">
+                                                <input type="checkbox" class="primary">
+                                                <span class="slider round"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="class-item">
+                            <div class="class-header">
+                                <div class="left">3. Địa hình</div>
+                                <button class="btn-toggle">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-header">
+                                <div class="left">4. Thủy hệ</div>
+                                <button class="btn-toggle">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-header">
+                                <div class="left">5. Giao thông</div>
+                                <button class="btn-toggle">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-header">
+                                <div class="left">6. Cư dân</div>
+                                <button class="btn-toggle">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-header">
+                                <div class="left">7. Phủ bề mặt</div>
+                                <button class="btn-toggle">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+                        <div class="class-item">
+                            <div class="class-header">
+                                <div class="left">8. Khí hậu</div>
+                                <button class="btn-toggle">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="class-diagram__board">
+                    <div class="board-header">
+                        Nhóm dữ liệu chuyên ngành
+                    </div>
+
+                    <div class="board-content">
+                        <div class="class-item">
+                            <div class="class-header">
+                                <div class="left">1. Kinh tế xã hội</div>
+                                <button class="btn-toggle">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="class-item">
+                            <div class="class-header">
+                                <div class="left">2. Xây dựng</div>
+                                <button class="btn-toggle">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </button>
+                            </div>
+                            <div class="class-lv1">
+                                <div class="class-lv1__item">
+                                    <div class="class-lv1__header">
+                                        <div class="left">2.1 Dự án đầu tư xây dựng</div>
+                                        <button class="btn-toggle">
+                                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="class-lv2">
+                                        <div class="slide-wrap">
+                                            <div class="slide-wrap__top">
+                                                <div class="left">
+                                                    <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M5.6 0C5.26863 0 5 0.268629 5 0.6V1.4C5 1.73137 5.26863 2 5.6 2H13.4C13.7314 2 14 1.73137 14 1.4V0.6C14 0.268629 13.7314 0 13.4 0L5.6 0ZM5 9.4C5 9.73137 5.26863 10 5.6 10H13.4C13.7314 10 14 9.73137 14 9.4V8.6C14 8.26863 13.7314 8 13.4 8H5.6C5.26863 8 5 8.26863 5 8.6V9.4ZM5 5.4C5 5.73137 5.26863 6 5.6 6H13.4C13.7314 6 14 5.73137 14 5.4V4.6C14 4.26863 13.7314 4 13.4 4H5.6C5.26863 4 5 4.26863 5 4.6V5.4ZM0 1.4C0 1.73137 0.268629 2 0.6 2H3.4C3.73137 2 4 1.73137 4 1.4V0.6C4 0.268629 3.73137 0 3.4 0H0.6C0.268629 0 0 0.268629 0 0.6V1.4ZM0 9.4C0 9.73137 0.268629 10 0.6 10H3.4C3.73137 10 4 9.73137 4 9.4V8.6C4 8.26863 3.73137 8 3.4 8H0.6C0.268629 8 0 8.26863 0 8.6V9.4ZM0 5.4C0 5.73137 0.268629 6 0.6 6H3.4C3.73137 6 4 5.73137 4 5.4V4.6C4 4.26863 3.73137 4 3.4 4H0.6C0.268629 4 0 4.26863 0 4.6V5.4Z" fill="#9B9B9B"/>
+                                                    </svg>
+                                                    Dự án đang triển khai
+                                                </div>
+                                                <label class="switch ">
+                                                    <input type="checkbox" class="primary">
+                                                    <span class="slider round"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="class-lv1__item">
+                                    <div class="class-lv1__header">
+                                        <div class="left">2.2 Hệ thống cấp nước</div>
+                                        <button class="btn-toggle">
+                                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="class-lv1__item">
+                                    <div class="class-lv1__header">
+                                        <div class="left">2.3 Hệ thống thoát nước</div>
+                                        <button class="btn-toggle">
+                                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="class-lv1__item">
+                                    <div class="class-lv1__header">
+                                        <div class="left">2.4 Hệ thống cây xanh</div>
+                                        <button class="btn-toggle">
+                                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="class-lv1__item">
+                                    <div class="class-lv1__header">
+                                        <div class="left">2.5 Hệ thống đô thị, nông thôn</div>
+                                        <button class="btn-toggle">
+                                            <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="class-item">
+                            <div class="class-header">
+                                <div class="left">3. Công nương</div>
+                                <button class="btn-toggle">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="class-item">
+                            <div class="class-header">
+                                <div class="left">4. Nông nghiệp</div>
+                                <button class="btn-toggle">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="class-item">
+                            <div class="class-header">
+                                <div class="left">5. Văn hóa, thể thao và du lịch</div>
+                                <button class="btn-toggle">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="class-item">
+                            <div class="class-header">
+                                <div class="left">6. Tài nguyên và môi trường</div>
+                                <button class="btn-toggle">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="class-item">
+                            <div class="class-header">
+                                <div class="left">7. Quản lý chất thải rắn và nghĩa trang</div>
+                                <button class="btn-toggle">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="class-item">
+                            <div class="class-header">
+                                <div class="left">8. Giao thông vận tải</div>
+                                <button class="btn-toggle">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="class-item">
+                            <div class="class-header">
+                                <div class="left">9. Thông tin và truyền thôn</div>
+                                <button class="btn-toggle">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="class-item">
+                            <div class="class-header">
+                                <div class="left">10. Khoa học và công nghệ</div>
+                                <button class="btn-toggle">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="class-item">
+                            <div class="class-header">
+                                <div class="left">11. Y tế</div>
+                                <button class="btn-toggle">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="class-item">
+                            <div class="class-header">
+                                <div class="left">12. Giáo dục và đào tạo</div>
+                                <button class="btn-toggle">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="class-item">
+                            <div class="class-header">
+                                <div class="left">13. Quốc phòng và an ninh</div>
+                                <button class="btn-toggle">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="class-item">
+                            <div class="class-header">
+                                <div class="left">Biến đổi khí hậu (BĐKH)</div>
+                                <button class="btn-toggle">
+                                    <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.66663 1L4.99996 4.33333L8.33329 1" stroke="#9B9B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="class-diagram__submit">
+                <button class="submit">DONE</button>
+            </div>
+        </div>
+
+        <div id="tool" class="left__sidebar" data-click="tool">
+            <div class="left-sidebar__header">
+                <div class="left">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.4746 2.25062L12.7843 2.94101L12.1169 3.60835L11.2671 4.45821C11.0365 4.47355 10.8053 4.43944 10.589 4.35815C10.3727 4.27686 10.1762 4.15027 10.0128 3.98686C9.84943 3.82346 9.72284 3.62701 9.64155 3.4107C9.56026 3.19438 9.52615 2.96318 9.54149 2.7326L10.3913 1.88275L11.0587 1.2154L11.7491 0.52502C11.7706 0.503428 11.7827 0.474175 11.7827 0.443678C11.7827 0.41318 11.7706 0.383928 11.7491 0.362335C11.7408 0.354121 11.731 0.34912 11.7214 0.343942L11.7215 0.343763L11.7198 0.343049C11.7139 0.339975 11.7078 0.337406 11.7015 0.33537C11.2102 0.114852 10.6778 0.000569824 10.1392 0C8.00717 0 6.27873 1.72846 6.27873 3.8605C6.27873 4.26766 6.34266 4.65964 6.45945 5.02805L2.43345 9.05428C1.0861 9.07606 0 10.1734 0 11.5262C0 12.8923 1.10771 14 2.47381 14C3.82635 14 4.92388 12.9137 4.94566 11.5663L8.97184 7.54011C9.34948 7.65996 9.74334 7.72092 10.1395 7.72083C12.2716 7.72083 14 5.99237 14 3.86033C14 3.30352 13.8775 2.77707 13.6648 2.2992C13.6626 2.29187 13.6596 2.28481 13.6559 2.27812L13.652 2.26884L13.6507 2.27009C13.6464 2.26348 13.6434 2.25616 13.6375 2.25026C13.6158 2.22876 13.5865 2.21673 13.556 2.2168C13.5255 2.21686 13.4962 2.22903 13.4746 2.25062ZM3.49598 11.5262C3.49598 11.7973 3.38828 12.0573 3.19657 12.249C3.00486 12.4407 2.74484 12.5484 2.47372 12.5484C2.2026 12.5484 1.94259 12.4407 1.75088 12.249C1.55917 12.0573 1.45147 11.7973 1.45147 11.5262C1.45147 11.255 1.55917 10.995 1.75088 10.8033C1.94259 10.6116 2.2026 10.5039 2.47372 10.5039C2.74484 10.5039 3.00486 10.6116 3.19657 10.8033C3.38828 10.995 3.49598 11.255 3.49598 11.5262Z"
+                              fill="#464646"/>
+                    </svg>
+                    Công cụ
+                </div>
+                <button id="close-tool" class="btn-close">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 5L5 15" stroke="#464646" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5 5L15 15" stroke="#464646" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+
+                </button>
+            </div>
+            <div class="sidebar-board">
+                <div class="board-header">Công cụ cơ bản</div>
+                <div class="board-content">
+                    <div class="board-tool__item">
+                        <div class="left">
+                            <img src="images/Vector.png" alt="">
+                        </div>
+                        <div class="right">
+                            <div class="tool-title">Công cụ 01</div>
+                            <div class="tool-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae praesent velit blandit sit purus, quis eget dui.</div>
+                        </div>
+                    </div>
+                    <div class="board-tool__item">
+                        <div class="left">
+                            <img src="images/Vector.png" alt="">
+                        </div>
+                        <div class="right">
+                            <div class="tool-title">Công cụ 02</div>
+                            <div class="tool-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae praesent velit blandit sit purus, quis eget dui.</div>
+                        </div>
+                    </div>
+                    <div class="board-tool__item">
+                        <div class="left">
+                            <img src="images/Vector.png" alt="">
+                        </div>
+                        <div class="right">
+                            <div class="tool-title">Công cụ 03</div>
+                            <div class="tool-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae praesent velit blandit sit purus, quis eget dui.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-board">
+                <div class="board-header">Công cụ nâng cao</div>
+                <div class="board-content">
+                    <div class="board-tool__item">
+                        <div class="left">
+                            <img src="images/Vector.png" alt="">
+                        </div>
+                        <div class="right">
+                            <div class="tool-title">Công cụ 01</div>
+                            <div class="tool-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae praesent velit blandit sit purus, quis eget dui.</div>
+                        </div>
+                    </div>
+                    <div class="board-tool__item">
+                        <div class="left">
+                            <img src="images/Vector.png" alt="">
+                        </div>
+                        <div class="right">
+                            <div class="tool-title">Công cụ 02</div>
+                            <div class="tool-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae praesent velit blandit sit purus, quis eget dui.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!--JS library-->

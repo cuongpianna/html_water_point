@@ -1,13 +1,33 @@
 jQuery(document).ready(function (e) {
-    $('.nav-button').click(function (){
-        if($(this).hasClass('close')) {
-            $(this).removeClass('close');
-            $('header .navigation').removeClass('mobile');
-            $('body').removeClass('no-scroll');
-        }else {
-            $(this).addClass('close');
-            $('header .navigation').addClass('mobile');
-            $('body').addClass('no-scroll');
+    $('#btn-Tool').click(function (){
+        $('#tool').addClass('show');
+    });
+
+    $('#close-tool').click(function (){
+        $('#tool').removeClass('show');
+    })
+
+    $('#btn-classDiagram').click(function (){
+        $('#classDiagram').addClass('show');
+    });
+
+    $('#close-classDiagram').click(function (){
+        $('#classDiagram').removeClass('show');
+    })
+
+    $('.btn-toggle').click(function () {
+        let parentClass = $(this).parent().next('.class-lv1');
+        if(parentClass) {
+            $(this).toggleClass('show');
         }
+        $(parentClass).slideToggle();
+    })
+
+    $('.class-lv1__item .btn-toggle').click(function () {
+        let parentClass = $(this).parent().next('.class-lv2');
+        if(parentClass) {
+            $(this).toggleClass('show');
+        }
+        $(parentClass).slideToggle();
     })
 });
