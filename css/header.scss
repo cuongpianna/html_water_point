@@ -2,6 +2,11 @@
 header{
   display: flex;
   height: 50px;
+
+  .nav-button{
+    display: none;
+  }
+
   .header-left{
     flex-basis: 450px;
     padding-left: 15px;
@@ -29,6 +34,9 @@ header{
     }
 
     h1{
+      display: inline-flex;
+      align-items: center;
+      margin-bottom: 0;
       a{
         font-style: normal;
         font-weight: bold;
@@ -49,14 +57,51 @@ header{
     background-image: linear-gradient(to right, rgba(245,245,245,0) 0%,rgba(245,245,245,0.99) 40%), url("../images/tra_vinh_12-12_53_09_994_photos_v2_x41.png");
     background-repeat: no-repeat;
 
-    ul{
+    &>ul{
       display: flex;
-      align-items: center;
+      position: relative;
       li{
         margin-right: 30px;
         cursor: pointer;
+        line-height: 50px;
 
-        &:last-child{
+        &.has-sub{
+          //position: relative;
+          z-index: 20000;
+          & > a{
+            position: relative;
+            &:after{
+              display: block;
+              content: "\f0d7";
+              font-family: "Font Awesome 5 Free";
+              font-weight: 900;
+              position: absolute;
+              right: -13px;
+              top: 1px;
+            }
+          }
+
+          .sub-menu{
+            display: none;
+            z-index: 2;
+            position: absolute;
+            background: rgb(245,245,245);
+            bottom: -81px;
+            right: 10px;
+            li{
+              display: flex;
+              align-items: center;
+              width: 145px;
+              padding-left: 20px;
+              align-items: center;
+              height: 40px;
+              margin-right: 0;
+            }
+          }
+
+          .sub-menu.show{
+            display: block;
+          }
 
         }
       }
@@ -73,6 +118,21 @@ header{
   }
 }
 
+@keyframes bar3 {
+  0% { top: 15px; height: 3px; transform: skewY(0); }
+  100% { top: 15px; height: 3px; transform: skewY(-40deg); }
+}
+
+@keyframes bar1 {
+  0% { top: 15px; height: 3px; transform: skewY(0); }
+  100% { top: 15px; height: 3px; transform: skewY(40deg); }
+}
+
+@keyframes bar2 {
+  0% { opacity: 1; }
+  100% { opacity: 0 }
+}
+
 
 /*================RESPONSIVE===================*/
 @media only screen and (max-width: 1024px) {
@@ -81,7 +141,128 @@ header{
 }
 
 @media only screen and (max-width: 768px) {
+  header{
+    position: relative;
+    .header-left{
+      border: none !important;
+      flex-basis: 100%;
 
+      &:after{
+        display: none;
+      }
+    }
+
+
+
+    .header-right{
+      background: #354EA9;
+      border: none !important;
+      ul{
+        display: none;
+      }
+    }
+
+    .nav-button{
+      display: block;
+      background: #354EA9;
+      width: 30px;
+      height: 30px;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      right: 10px;
+      top: 10px;
+      position: absolute;
+
+      &.close{
+        .bar1{
+          animation: bar1 0.2s linear;
+          top: 15px;
+          height: 3px;
+          transform: skewY(40deg);
+        }
+
+        .bar2{
+          animation: bar2 0.2s linear;
+          opacity: 0;
+        }
+
+        .bar3{
+          height: 3px;
+          animation: bar3 0.2s linear;
+          top: 15px;
+          transform: skewY(-40deg);
+        }
+      }
+
+      .bar{
+        background-color: #fff;
+        height: 2px;
+        width: 70%;
+        border-radius: 5px;
+        position: absolute;
+        left: 3px;
+      }
+
+      .bar1{
+        top: 10px;
+      }
+
+      .bar2{
+        top: 15px;
+      }
+
+      .bar3{
+        top: 20px;
+      }
+    }
+
+
+    ul.menu.open{
+      display: block !important;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      left: 0;
+      top: 50px;
+      z-index: 200000000000;
+
+      li{
+        text-align: center;
+        margin-right: 0;
+        border-bottom: 1px solid $borderColor;
+
+        a:after{
+          display: none !important;
+        }
+
+        &:last-child{
+          border: none;
+        }
+
+        &.has-sub{
+          position: relative;
+        }
+
+        .sub-menu{
+          display: block !important;
+          width: 100%;
+          background: #fff;
+          li{
+            justify-content: center;
+            display: flex;
+            width: 100%;
+            border: none;
+
+            a{
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 480px) {

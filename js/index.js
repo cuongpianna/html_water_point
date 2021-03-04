@@ -1,4 +1,8 @@
 jQuery(document).ready(function (e) {
+    $('.has-sub').click(function (){
+        $(this).find('.sub-menu').toggleClass('show');
+    });
+
     $('#btn-Tool').click(function (){
         $('#tool').addClass('show');
     });
@@ -30,4 +34,13 @@ jQuery(document).ready(function (e) {
         }
         $(parentClass).slideToggle();
     })
+
+    $('.nav-button').click(function (){
+        if(!$(this).hasClass('close')) {
+            $('body').addClass('no-scroll');
+        }
+        $(this).toggleClass('close');
+        $('ul.menu').toggleClass('open');
+    })
+
 });
