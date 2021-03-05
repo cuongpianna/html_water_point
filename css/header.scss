@@ -65,6 +65,11 @@ header{
         cursor: pointer;
         line-height: 50px;
 
+        &.active{
+          border-bottom: 3px solid #354EA9;
+          margin-bottom: -2px;
+        }
+
         &.has-sub{
           //position: relative;
           z-index: 20000;
@@ -96,6 +101,10 @@ header{
               align-items: center;
               height: 40px;
               margin-right: 0;
+
+              a{
+                text-transform: capitalize !important;
+              }
             }
           }
 

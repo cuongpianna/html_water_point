@@ -4,6 +4,7 @@ jQuery(document).ready(function (e) {
     });
 
     $('#btn-Tool').click(function (){
+        $('.left__sidebar').removeClass('show');
         $('#tool').addClass('show');
     });
 
@@ -12,6 +13,7 @@ jQuery(document).ready(function (e) {
     })
 
     $('#btn-classDiagram').click(function (){
+        $('.left__sidebar').removeClass('show');
         $('#classDiagram').addClass('show');
     });
 
@@ -43,4 +45,17 @@ jQuery(document).ready(function (e) {
         $('ul.menu').toggleClass('open');
     })
 
+    $('.has-sub.content-folder').click(function (){
+        $(this).find('.sub__content-folder').slideToggle();
+    })
+
+    let link = window.location.href;
+
+    if(link.includes('index')) {
+        $('.index').addClass('active');
+    }else if(link.includes('map')) {
+        $('.map').addClass('active');
+    }else if(link.includes('feedback')) {
+        $('.feedback').addClass('active');
+    }
 });

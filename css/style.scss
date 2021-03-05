@@ -28,6 +28,24 @@
       }
     }
 
+    .bottom-actions-bar{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: 15px;
+      bottom: 110px;
+
+      button {
+        background: #F5F5F5;
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+        width: 30px;
+        height: 30px;
+        border: none;
+        margin-bottom: 8px;
+      }
+    }
+
     .left__sidebar {
       transition: all ease .3s;
       border-right: 1px solid #C9C9C9;
@@ -264,7 +282,6 @@
     .content-left{
       flex-basis: 408px;
       border-right: 1px solid $borderColor;
-      height: calc(100vh - 50px);
       .content-left__header{
         height: 50px;
         padding-left: 10px;
@@ -326,22 +343,24 @@
             }
 
             &.has-sub{
+              cursor: pointer;
+
               &:before{
                 display: block;
                 content: "\f0d7";
                 position: absolute;
                 left: -15px;
-                top: -1px;
+                top: -5px;
                 font-family: "Font Awesome 5 Free";
                 font-weight: 900;
               }
             }
 
             .sub__content-folder{
+              display: none;
               margin-left: 20px;
               .sub-folder-item{
                 display: flex;
-                flex-wrap: wrap;
                 margin-top: 10px;
                 font-weight: 600;
                 font-size: 16px;
@@ -390,6 +409,7 @@
             font-size: 16px;
             line-height: 20px;
             color: #616E96;
+            margin-bottom: 5px;
           }
         }
 
@@ -506,7 +526,7 @@
         padding: 26px 24px;
         h2{
           font-weight: 600;
-          font-size: 18px;
+          font-size: 16px;
           line-height: 20px;
           text-transform: uppercase;
           color: #464646;
@@ -552,6 +572,17 @@
               border-radius: 2px;
               height: 42px;
               padding-left: 12px;
+            }
+
+            textarea{
+              width: 100%;
+              background: #FFFFFF;
+              border: 1px solid #C9C9C9;
+              box-sizing: border-box;
+              border-radius: 2px;
+              height: 152px;
+              padding-left: 12px;
+              padding-top: 10px;
             }
           }
         }
@@ -682,15 +713,15 @@
 
 /*================RESPONSIVE===================*/
 @media only screen and (max-width: 1024px) {
-  .home-page {
-    max-width: 90%;
-    margin: auto;
-  }
+
 }
 
 @media only screen and (max-width: 768px) {
   // home page
   .home-page {
+    .left__sidebar{
+      width: 100% !important;
+    }
   }
 
   // rule page
@@ -707,11 +738,28 @@
       }
     }
   }
+
+  .map-page{
+    .content{
+      height: unset;
+      display: block !important;
+    }
+  }
 }
 
 @media only screen and (max-width: 480px) {
   // home
   .home-page {
+  }
+
+  .feedback-page{
+    .left__sidebar{
+      width: 100% !important;
+    }
+
+    .left__sidebar .feedback-form .feedback-row{
+      display: block !important;
+    }
   }
 
   .rule-page{
