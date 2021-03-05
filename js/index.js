@@ -93,15 +93,11 @@ jQuery(document).ready(function (e) {
         if(widthh <= 768) {
             $('.map-page .content-right').addClass('show');
 
-            // $('.rule-content h4').click(function (){
-            //     $('.rule-content').hide();
-            //     $('.rule-page .content-right').removeClass('show');
-            // });
-            //
-            // $('.rule-content h3').click(function (){
-            //     $('.rule-content').hide();
-            //     $('.rule-page .content-right').removeClass('show');
-            // });
+            $('.map-page .map-title').click(function (){
+                $('.map-page .content-right').removeClass('show');
+                $('.map-content').hide();
+            });
+
         }
     })
 });
