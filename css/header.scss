@@ -82,7 +82,7 @@ header{
               font-weight: 900;
               position: absolute;
               right: -13px;
-              top: 1px;
+              top: -1px;
             }
           }
 
@@ -91,7 +91,7 @@ header{
             z-index: 2;
             position: absolute;
             background: rgb(245,245,245);
-            bottom: -81px;
+            bottom: -80px;
             right: 10px;
             li{
               display: flex;
@@ -231,7 +231,7 @@ header{
       display: block !important;
       position: fixed;
       width: 100%;
-      height: 100%;
+      //height: 100%;
       background: #fff;
       left: 0;
       top: 50px;
@@ -243,7 +243,7 @@ header{
         border-bottom: 1px solid $borderColor;
 
         a:after{
-          display: none !important;
+          //display: none !important;
         }
 
         &:last-child{
@@ -270,6 +270,14 @@ header{
           }
         }
       }
+    }
+  }
+
+  .sub-menu{
+    bottom: -78px !important;
+    right: 0 !important;
+    li{
+      padding-left: 0 !important;
     }
   }
 }

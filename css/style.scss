@@ -278,10 +278,16 @@
 
 .map-page{
   .content{
+
+    .map-title{
+      margin-bottom: 8px;
+    }
+
     display: flex;
     .content-left{
       flex-basis: 408px;
       border-right: 1px solid $borderColor;
+      min-height: calc(100vh - 50px);
       .content-left__header{
         height: 50px;
         padding-left: 10px;
@@ -331,6 +337,7 @@
             margin-bottom: 12px;
             position: relative;
             .content-folder__title{
+              cursor: pointer;
               display: flex;
               svg{
                 margin-right: 9px;
@@ -382,6 +389,10 @@
     .content-right{
       flex-basis: calc(100% - 408px);
       padding: 50px 20px 56px;
+
+      .map-content{
+        display: none;
+      }
 
       .map-item{
         margin-bottom: 21px;
@@ -613,12 +624,18 @@
 
 .rule-page{
   .content{
+
+    .rule-content{
+      display: none;
+    }
+
     position: relative;
     z-index: 1;
     display: flex;
     .content-left{
       flex-basis: 408px;
       border-right: 1px solid $borderColor;
+      min-height: calc(100vh - 50px);
       .content-left__header{
         height: 50px;
         padding-left: 10px;
@@ -640,6 +657,7 @@
 
       .content-left__body{
         .rule-header{
+          cursor: pointer;
           height: 46px;
           background: #5592F0;
           display: flex;
@@ -653,6 +671,8 @@
           text-transform: uppercase;
         }
 
+
+
         .rule-item{
           padding: 0 34px;
           height: 46px;
@@ -663,12 +683,18 @@
           font-weight: 600;
           font-size: 16px;
           line-height: 20px;
-          color: #464646;
+          a{
+            color: #464646;
+            cursor: pointer;
+            text-decoration: unset !important;
+          }
           border-bottom: 1px solid $borderColor;
           transition: all ease .2s;
           &:hover{
             background: #5592F0;
-            color: #fff;
+            a{
+               color: #fff;;
+            }
           }
 
           &:last-child{
@@ -718,11 +744,7 @@
 
 @media only screen and (max-width: 768px) {
   // home page
-  .home-page {
-    .left__sidebar{
-      width: 100% !important;
-    }
-  }
+
 
   // rule page
   .rule-page{
@@ -738,21 +760,132 @@
       }
     }
   }
+  .rule-page{
+    .content-right{
+      position: fixed;
+      right: -4000px;
+      width: 100%;
+      top: 50px;
+      min-height: 100vh;
+      padding: 0 !important;
+      h4{
+        height: 48px;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        border-bottom: 1px solid $borderColor;
+
+        &:before{
+          display: inline-flex;
+          content: "\f060";
+          font-weight: 900;
+          font-family: "Font Awesome 5 Free";
+          margin-right: 8px;
+        }
+      }
+
+      h3{
+        height: 48px;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        border-bottom: 1px solid $borderColor;
+
+        &:before{
+          display: inline-flex;
+          content: "\f060";
+          font-weight: 900;
+          font-family: "Font Awesome 5 Free";
+          margin-right: 8px;
+        }
+      }
+
+      p{
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+
+      &.show{
+        right: 0;
+        background: #fff;
+        z-index: 200;
+
+
+      }
+    }
+  }
 
   .map-page{
     .content{
       height: unset;
       display: block !important;
+
+      .content-right{
+        padding-bottom: 50px !important;
+        height: calc(100% - 50px);
+        overflow-y: scroll;
+        left: -40000px;
+        position: fixed;
+        z-index: 10;
+        top: 50px;
+        background: #fff;
+        padding: 0;
+
+        .map-title{
+          padding: 8px 15px;
+          border-bottom: 1px solid $borderColor;
+          display: flex;
+
+          &:before{
+            display: inline-flex;
+            content: "\f060";
+            font-weight: 900;
+            font-family: "Font Awesome 5 Free";
+            margin-right: 8px;
+          }
+        }
+
+        .row-wrap{
+          padding-left: 20px;
+          padding-right: 20px;
+          padding-top: 10px;
+        }
+
+        &.show{
+          left: 0;
+        }
+      }
     }
+  }
+
+  .feedback-page .content .left__sidebar .feedback-form {
+    padding: 38px 0px;
   }
 }
 
 @media only screen and (max-width: 480px) {
   // home
   .home-page {
+    .left__sidebar{
+      width: 100% !important;
+    }
+
+    #tool{
+      overflow-y: scroll;
+    }
+  }
+
+  .home-page .content .left__sidebar#classDiagram .class-diagram__submit {
+    width: 100%;
+  }
+
+  .feedback-page .content .left__sidebar {
+    height: calc(100% - 50px);
+    overflow-y: scroll;
   }
 
   .feedback-page{
+
     .left__sidebar{
       width: 100% !important;
     }

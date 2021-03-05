@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.min.css">
     <link rel="stylesheet" href="libs/toggle/minitoggle.css">
     <script src="js/jquery.js"></script>
+    <script
+            src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+            integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+            crossorigin="anonymous"></script>
     <script src="libs/toggle/minitoggle.js"></script>
     <script src="libs/bootstrap/bootstrap.js"></script>
 </head>
@@ -64,129 +68,174 @@
             </div>
             <div class="content-left__body">
                 <div class="rule-wrap">
-                    <div class="rule-header">Quy định chung</div>
-                    <div class="rule-item">1. Quy định chung 01</div>
-                    <div class="rule-item">2. Quy định chung 02</div>
-                    <div class="rule-item">3. Quy định chung 03</div>
-                    <div class="rule-item">4. Quy định chung 04</div>
-                    <div class="rule-item">5. Quy định chung 05</div>
-                    <div class="rule-item">6. Quy định chung 06</div>
-                    <div class="rule-item">7. Quy định chung 07</div>
-                    <div class="rule-item">8. Quy định chung 08</div>
-                    <div class="rule-item">9. Quy định chung 09</div>
-                    <div class="rule-item">10. Quy định chung 10</div>
+                    <div class="rule rule-header" data-rule="rule-main1">Quy định chung</div>
+                    <div class="rule rule-item" data-rule="rule1"><a>1. Quy định chung 01</a></div>
+                    <div class="rule rule-item" data-rule="rule2"><a>2. Quy định chung 02</a></div>
+                    <div class="rule rule-item" data-rule="rule3"><a>3. Quy định chung 03</a></div>
+                    <div class="rule rule-item" data-rule="rule4"><a>4. Quy định chung 04</a></div>
+                    <div class="rule rule-item" data-rule="rule5"><a>5. Quy định chung 05</a></div>
+                    <div class="rule rule-item" data-rule="rule6"><a>6. Quy định chung 06</a></div>
+                    <div class="rule rule-item" data-rule="rule7"><a>7. Quy định chung 07</a></div>
+                    <div class="rule rule-item" data-rule="rule8"><a>8. Quy định chung 08</a></div>
+                    <div class="rule rule-item" data-rule="rule9"><a>9. Quy định chung 09</a></div>
+                    <div class="rule rule-item" data-rule="rule10"><a>10. Quy định chung 10</a></div>
                 </div>
                 <div class="rule-wrap">
-                    <div class="rule-header">Quy định sử dụng</div>
-                    <div class="rule-item">1. Quy định chung 01</div>
-                    <div class="rule-item">2. Quy định chung 02</div>
-                    <div class="rule-item">3. Quy định chung 03</div>
+                    <div class="rule rule-header" data-rule="rule-main2">Quy định sử dụng</div>
+                    <div class="rule rule-item" data-rule="rule11"><a>1. Quy định chung 01</a></div>
+                    <div class="rule rule-item" data-rule="rule12"><a>2. Quy định chung 02</a></div>
+                    <div class="rule rule-item" data-rule="rule13"><a>3. Quy định chung 03</a></div>
                 </div>
             </div>
         </div>
         <div class="content-right">
-            <h3>Quy định chung</h3>
+            <div class="rule-content" id="rule-main1">
+                <h3>Quy định chung</h3>
 
-            <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
-                consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit malesuada
-                dapibus consequat egestas magna fames tristique.</p>
+                <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
+                    consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit
+                    malesuada
+                    dapibus consequat egestas magna fames tristique.</p>
 
-            <p>Sed turpis lobortis turpis cursus vitae urna praesent in dignissim. Pretium mauris netus sed id mi
-                vestibulum. Vulputate non, cursus lobortis ipsum blandit netus odio egestas. Arcu et eget tempus nisi
-                tempor elit. Quis neque viverra vitae neque, nisl et metus, lacus. Vitae ipsum in ut eget condimentum.
-                Duis nunc, nibh proin massa pellentesque tellus sollicitudin. Nulla est facilisis fringilla semper at.
-                Elementum sit nisl proin egestas. Ultrices sed amet augue nisi, ipsum tristique. Sapien in ut hendrerit
-                neque sociis.</p>
+                <p>Sed turpis lobortis turpis cursus vitae urna praesent in dignissim. Pretium mauris netus sed id mi
+                    vestibulum. Vulputate non, cursus lobortis ipsum blandit netus odio egestas. Arcu et eget tempus
+                    nisi
+                    tempor elit. Quis neque viverra vitae neque, nisl et metus, lacus. Vitae ipsum in ut eget
+                    condimentum.
+                    Duis nunc, nibh proin massa pellentesque tellus sollicitudin. Nulla est facilisis fringilla semper
+                    at.
+                    Elementum sit nisl proin egestas. Ultrices sed amet augue nisi, ipsum tristique. Sapien in ut
+                    hendrerit
+                    neque sociis.</p>
 
-            <p>Fermentum gravida mollis lacus, enim. Viverra feugiat non id aliquet. Eu, etiam purus eget tempor duis.
-                Lacus, sed purus justo pharetra ut pharetra vitae magna. Facilisis convallis aliquam, in bibendum ut
-                porttitor tortor aliquam pellentesque. Erat iaculis facilisi ut malesuada proin enim, in maecenas.
-                Vivamus nulla mi imperdiet fermentum.</p>
+                <p>Fermentum gravida mollis lacus, enim. Viverra feugiat non id aliquet. Eu, etiam purus eget tempor
+                    duis.
+                    Lacus, sed purus justo pharetra ut pharetra vitae magna. Facilisis convallis aliquam, in bibendum ut
+                    porttitor tortor aliquam pellentesque. Erat iaculis facilisi ut malesuada proin enim, in maecenas.
+                    Vivamus nulla mi imperdiet fermentum.</p>
 
-            <p>Scelerisque scelerisque adipiscing aliquam sit. Dui ut id neque rhoncus netus elementum placerat.
-                Scelerisque egestas sed maecenas curabitur faucibus a. Ultricies hendrerit ridiculus egestas felis,
-                proin. Pharetra curabitur blandit etiam sociis vitae neque nisl, lectus id. At dolor sed malesuada vel
-                aliquet. Donec elit ornare fermentum, a nisl enim viverra ante.</p>
+                <p>Scelerisque scelerisque adipiscing aliquam sit. Dui ut id neque rhoncus netus elementum placerat.
+                    Scelerisque egestas sed maecenas curabitur faucibus a. Ultricies hendrerit ridiculus egestas felis,
+                    proin. Pharetra curabitur blandit etiam sociis vitae neque nisl, lectus id. At dolor sed malesuada
+                    vel
+                    aliquet. Donec elit ornare fermentum, a nisl enim viverra ante.</p>
+            </div>
 
-            <h4>1. Quy định chung 01</h4>
+            <div class="rule-content" id="rule1">
+                <h4>1. Quy định chung 01</h4>
 
-            <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
-                consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit malesuada
-                dapibus consequat egestas magna fames tristique.</p>
+                <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
+                    consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit
+                    malesuada
+                    dapibus consequat egestas magna fames tristique.</p>
+            </div>
 
-            <h4>1. Quy định chung 02</h4>
+            <div class="rule-content" id="rule2">
+                <h4>1. Quy định chung 02</h4>
 
-            <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
-                consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit malesuada
-                dapibus consequat egestas magna fames tristique.</p>
+                <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
+                    consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit
+                    malesuada
+                    dapibus consequat egestas magna fames tristique.</p>
+            </div>
 
-            <h4>1. Quy định chung 03</h4>
+            <div class="rule-content" id="rule3">
+                <h4>1. Quy định chung 03</h4>
 
-            <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
-                consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit malesuada
-                dapibus consequat egestas magna fames tristique.</p>
+                <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
+                    consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit
+                    malesuada
+                    dapibus consequat egestas magna fames tristique.</p>
+            </div>
 
-            <h4>1. Quy định chung 04</h4>
+            <div class="rule-content" id="rule4">
+                <h4>1. Quy định chung 04</h4>
 
-            <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
-                consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit malesuada
-                dapibus consequat egestas magna fames tristique.</p>
+                <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
+                    consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit
+                    malesuada
+                    dapibus consequat egestas magna fames tristique.</p>
+            </div>
 
-            <h4>1. Quy định chung 05</h4>
+            <div class="rule-content" id="rule5">
+                <h4>1. Quy định chung 05</h4>
 
-            <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
-                consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit malesuada
-                dapibus consequat egestas magna fames tristique.</p>
+                <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
+                    consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit
+                    malesuada
+                    dapibus consequat egestas magna fames tristique.</p>
+            </div>
+            <div class="rule-content" id="rule6">
+                <h4>1. Quy định chung 06</h4>
 
-            <h4>1. Quy định chung 06</h4>
+                <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
+                    consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit
+                    malesuada
+                    dapibus consequat egestas magna fames tristique.</p>
+            </div>
+            <div class="rule-content" id="rule7">
+                <h4>1. Quy định chung 07</h4>
 
-            <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
-                consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit malesuada
-                dapibus consequat egestas magna fames tristique.</p>
+                <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
+                    consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit
+                    malesuada
+                    dapibus consequat egestas magna fames tristique.</p>
+            </div>
+            <div class="rule-content" id="rule8">
+                <h4>1. Quy định chung 08</h4>
 
-            <h4>1. Quy định chung 07</h4>
+                <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
+                    consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit
+                    malesuada
+                    dapibus consequat egestas magna fames tristique.</p>
+            </div>
+            <div class="rule-content" id="rule9">
+                <h4>1. Quy định chung 09</h4>
 
-            <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
-                consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit malesuada
-                dapibus consequat egestas magna fames tristique.</p>
+                <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
+                    consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit
+                    malesuada
+                    dapibus consequat egestas magna fames tristique.</p>
+            </div>
+            <div class="rule-content" id="rule10">
 
-            <h4>1. Quy định chung 08</h4>
+                <h4>1. Quy định chung 10</h4>
 
-            <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
-                consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit malesuada
-                dapibus consequat egestas magna fames tristique.</p>
+                <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
+                    consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit
+                    malesuada
+                    dapibus consequat egestas magna fames tristique.</p>
+            </div>
+            <div class="rule-content" id="rule11">
+                <h4>1. Quy định chung 01</h4>
 
-            <h4>1. Quy định chung 09</h4>
+                <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
+                    consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit
+                    malesuada
+                    dapibus consequat egestas magna fames tristique.</p>
+            </div>
 
-            <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
-                consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit malesuada
-                dapibus consequat egestas magna fames tristique.</p>
+            <div class="rule-content" id="rule-main2">
+                            <h3>Quy định sử dụng</h3>
+            </div>
 
-            <h4>1. Quy định chung 10</h4>
 
-            <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
-                consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit malesuada
-                dapibus consequat egestas magna fames tristique.</p>
+            <div class="rule-content" id="rule12">
+                            <h4>1. Quy định chung sử dung 02</h4>
 
-            <h3>Quy định sử dụng</h3>
+                            <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
+                                consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit malesuada
+                                dapibus consequat egestas magna fames tristique.</p>
+            </div>
+            <div class="rule-content" id="rule13">
 
-            <h4>1. Quy định chung 01</h4>
+                <h4>1. Quy định chung sử dung 03</h4>
 
-            <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
-                consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit malesuada
-                dapibus consequat egestas magna fames tristique.</p>
-
-            <h4>1. Quy định chung 02</h4>
-
-            <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
-                consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit malesuada
-                dapibus consequat egestas magna fames tristique.</p>
-
-            <h4>1. Quy định chung 13</h4>
-
-            <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
-                consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit malesuada
-                dapibus consequat egestas magna fames tristique.</p>
+                <p>Et libero posuere maecenas orci in urna, ut. Dolor nec eget ut habitant. Tristique nibh malesuada
+                    consectetur blandit. Tincidunt eget amet, lorem sagittis sapien auctor vel fusce et. Lacus sit
+                    malesuada
+                    dapibus consequat egestas magna fames tristique.</p>
+            </div>
         </div>
     </div>
 </div>
