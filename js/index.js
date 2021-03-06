@@ -45,8 +45,8 @@ jQuery(document).ready(function (e) {
         $('ul.menu').toggleClass('open');
     })
 
-    $('.has-sub.content-folder').click(function (){
-        $(this).find('.sub__content-folder').slideToggle();
+    $('.has-sub.content-folder .content-folder__title').click(function (){
+        $(this).parent().find('.sub__content-folder').slideToggle();
     })
 
     let link = window.location.href;
@@ -64,11 +64,11 @@ jQuery(document).ready(function (e) {
     // rule page
     $('.rule-page .rule').click(function (){
 
-        $('.rule-content').hide();
-
-        $(`#${$(this).attr('data-rule')}`).show("slide", { direction: "right" }, 300);
-
         if(width <= 768) {
+            $('.rule-content').hide();
+
+            $(`#${$(this).attr('data-rule')}`).show("slide", { direction: "right" }, 300);
+
             $('.rule-page .content-right').addClass('show');
 
             $('.rule-content h4').click(function (){
