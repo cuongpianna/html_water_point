@@ -85,19 +85,21 @@ jQuery(document).ready(function (e) {
 
     // map page
     $('.map-page .content-folder__title').click(function (){
-        $('.map-content').hide();
-        $(`#${$(this).attr('data-map')}`).show("slide", { direction: "right" }, 300);
+        if($(this).attr('data-map')) {
+            $('.map-content').hide();
+            $(`#${$(this).attr('data-map')}`).show("slide", { direction: "right" }, 300);
 
-        let widthh = window.innerWidth
+            let widthh = window.innerWidth
 
-        if(widthh <= 768) {
-            $('.map-page .content-right').addClass('show');
+            if(widthh <= 768) {
+                $('.map-page .content-right').addClass('show');
 
-            $('.map-page .map-title').click(function (){
-                $('.map-page .content-right').removeClass('show');
-                $('.map-content').hide();
-            });
+                $('.map-page .map-title').click(function (){
+                    $('.map-page .content-right').removeClass('show');
+                    $('.map-content').hide();
+                });
 
+            }
         }
     })
 });
