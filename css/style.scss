@@ -891,27 +891,19 @@
   }
 
   .feedback-page .content .left__sidebar {
-    height: calc(80% - 60px);
-    overflow-y: scroll;
     top: 50px;
     border-bottom: 1px solid $borderColor;
+    position: unset !important;
+    height: unset !important;
   }
 
   .feedback-page{
-
-    overflow-y: hidden;
-
     .content{
-      margin-top: 50px;
       height: unset;
 
-      //iframe{
-      //  height: calc(100vh + 50px);
-      //  position: fixed;
-      //  left: 0;
-      //  top: 50px;
-      //  z-index: 1;
-      //}
+      iframe{
+        height: 500px;
+      }
     }
 
     .left__sidebar{
