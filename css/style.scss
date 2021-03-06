@@ -392,6 +392,10 @@
 
       .map-content{
         display: none;
+
+        &.active{
+          display: block;
+        }
       }
 
       .map-item{
@@ -887,9 +891,10 @@
   }
 
   .feedback-page .content .left__sidebar {
-    height: calc(80% - 50px);
+    height: calc(80% - 60px);
     overflow-y: scroll;
-    top: 50px
+    top: 50px;
+    border-bottom: 1px solid $borderColor;
   }
 
   .feedback-page{
