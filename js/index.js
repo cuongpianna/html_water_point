@@ -110,4 +110,13 @@ jQuery(document).ready(function (e) {
     $('.slide-wrap__top .left svg').click(function (){
         console.log('click')
     })
+
+
+    function initMap() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 4,
+            center: { lat: -33, lng: 151 },
+            disableDefaultUI: true,
+        });
+    }
 });
