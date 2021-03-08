@@ -173,6 +173,7 @@
 
                         svg{
                           margin-right: 8px;
+                          cursor: pointer;
                         }
                       }
                     }
@@ -272,6 +273,15 @@
           }
         }
       }
+    }
+  }
+
+  .can-switch .range-wrap{
+    display: none;
+
+    .opa{
+      font-size: 11px;
+      color: grey;
     }
   }
 }
