@@ -1,5 +1,22 @@
 /*=================VARIABLE===============*/
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400&display=swap');
-$fontR:'Mulish', sans-serif;
-$borderColor: #C9C9C9;
 
+$fontR: 'Mulish', sans-serif;
+$borderColor: #C9C9C9;
+$mainColor: #56646f;
+
+@font-face {
+  font-family: Noto;
+  src: url('../fonts/Noto_Serif/NotoSerif-Bold.ttf'),
+  url('../fonts/Noto_Serif/NotoSerif-Italic.ttf'),
+  url('../fonts/Noto_Serif/NotoSerif-Regular.ttf');
+}
+
+$fontNoto: Noto, sans-serif;
+
+@font-face {
+  font-family: Cormorant;
+  src: url('../fonts/Cormorant/Cormorant-Regular.ttf');
+}
+
+$fontCormorant: Cormorant, sans-serif;
