@@ -1813,6 +1813,14 @@
   }
 
   .section.steps {
+    .step-container{
+      width: 100%;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+
+  .section.steps {
     padding-top: 110px;
     padding-bottom: 175px;
     h3{
@@ -1842,6 +1850,7 @@
     .box-wrapper{
       .box-container{
         padding-left: 30px;
+        height: 500px;
 
         .text-top{
           left: 30px;
@@ -1859,7 +1868,7 @@
           padding: 0;
           right: unset;
           line-height: 1.5;
-          bottom: -70px;
+          bottom: -100px;
           width: 85%;
           left: 15px;
           .text{
@@ -1874,6 +1883,25 @@
           }
         }
       }
+    }
+  }
+
+  .section.box-animate {
+    h3{
+      font-size: 28px;
+      padding-left: 20px;
+    }
+
+    .img-shop{
+      margin-bottom: 25px;
+      img{
+        width: 90%;
+      }
+    }
+
+    .shop-detail{
+      width: 90%;
+      margin: auto;
     }
   }
 
