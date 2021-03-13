@@ -20,3 +20,11 @@ $fontNoto: Noto, sans-serif;
 }
 
 $fontCormorant: Cormorant, sans-serif;
+
+
+@font-face {
+  font-weight: BaskOldFace;
+  src: url("../fonts/BASKVILL.ttf");
+}
+
+$fontBaskOld: BaskOldFace

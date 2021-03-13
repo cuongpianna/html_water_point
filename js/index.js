@@ -1,36 +1,40 @@
 jQuery(document).ready(function (e) {
-    // $('.intro-img').paroller();
-
     $('.navigation li').click(function (){
         $('.navigation li').removeClass('active');
         $(this).addClass('active');
     })
 
     $('.jarallax').jarallax({
-        speed: 1.5,
+        speed: 3,
     });
 
+    window.onscroll = function() {scollPos()};
 
-    // $('.owl-carousel').owlCarousel({
-    //     items: 2,
-    //     nav: false,
-    //     margin: 0,
-    //     center: true,
-    //     loop:true,
-    // });
-    //
-    // $('.owl-carousel').data('owl.carousel').difference = function(first, second) {
-    //     return {
-    //         x: first.x - second.x + (first.y - second.y),
-    //         y: first.y - second.y
-    //     };
-    // };
-    //
-    // $('.owl-carousel').data('owl.carousel').difference = function(first, second) {
-    //     return {
-    //         x: first.x - second.x + (first.y - second.y),
-    //         y: first.y - second.y
-    //     };
-    // };
+    function scollPos() {
+        var height = $('#shop-img')[0].offsetHeight
+        var position = $('#shop-img')[0].getBoundingClientRect().top
+        if(position <= (height / 2)) {
+            $('.box-animate').addClass('bg-gray');
+        }else {
+            $('.box-animate').removeClass('bg-gray');
+        }
+    }
+
+
+    $(document).on('click', 'a[href^="#"]', function(e) {
+        var id = $(this).attr('href');
+        var $id = $(id);
+        if ($id.length === 0) {
+            return;
+        }
+        e.preventDefault();
+        var pos = $id.offset().top;
+        $('body, html').animate({scrollTop: pos});
+    });
+
+    $('.only-mobile.open-nav').click(function (){
+        $(this).parent().toggleClass('show');
+    })
+
 });
 
