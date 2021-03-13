@@ -1381,6 +1381,20 @@
   .banner {
     height: 736px;
 
+    .slider-header{
+      left: 0;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 736px;
+      background-position: center;
+    }
+
+    .banner-content .v-text {
+      right: 40px !important;
+      top: -60px !important;
+      left: unset !important;
+    }
+
     .banner-content .v-text {
       right: 40px !important;
       top: -60px !important;
@@ -1435,7 +1449,7 @@
     }
 
     .navigation {
-      top: -660px;
+      top: -460px;
       right: 0px;
       width: 100%;
       position: relative;
@@ -1655,7 +1669,7 @@
 
         &:last-child {
           .anchor-title {
-            margin-bottom: 47px;
+            margin-bottom: 60px;
           }
         }
 
