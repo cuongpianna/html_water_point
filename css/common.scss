@@ -129,21 +129,6 @@ body {
 @media only screen and (max-width: 480px) {
 }
 
-$t: transparent;
-$n: 5; // # of sections
-
-
-//section {
-//  height: 100%;
-//  position: absolute;
-//  width: calc(100% / #{$n});
-//  @for $i from 1 through $n {
-//    &:nth-of-type(#{$i}) {
-//      left: calc((100% / #{$n}) * #{$i - 1});
-//    }
-//  }
-//}
-
 
 .text-animation {
   display: inline-flex;

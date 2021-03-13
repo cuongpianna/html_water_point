@@ -36,5 +36,31 @@ jQuery(document).ready(function (e) {
         $(this).parent().toggleClass('show');
     })
 
+    var swiper = new Swiper(".swiper-container", {
+        direction: "vertical",
+        loop: true,
+        centeredSlides: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 2,
+                spaceBetween: 0
+            },
+            1024: {
+                slidesPerView: 6,
+                spaceBetween: 0
+            }
+        }
+
+    });
+
+
+    console.log($('.swiper-wrapper'))
+
+    $('.swiper-wrapper').attr('style', 'transform: translate3d(0px,-135px, 0px);')
+
 });
 
