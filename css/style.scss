@@ -1665,7 +1665,7 @@
       margin-top: 0;
 
       .anchor-item {
-        flex-basis: calc((100% - 10px) / 3);
+        flex-basis: calc((100% - 120px) / 3);
 
         &:last-child {
           .anchor-title {
@@ -1675,7 +1675,7 @@
 
         .anchor-title {
           padding-right: 0;
-          font-size: 14px;
+          font-size: 20px;
           color: $mainColor;
         }
 
