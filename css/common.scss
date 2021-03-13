@@ -129,3 +129,39 @@ body {
 @media only screen and (max-width: 480px) {
 }
 
+$t: transparent;
+$n: 5; // # of sections
+
+
+//section {
+//  height: 100%;
+//  position: absolute;
+//  width: calc(100% / #{$n});
+//  @for $i from 1 through $n {
+//    &:nth-of-type(#{$i}) {
+//      left: calc((100% / #{$n}) * #{$i - 1});
+//    }
+//  }
+//}
+
+
+.text-animation {
+  display: inline-flex;
+  text-transform: uppercase;
+  text-align: center;
+  animation: background 10s linear infinite;
+  font-family: $fontCormorant;
+  font-size: 34px;
+  background: linear-gradient(90deg, #fff 0%,#e8e2db 10%,#fafafa 20%,gray 40%,#bad2db  50%,#bad2db 60%,gray 70%,#fafafa  80%,#e8e2db 90%,#fff 100%);
+  background-size: 1000% 100%;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes background {
+  0%{background-position:0% 50%}
+  100%{background-position:100% 50%}
+}
+

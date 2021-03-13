@@ -880,6 +880,25 @@
 
   .box-container{
     padding-top: 150px;
+    position: relative;
+
+    .text-animation{
+      position: absolute;
+      transform: rotate(-90deg);
+      letter-spacing: 8px;
+      font-style: italic;
+      font-size: 100px;
+
+      &.top-silking{
+        left: -20px;
+        top: -60px;
+      }
+
+      &.btm-silking{
+        right: -20px;
+        bottom: -220px;
+      }
+    }
   }
 
   .box-title{
