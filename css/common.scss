@@ -115,6 +115,21 @@ body {
   }
 }
 
+.wrapper{
+  position: relative;
+
+  .overlay-wrap{
+    background: #fafafa;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
 .main-container{
   width: 100%;

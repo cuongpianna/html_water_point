@@ -1,4 +1,7 @@
 jQuery(document).ready(function (e) {
+    $('.overlay-wrap').fadeOut('1000');
+    $('body').removeClass('no-scroll')
+
     $('.navigation li').click(function (){
         $('.navigation li').removeClass('active');
         $(this).addClass('active');
