@@ -74,6 +74,7 @@ module.exports = function (grunt) {
             main: {
                 files: {
                     'assets/css/style.css': 'assets/css/style.css',
+                    'assets/css/common.css': 'assets/css/common.css',
                 }
             }
         },
