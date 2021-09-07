@@ -4,478 +4,659 @@
     <title>Document</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="libs/owl/owl.theme.default.min.css">
     <link rel="stylesheet" href="fontawesome-free-5.14.0-web/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="js/jquery.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="libs/owl/owl.carousel.min.js"></script>
-    <script src="libs/bootstrap/bootstrap.js"></script>
 </head>
-<body class="job-page">
-
-<div class="page-wrap page-jobs">
-    <div class="overlay"></div>
-    <div class="header">
-        <div class="container">
-            <div class="row">
-                <div class="header-wrap">
-                    <a href="" class="site-logo">
-                        <svg width="29" height="33" viewBox="0 0 29 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                  d="M20.8871 20.3099L14.2891 24.1193L14.2891 32.9998L14.2894 33L28.5788 24.75L28.5788 8.25L14.2894 2.56548e-06L7.21238e-07 8.25L2.16371e-06 24.75L7.69105 29.1904L7.69105 12.6912L14.2891 8.88184L20.8871 12.6912L20.8871 20.3099Z"
-                                  fill="#3998FF"/>
-                            <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="29"
-                                  height="33">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                      d="M20.8871 20.3099L14.289 24.1193L14.289 32.9998L14.2894 33L28.5788 24.75L28.5788 8.25L14.2894 2.56548e-06L-2.81559e-05 8.25L-2.67134e-05 24.75L7.69102 29.1904L7.69102 12.6912L14.289 8.88184L20.8871 12.6912L20.8871 20.3099Z"
-                                      fill="#3998FF"/>
-                            </mask>
-                            <g mask="url(#mask0)">
-                                <rect width="20.5975" height="7.7215"
-                                      transform="matrix(0.866025 0.5 0.5 -0.866025 -8.69434 19.7983)" fill="#70F3FC"/>
-                                <rect x="19.7871" y="36.2417" width="12.289" height="7.73639"
-                                      transform="rotate(-150 19.7871 36.2417)" fill="#19E6F3"/>
-                                <rect width="22.8689" height="6.71245"
-                                      transform="matrix(0.866025 0.5 0.5 -0.866025 -8.69336 10.9375)" fill="#19E6F3"/>
-                                <rect x="28.5166" y="32.4224" width="20.0988" height="6.71245"
-                                      transform="rotate(-150 28.5166 32.4224)" fill="#3998FF"/>
-                                <rect width="18.4762" height="6.71245"
-                                      transform="matrix(0.866025 0.5 0.5 -0.866025 -1.25293 7.5415)" fill="#3998FF"/>
-                                <rect width="41.3371" height="10.2059"
-                                      transform="matrix(0.866025 0.5 0.5 -0.866025 1.22168 1.28442)" fill="white"/>
-                            </g>
-                        </svg>
-                        <span class="logo-text">
-                            Reelancer
-                        </span>
-                    </a>
-                    <div class="header-menu">
-                        <div class="menu-wrap">
-                            <div class="active menu-item">
-                                <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M5.0625 4.5C4.75184 4.5 4.5 4.75184 4.5 5.0625V21.9375C4.5 22.2482 4.75184 22.5 5.0625 22.5H21.9375C22.2482 22.5 22.5 22.2482 22.5 21.9375V5.0625C22.5 4.75184 22.2482 4.5 21.9375 4.5H5.0625ZM2.25 5.0625C2.25 3.5092 3.5092 2.25 5.0625 2.25H21.9375C23.4908 2.25 24.75 3.5092 24.75 5.0625V21.9375C24.75 23.4908 23.4908 24.75 21.9375 24.75H5.0625C3.5092 24.75 2.25 23.4908 2.25 21.9375V5.0625ZM6.75 8.4375C6.75 7.81618 7.25368 7.3125 7.875 7.3125H19.125C19.7463 7.3125 20.25 7.81618 20.25 8.4375C20.25 9.05882 19.7463 9.5625 19.125 9.5625H7.875C7.25368 9.5625 6.75 9.05882 6.75 8.4375ZM6.75 13.5C6.75 12.8787 7.25368 12.375 7.875 12.375H14.625C15.2463 12.375 15.75 12.8787 15.75 13.5C15.75 14.1213 15.2463 14.625 14.625 14.625H7.875C7.25368 14.625 6.75 14.1213 6.75 13.5ZM6.75 18.5625C6.75 17.9412 7.25368 17.4375 7.875 17.4375H18C18.6213 17.4375 19.125 17.9412 19.125 18.5625C19.125 19.1838 18.6213 19.6875 18 19.6875H7.875C7.25368 19.6875 6.75 19.1838 6.75 18.5625Z"
-                                          fill="#19E6F3"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M4.5 5.0625C4.5 4.75184 4.75184 4.5 5.0625 4.5H21.9375C22.2482 4.5 22.5 4.75184 22.5 5.0625V21.9375C22.5 22.2482 22.2482 22.5 21.9375 22.5H5.0625C4.75184 22.5 4.5 22.2482 4.5 21.9375V5.0625ZM6.75 8.4375C6.75 7.81618 7.25368 7.3125 7.875 7.3125H19.125C19.7463 7.3125 20.25 7.81618 20.25 8.4375C20.25 9.05882 19.7463 9.5625 19.125 9.5625H7.875C7.25368 9.5625 6.75 9.05882 6.75 8.4375ZM6.75 13.5C6.75 12.8787 7.25368 12.375 7.875 12.375H14.625C15.2463 12.375 15.75 12.8787 15.75 13.5C15.75 14.1213 15.2463 14.625 14.625 14.625H7.875C7.25368 14.625 6.75 14.1213 6.75 13.5ZM6.75 18.5625C6.75 17.9412 7.25368 17.4375 7.875 17.4375H18C18.6213 17.4375 19.125 17.9412 19.125 18.5625C19.125 19.1838 18.6213 19.6875 18 19.6875H7.875C7.25368 19.6875 6.75 19.1838 6.75 18.5625Z"
-                                          fill="#0F2257"/>
-                                </svg>
-
-                                <a class="menu-link">
-                                    Việc làm
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M3.375 3.375C3.375 2.75368 3.87868 2.25 4.5 2.25H22.5C23.1213 2.25 23.625 2.75368 23.625 3.375V10.125C23.625 10.7463 23.1213 11.25 22.5 11.25H14.625V13.5H22.5C23.1213 13.5 23.625 14.0037 23.625 14.625V18H24.75C25.3713 18 25.875 18.5037 25.875 19.125V23.625C25.875 24.2463 25.3713 24.75 24.75 24.75H20.25C19.6287 24.75 19.125 24.2463 19.125 23.625V19.125C19.125 18.5037 19.6287 18 20.25 18H21.375V15.75H14.625V18H15.75C16.3713 18 16.875 18.5037 16.875 19.125V23.625C16.875 24.2463 16.3713 24.75 15.75 24.75H11.25C10.6287 24.75 10.125 24.2463 10.125 23.625V19.125C10.125 18.5037 10.6287 18 11.25 18H12.375V15.75H5.625V18H6.75C7.37132 18 7.875 18.5037 7.875 19.125V23.625C7.875 24.2463 7.37132 24.75 6.75 24.75H2.25C1.62868 24.75 1.125 24.2463 1.125 23.625V19.125C1.125 18.5037 1.62868 18 2.25 18H3.375V14.625C3.375 14.0037 3.87868 13.5 4.5 13.5H12.375V11.25H4.5C3.87868 11.25 3.375 10.7463 3.375 10.125V3.375ZM21.375 9V4.5H5.625V9H21.375ZM3.375 20.25V22.5H5.625V20.25H3.375ZM12.375 20.25V22.5H14.625V20.25H12.375ZM21.375 20.25V22.5H23.625V20.25H21.375ZM6.75 6.75C6.75 6.12868 7.25368 5.625 7.875 5.625H9C9.62132 5.625 10.125 6.12868 10.125 6.75C10.125 7.37132 9.62132 7.875 9 7.875H7.875C7.25368 7.875 6.75 7.37132 6.75 6.75Z"
-                                          fill="white"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M21.375 4.5V9H5.625V4.5H21.375ZM6.75 6.75C6.75 6.12868 7.25368 5.625 7.875 5.625H9C9.62132 5.625 10.125 6.12868 10.125 6.75C10.125 7.37132 9.62132 7.875 9 7.875H7.875C7.25368 7.875 6.75 7.37132 6.75 6.75Z"
-                                          fill="#141D35"/>
-                                    <path d="M3.375 22.5V20.25H5.625V22.5H3.375Z" fill="#141D35"/>
-                                    <path d="M12.375 22.5V20.25H14.625V22.5H12.375Z" fill="#141D35"/>
-                                    <path d="M21.375 22.5V20.25H23.625V22.5H21.375Z" fill="#141D35"/>
-                                </svg>
-
-
-                                <a class="menu-link">
-                                    Ứng viên
-                                </a>
-                            </div>
-                            <div class="menu-chat menu-item">
-                                <span class="menu-icon">
-                                    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"
-                                         xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13.417 11.0833C12.7727 11.0833 12.2503 11.6056 12.2503 12.2499C12.2503 12.8943 12.7727 13.4166 13.417 13.4166H14.5851C15.2294 13.4166 15.7518 12.8943 15.7518 12.2499C15.7518 11.6056 15.2294 11.0833 14.5851 11.0833H13.417Z"
-                                          fill="white"/>
-                                    <path d="M18.0843 12.2499C18.0843 11.6056 18.6066 11.0833 19.251 11.0833H20.417C21.0613 11.0833 21.5837 11.6056 21.5837 12.2499C21.5837 12.8943 21.0613 13.4166 20.417 13.4166H19.251C18.6066 13.4166 18.0843 12.8943 18.0843 12.2499Z"
-                                          fill="white"/>
-                                    <path d="M7.58423 11.0833C6.9399 11.0833 6.41756 11.6056 6.41756 12.2499C6.41756 12.8943 6.9399 13.4166 7.58423 13.4166H8.75025C9.39458 13.4166 9.91692 12.8943 9.91692 12.2499C9.91692 11.6056 9.39458 11.0833 8.75025 11.0833H7.58423Z"
-                                          fill="white"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M2.33366 2.33325C1.68933 2.33325 1.16699 2.85559 1.16699 3.49992V20.9999C1.16699 21.6442 1.68933 22.1666 2.33366 22.1666H10.6004L13.1754 24.7415C13.631 25.1972 14.3697 25.1972 14.8253 24.7415L17.4002 22.1666H25.667C26.3113 22.1666 26.8337 21.6442 26.8337 20.9999V3.49992C26.8337 2.85559 26.3113 2.33325 25.667 2.33325H2.33366ZM3.50033 19.8333V4.66659H24.5003V19.8333H16.917C16.6076 19.8333 16.3108 19.9562 16.092 20.175L14.0003 22.2667L11.9086 20.175C11.6898 19.9562 11.3931 19.8333 11.0837 19.8333H3.50033Z"
-                                          fill="white"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M3.5 4.66675V19.8334H11.0833C11.3928 19.8334 11.6895 19.9563 11.9083 20.1751L14 22.2668L16.0917 20.1751C16.3105 19.9563 16.6072 19.8334 16.9167 19.8334H24.5V4.66675H3.5ZM13.4167 11.0834C12.7723 11.0834 12.25 11.6057 12.25 12.2501C12.25 12.8944 12.7723 13.4167 13.4167 13.4167H14.5848C15.2291 13.4167 15.7515 12.8944 15.7515 12.2501C15.7515 11.6057 15.2291 11.0834 14.5848 11.0834H13.4167ZM18.084 12.2501C18.084 11.6057 18.6063 11.0834 19.2506 11.0834H20.4167C21.061 11.0834 21.5833 11.6057 21.5833 12.2501C21.5833 12.8944 21.061 13.4167 20.4167 13.4167H19.2506C18.6063 13.4167 18.084 12.8944 18.084 12.2501ZM7.5839 11.0834C6.93957 11.0834 6.41724 11.6057 6.41724 12.2501C6.41724 12.8944 6.93957 13.4167 7.5839 13.4167H8.74993C9.39426 13.4167 9.91659 12.8944 9.91659 12.2501C9.91659 11.6057 9.39426 11.0834 8.74993 11.0834H7.5839Z"
-                                          fill="#141D35"/>
-                                </svg>
-                                                                        <div class="num">
-                                        +9
-                                    </div>
-                                </span>
-
-                                <a class="menu-link">
-                                    Chat
-                                </a>
-                            </div>
-                            <div class="menu-item">
-                                <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M4.5 1C3.94772 1 3.5 1.44772 3.5 2V22C3.5 22.3734 3.70809 22.7158 4.0396 22.8877C4.37112 23.0596 4.77081 23.0325 5.07607 22.8174L12 17.9377L18.9239 22.8174C19.2292 23.0325 19.6289 23.0596 19.9604 22.8877C20.2919 22.7158 20.5 22.3734 20.5 22V2C20.5 1.44772 20.0523 1 19.5 1H4.5ZM18.5 7V3H5.5V7H18.5ZM5.5 9H18.5V20.0718L12.5761 15.8969C12.2306 15.6534 11.7694 15.6534 11.4239 15.8969L5.5 20.0718V9Z"
-                                          fill="white"/>
-                                    <path d="M18.5 7V3H5.5V7H18.5Z" fill="#141D35"/>
-                                </svg>
-                                <a class="menu-link">
-                                    Hội nhóm
-                                </a>
-                            </div>
-                            <div class="menu-league menu-item">
-                                <span class="menu-icon">
-                                <svg width="29" height="29" viewBox="0 0 29 29" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.80861 10.7136L4.1582 3.625H9.44355L11.0781 7.83404C9.41651 8.42089 7.95221 9.42241 6.80861 10.7136Z"
-                                          fill="#141D35"/>
-                                    <path d="M17.9216 7.83404L19.5561 3.625H24.8415L22.1911 10.7136C21.0475 9.42241 19.5832 8.42089 17.9216 7.83404Z"
-                                          fill="#141D35"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M12.9278 9.82382C13.4347 9.7209 13.9603 9.66667 14.4998 9.66667C15.0394 9.66667 15.565 9.72091 16.072 9.82383C18.4046 10.2973 20.3659 11.8078 21.4488 13.8563C22.0264 14.9491 22.354 16.1949 22.354 17.5208C22.354 21.8586 18.8376 25.375 14.4998 25.375C10.1621 25.375 6.64567 21.8586 6.64567 17.5208C6.64567 16.1949 6.97325 14.9491 7.55087 13.8564C8.63377 11.8078 10.5951 10.2973 12.9278 9.82382ZM15.2064 12.3114C15.5215 12.5385 15.7082 12.9033 15.7082 13.2917V19.9375H16.9165C17.5838 19.9375 18.1248 20.4785 18.1248 21.1458C18.1248 21.8132 17.5838 22.3542 16.9165 22.3542H12.0832C11.4158 22.3542 10.8748 21.8132 10.8748 21.1458C10.8748 20.4785 11.4158 19.9375 12.0832 19.9375H13.2915V14.9681L13.0694 15.0422C12.4363 15.2532 11.752 14.911 11.541 14.278C11.33 13.6449 11.6721 12.9606 12.3052 12.7495L14.1177 12.1454C14.4862 12.0225 14.8913 12.0843 15.2064 12.3114Z"
-                                          fill="#141D35"/>
-                                    <path d="M15.708 13.2916C15.708 12.9032 15.5213 12.5385 15.2062 12.3113C14.8911 12.0842 14.486 12.0224 14.1176 12.1453L12.3051 12.7494C11.672 12.9605 11.3298 13.6448 11.5408 14.2779C11.7519 14.911 12.4362 15.2531 13.0693 15.0421L13.2913 14.9681V19.9374H12.083C11.4157 19.9374 10.8747 20.4784 10.8747 21.1458C10.8747 21.8131 11.4157 22.3541 12.083 22.3541H16.9163C17.5837 22.3541 18.1247 21.8131 18.1247 21.1458C18.1247 20.4784 17.5837 19.9374 16.9163 19.9374H15.708V13.2916Z"
-                                          fill="white"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M2.41635 1.20825C2.02025 1.20825 1.6493 1.40239 1.42352 1.72784C1.19775 2.0533 1.14582 2.46875 1.28454 2.83976L5.1677 13.2255C4.56478 14.5335 4.22884 15.9893 4.22884 17.5208C4.22884 23.1932 8.82723 27.7916 14.4997 27.7916C20.1721 27.7916 24.7705 23.1932 24.7705 17.5208C24.7705 15.9893 24.4345 14.5335 23.8316 13.2255L27.7148 2.83976C27.8535 2.46875 27.8016 2.0533 27.5758 1.72784C27.3501 1.40239 26.9791 1.20825 26.583 1.20825H18.7288C18.2303 1.20825 17.7829 1.51443 17.6025 1.97916L15.5355 7.3016C15.1946 7.2674 14.849 7.24992 14.4997 7.24992C14.1503 7.24992 13.8048 7.2674 13.4638 7.3016L11.3969 1.97916C11.2164 1.51443 10.7691 1.20825 10.2705 1.20825H2.41635ZM6.80857 10.7135C7.95218 9.42232 9.41649 8.4208 11.0781 7.83396L9.44351 3.62492H4.15817L6.80857 10.7135ZM6.64551 17.5208C6.64551 16.1958 6.97259 14.9509 7.54941 13.8587L7.55072 13.8563C8.15984 12.7039 9.04691 11.7219 10.1217 10.9989C10.3637 10.8361 10.6152 10.6864 10.8752 10.5509C11.5133 10.2183 12.2025 9.97093 12.9276 9.82375L12.9292 9.8234C13.4357 9.7207 13.9607 9.66658 14.4997 9.66658C15.0392 9.66658 15.5649 9.72082 16.0718 9.82375C18.1128 10.238 19.8696 11.4463 21.0024 13.1143C21.1642 13.3525 21.3133 13.6002 21.4486 13.8563C22.0262 14.949 22.3538 16.1948 22.3538 17.5208C22.3538 21.8585 18.8374 25.3749 14.4997 25.3749C10.1619 25.3749 6.64551 21.8585 6.64551 17.5208ZM24.8412 3.62492L22.1908 10.7136C21.0472 9.42233 19.5829 8.42081 17.9213 7.83396L19.5558 3.62492H24.8412Z"
-                                          fill="white"/>
-                                </svg>
-                                    <span class="num">+2</span>
-                                </span>
-                                <a class="menu-link">
-                                    Giải đấu
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="user-profile">
-                        <img src="images/logouser.png" alt="" class="user-avatar">
-                        <div class="user-info">
-                            <div class="username">Hai Le Jason</div>
-                            <div class="user-level">
-                                <img src="images/level.png" alt="" class="user-level">
-                                <span>VIP Level 2</span>
-                            </div>
-                        </div>
-
-                        <div class="only-mobile menu-icon">
-                            <i class="icon fas fa-bars"></i>
-                        </div>
-                    </div>
-
-
-                </div>
+<body class="home-page">
+<!-- Header -->
+<div class="header">
+    <div class="page-container">
+        <div class="header-inner">
+            <div class="logo-left">
+                <a href="" title="Creaters Bank">
+                    <img src="images/logo.png" alt="Creaters Bank">
+                </a>
             </div>
-        </div>
-    </div>
-
-    <div class="content-wrap">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 col-xl-9">
-                    <div class="search-wrap">
-                        <input type="text" placeholder="Tìm từ khóa kỹ năng, công việc">
-                        <i class="fas fa-search icon"></i>
-                    </div>
-
-                    <div class="job-list">
-                        <div class="job-item">
-                            <div class="job-left">
-                                <h3 class="job-title">
-                                    <a href="">Senior Product Owner - Stock Options</a>
-                                </h3>
-                                <div class="job-company">
-                                    <img class="company-avatar" src="images/logo1.png" alt="">
-                                    <div class="company-name">
-                                        Digital Software
-                                    </div>
-                                </div>
-                                <div class="job-info">
-                                    <div class="job-info__item job-address">
-                                        <div class="label">Địa điểm</div>
-                                        <div class="value">Hà Nội</div>
-                                    </div>
-                                    <div class="job-info__item job-salary">
-                                        <div class="label">Lương ứng viên</div>
-                                        <div class="value">$1000 - $2000</div>
-                                    </div>
-                                    <div class="job-info__item job-count">
-                                        <div class="label">Số lượng</div>
-                                        <div class="value">02</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-right">
-                                <div class="bonus-label">Tiền thưởng:</div>
-                                <div class="bonus-salary">
-                                    <div class="value">25,000,000 đ/</div>
-                                    <div class="label">ứng viên</div>
-                                </div>
-                                <a href="" class="submit-profile">Submit hồ sơ</a>
-                            </div>
-                        </div>
-                        <div class="job-item">
-                            <div class="job-left">
-                                <h3 class="job-title">
-                                    <a href="">Full Stack Developer (Python, Javascript, Html) - Salary Upto $1500</a>
-                                </h3>
-                                <div class="job-company">
-                                    <img class="company-avatar" src="images/logo2.png" alt="">
-                                    <div class="company-name">
-                                        Công ty TNHH công nghệ Alissa Vietnam
-                                    </div>
-                                </div>
-                                <div class="job-info">
-                                    <div class="job-info__item job-address">
-                                        <div class="label">Địa điểm</div>
-                                        <div class="value">Hà Nội</div>
-                                    </div>
-                                    <div class="job-info__item job-salary">
-                                        <div class="label">Lương ứng viên</div>
-                                        <div class="value">$1000 - $2000</div>
-                                    </div>
-                                    <div class="job-info__item job-count">
-                                        <div class="label">Số lượng</div>
-                                        <div class="value">02</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-right">
-                                <div class="bonus-label">Tiền thưởng:</div>
-                                <div class="bonus-salary">
-                                    <div class="value">18,000,000 đ/</div>
-                                    <div class="label">ứng viên</div>
-                                </div>
-                                <a href="" class="submit-profile">Submit hồ sơ</a>
-                            </div>
-                        </div>
-
-                        <div class="job-item">
-                            <div class="job-left">
-                                <h3 class="job-title">
-                                    <a href="">Senior Product Owner - Stock Options</a>
-                                </h3>
-                                <div class="job-company">
-                                    <img class="company-avatar" src="images/logo1.png" alt="">
-                                    <div class="company-name">
-                                        Digital Software
-                                    </div>
-                                </div>
-                                <div class="job-info">
-                                    <div class="job-info__item job-address">
-                                        <div class="label">Địa điểm</div>
-                                        <div class="value">Hà Nội</div>
-                                    </div>
-                                    <div class="job-info__item job-salary">
-                                        <div class="label">Lương ứng viên</div>
-                                        <div class="value">$1000 - $2000</div>
-                                    </div>
-                                    <div class="job-info__item job-count">
-                                        <div class="label">Số lượng</div>
-                                        <div class="value">02</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-right">
-                                <div class="bonus-label">Tiền thưởng:</div>
-                                <div class="bonus-salary">
-                                    <div class="value">25,000,000 đ/</div>
-                                    <div class="label">ứng viên</div>
-                                </div>
-                                <a href="" class="submit-profile">Submit hồ sơ</a>
-                            </div>
-                        </div>
-                        <div class="job-item">
-                            <div class="job-left">
-                                <h3 class="job-title">
-                                    <a href="">Full Stack Developer (Python, Javascript, Html) - Salary Upto $1500</a>
-                                </h3>
-                                <div class="job-company">
-                                    <img class="company-avatar" src="images/logo2.png" alt="">
-                                    <div class="company-name">
-                                        Công ty TNHH công nghệ Alissa Vietnam
-                                    </div>
-                                </div>
-                                <div class="job-info">
-                                    <div class="job-info__item job-address">
-                                        <div class="label">Địa điểm</div>
-                                        <div class="value">Hà Nội</div>
-                                    </div>
-                                    <div class="job-info__item job-salary">
-                                        <div class="label">Lương ứng viên</div>
-                                        <div class="value">$1000 - $2000</div>
-                                    </div>
-                                    <div class="job-info__item job-count">
-                                        <div class="label">Số lượng</div>
-                                        <div class="value">02</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-right">
-                                <div class="bonus-label">Tiền thưởng:</div>
-                                <div class="bonus-salary">
-                                    <div class="value">18,000,000 đ/</div>
-                                    <div class="label">ứng viên</div>
-                                </div>
-                                <a href="" class="submit-profile">Submit hồ sơ</a>
-                            </div>
-                        </div>
-
-                        <div class="job-item">
-                            <div class="job-left">
-                                <h3 class="job-title">
-                                    <a href="">Senior Product Owner - Stock Options</a>
-                                </h3>
-                                <div class="job-company">
-                                    <img class="company-avatar" src="images/logo1.png" alt="">
-                                    <div class="company-name">
-                                        Digital Software
-                                    </div>
-                                </div>
-                                <div class="job-info">
-                                    <div class="job-info__item job-address">
-                                        <div class="label">Địa điểm</div>
-                                        <div class="value">Hà Nội</div>
-                                    </div>
-                                    <div class="job-info__item job-salary">
-                                        <div class="label">Lương ứng viên</div>
-                                        <div class="value">$1000 - $2000</div>
-                                    </div>
-                                    <div class="job-info__item job-count">
-                                        <div class="label">Số lượng</div>
-                                        <div class="value">02</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-right">
-                                <div class="bonus-label">Tiền thưởng:</div>
-                                <div class="bonus-salary">
-                                    <div class="value">25,000,000 đ/</div>
-                                    <div class="label">ứng viên</div>
-                                </div>
-                                <a href="" class="submit-profile">Submit hồ sơ</a>
-                            </div>
-                        </div>
-                        <div class="job-item">
-                            <div class="job-left">
-                                <h3 class="job-title">
-                                    <a href="">Full Stack Developer (Python, Javascript, Html) - Salary Upto $1500</a>
-                                </h3>
-                                <div class="job-company">
-                                    <img class="company-avatar" src="images/logo2.png" alt="">
-                                    <div class="company-name">
-                                        Công ty TNHH công nghệ Alissa Vietnam
-                                    </div>
-                                </div>
-                                <div class="job-info">
-                                    <div class="job-info__item job-address">
-                                        <div class="label">Địa điểm</div>
-                                        <div class="value">Hà Nội</div>
-                                    </div>
-                                    <div class="job-info__item job-salary">
-                                        <div class="label">Lương ứng viên</div>
-                                        <div class="value">$1000 - $2000</div>
-                                    </div>
-                                    <div class="job-info__item job-count">
-                                        <div class="label">Số lượng</div>
-                                        <div class="value">02</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-right">
-                                <div class="bonus-label">Tiền thưởng:</div>
-                                <div class="bonus-salary">
-                                    <div class="value">18,000,000 đ/</div>
-                                    <div class="label">ứng viên</div>
-                                </div>
-                                <a href="" class="submit-profile">Submit hồ sơ</a>
-                            </div>
-                        </div>
-
-                        <div class="job-item">
-                            <div class="job-left">
-                                <h3 class="job-title">
-                                    <a href="">Senior Product Owner - Stock Options</a>
-                                </h3>
-                                <div class="job-company">
-                                    <img class="company-avatar" src="images/logo1.png" alt="">
-                                    <div class="company-name">
-                                        Digital Software
-                                    </div>
-                                </div>
-                                <div class="job-info">
-                                    <div class="job-info__item job-address">
-                                        <div class="label">Địa điểm</div>
-                                        <div class="value">Hà Nội</div>
-                                    </div>
-                                    <div class="job-info__item job-salary">
-                                        <div class="label">Lương ứng viên</div>
-                                        <div class="value">$1000 - $2000</div>
-                                    </div>
-                                    <div class="job-info__item job-count">
-                                        <div class="label">Số lượng</div>
-                                        <div class="value">02</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-right">
-                                <div class="bonus-label">Tiền thưởng:</div>
-                                <div class="bonus-salary">
-                                    <div class="value">25,000,000 đ/</div>
-                                    <div class="label">ứng viên</div>
-                                </div>
-                                <a href="" class="submit-profile">Submit hồ sơ</a>
-                            </div>
-                        </div>
-                        <div class="job-item">
-                            <div class="job-left">
-                                <h3 class="job-title">
-                                    <a href="">Full Stack Developer (Python, Javascript, Html) - Salary Upto $1500</a>
-                                </h3>
-                                <div class="job-company">
-                                    <img class="company-avatar" src="images/logo2.png" alt="">
-                                    <div class="company-name">
-                                        Công ty TNHH công nghệ Alissa Vietnam
-                                    </div>
-                                </div>
-                                <div class="job-info">
-                                    <div class="job-info__item job-address">
-                                        <div class="label">Địa điểm</div>
-                                        <div class="value">Hà Nội</div>
-                                    </div>
-                                    <div class="job-info__item job-salary">
-                                        <div class="label">Lương ứng viên</div>
-                                        <div class="value">$1000 - $2000</div>
-                                    </div>
-                                    <div class="job-info__item job-count">
-                                        <div class="label">Số lượng</div>
-                                        <div class="value">02</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="job-right">
-                                <div class="bonus-label">Tiền thưởng:</div>
-                                <div class="bonus-salary">
-                                    <div class="value">18,000,000 đ/</div>
-                                    <div class="label">ứng viên</div>
-                                </div>
-                                <a href="" class="submit-profile">Submit hồ sơ</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-right col-12 col-md-12 col-xl-3">
-                    <div class="right-box"></div>
-                    <div class="right-box"></div>
+            <div class="right">
+                <div class="search-box">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                              d="M14.8688 13.4575C17.3126 10.319 17.0918 5.77832 14.2067 2.89313C11.0825 -0.231061 6.01714 -0.231061 2.89295 2.89313C-0.231244 6.01733 -0.231244 11.0826 2.89295 14.2068C5.77813 17.092 10.3188 17.3128 13.4573 14.869C13.4708 14.8843 13.4849 14.8993 13.4996 14.9139L17.7422 19.1566C18.1327 19.5471 18.7659 19.5471 19.1564 19.1566C19.5469 18.7661 19.5469 18.1329 19.1564 17.7424L14.9138 13.4997C14.8991 13.4851 14.8841 13.471 14.8688 13.4575ZM12.7924 4.30735C15.1356 6.65049 15.1356 10.4495 12.7924 12.7926C10.4493 15.1358 6.65031 15.1358 4.30716 12.7926C1.96402 10.4495 1.96402 6.65049 4.30716 4.30735C6.65031 1.9642 10.4493 1.9642 12.7924 4.30735Z"
+                              fill="#E1125E"/>
+                    </svg>
+                    <input type="text">
                 </div>
             </div>
         </div>
     </div>
 </div>
+<!--End of Header-->
+
+<div class="navigation">
+    <div class="page-container">
+        <ul class="nav">
+            <li class="nav-item home-link">
+                <a href="" title="Creaters Bank">ホーム</a>
+            </li>
+            <li class="nav-item">
+                <a href="" title="月間チャットランキング">月間チャットランキング</a>
+            </li>
+            <li class="nav-item">
+                <a href="" title="割引・イベント">割引・イベント</a>
+            </li>
+            <li class="nav-item">
+                <a href="" title="サイトランキング">サイトランキング</a>
+            </li>
+            <li class="nav-item">
+                <a href="" title="出勤ランキング">出勤ランキング</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<!--Page Content-->
+<div class="content-wrap">
+    <div class="page-container">
+        <div class="content">
+            <!-- Box Top Girls-->
+            <div class="box-top__girls">
+                <div class="box-girl__slide">
+                    <h2 class="slide-title page-heading">【オンライン中】ランキング</h2>
+                    <div class="swiper mySwiper" id="girl-slide__Swiper">
+                        <div class="slide-wrap swiper-wrapper">
+                            <div class="slide-item slide-girl__item item swiper-slide">
+                                <div class="text-center performer_type">リアルタイム視聴率2位</div>
+                                <a target="_blank" class="img-wrap">
+                                    <div class="text-center status">パーティ</div>
+                                </a>
+                                <div class="followers text-center">12 人視聴中</div>
+                                <div class="site-name text-center">
+                                    <img src="images/site_name.png" alt="">
+                                </div>
+                                <a href="" target="_blank" class="room-link text-center">さき</a>
+                            </div>
+                            <div class="slide-item slide-girl__item item swiper-slide">
+                                <div class="text-center performer_type">リアルタイム視聴率2位</div>
+                                <a target="_blank" class="img-wrap">
+                                    <div class="text-center status">パーティ</div>
+                                </a>
+                                <div class="followers text-center">12 人視聴中</div>
+                                <div class="site-name text-center">
+                                    <img src="images/site_name.png" alt="">
+                                </div>
+                                <a href="" target="_blank" class="room-link text-center">さき</a>
+                            </div>
+                            <div class="slide-item slide-girl__item item swiper-slide">
+                                <div class="text-center performer_type">リアルタイム視聴率2位</div>
+                                <a target="_blank" class="img-wrap">
+                                    <div class="text-center status">パーティ</div>
+                                </a>
+                                <div class="followers text-center">12 人視聴中</div>
+                                <div class="site-name text-center">
+                                    <img src="images/site_name.png" alt="">
+                                </div>
+                                <a href="" target="_blank" class="room-link text-center">さき</a>
+                            </div>
+                        </div>
+                        <!-- If we need navigation buttons -->
+
+                        <div class="swiper-button-prev swiper-nav"></div>
+                        <div class="swiper-button-next swiper-nav"></div>
+
+                    </div>
+
+                </div>
+
+                <div class="box-ranking-top">
+                    <div class="box-top-ranks">
+                        <h3 class="rank-head head-purple"> 週間獲得ポイントランキング</h3>
+                        <div class="rank-body">
+                            <div class="rank-item">
+                                <div class="rank-profile">
+                                    <a class="profile-link" target="_blank" href="">
+                                    </a>
+                                    <div class="offline status">オフライン</div>
+                                </div>
+
+                                <div class="rank-meta">
+                                    <div class="top-icon text-center">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.9822 6.45301L17.5242 6.35078C17.4661 6.26989 17.4039 6.19239 17.333 6.12148C17.2982 6.08667 17.2604 6.05515 17.2228 6.02341C16.8467 5.7069 16.3319 5.54487 15.6866 5.54487H15.0786H13.9135L12.8851 5.31537L10.0405 0.387812C9.89128 0.129226 9.69561 0 9.50001 0C9.3044 0 9.1087 0.129293 8.95945 0.387812L6.11494 5.3153L5.08651 5.5448H3.92137H2.7563H1.56665C1.34481 5.5448 1.15981 5.70135 1.10157 5.91409C1.08944 5.95864 1.08077 6.00472 1.08077 6.05346V6.1788V6.43881L1.01771 6.45284C0.453272 6.57878 0.331494 7.02194 0.745922 7.4426L2.72435 9.45108V9.80541V10.1597V11.5137C2.72435 11.7946 2.94194 12.0224 3.2102 12.0224H3.98114H4.22641H4.47165L3.77009 17.2951C3.71129 17.7371 3.89 17.9999 4.19627 17.9999C4.30462 17.9999 4.429 17.967 4.56443 17.8975L9.49994 15.3675L14.4354 17.8976C14.5708 17.967 14.6952 18 14.8035 18C15.1099 18 15.2886 17.7373 15.2297 17.2952L14.5281 12.0225H14.6263C14.6767 12.0225 14.7243 12.0122 14.7701 11.9972C14.8588 11.9684 14.9359 11.9143 14.9947 11.842C15.0669 11.7532 15.1122 11.6396 15.1122 11.5138V11.3407V10.9866V10.6323L15.7465 9.98833C15.8845 9.98029 16.0154 9.96436 16.141 9.94222C16.3114 9.91223 16.4701 9.86905 16.617 9.81313C16.8792 9.71332 17.1054 9.57462 17.2905 9.39333C17.5052 9.18275 17.6644 8.93158 17.7694 8.64321C17.8231 8.4955 17.8617 8.33751 17.8863 8.17025C17.9045 8.04698 17.9147 7.91848 17.917 7.7849L18.2541 7.44267C18.6685 7.02208 18.5468 6.57894 17.9822 6.45301ZM17.3463 8.36434C17.2689 8.62306 17.1409 8.84321 16.9585 9.02204C16.7991 9.1784 16.597 9.29522 16.353 9.37269C16.1127 9.44925 15.8313 9.48755 15.5088 9.48755H14.6265V11.1254V11.5138H14.4608H13.0078V6.05353H15.6866C16.27 6.05353 16.707 6.19881 16.9975 6.48934C17.2881 6.77991 17.4334 7.19332 17.4334 7.72968C17.4334 7.9633 17.4031 8.17401 17.3463 8.36434ZM3.21026 10.653V10.2988V9.94441V7.40184H1.56665V6.3305V6.07048V6.05359H1.64232H2.80736H6.46539V7.40194H4.82177V11.514H4.53928H4.29404H4.04877H3.21026V10.653ZM9.50001 11.607C8.91185 11.607 8.42502 11.5089 8.03965 11.3127C7.65428 11.1166 7.34178 10.8062 7.10225 10.3816C6.86276 9.95695 6.74295 9.42558 6.74295 8.78743C6.74295 7.89597 6.98013 7.20193 7.45441 6.70538C7.92879 6.20872 8.58922 5.9605 9.43596 5.9605C10.304 5.9605 10.9728 6.20446 11.4424 6.69238C11.912 7.18029 12.1468 7.86383 12.1468 8.74278C12.1468 9.38093 12.0442 9.90429 11.8391 10.3127C11.6339 10.7211 11.3375 11.039 10.9497 11.2663C10.5618 11.4935 10.0787 11.607 9.50001 11.607Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M9.43237 7.23792C9.10746 7.23792 8.84653 7.35836 8.64969 7.59916C8.45284 7.84006 8.3544 8.23855 8.3544 8.79481C8.3544 9.34613 8.45227 9.74215 8.64797 9.98292C8.84368 10.2238 9.10981 10.3442 9.4466 10.3442C9.79282 10.3442 10.0609 10.2263 10.2506 9.99036C10.4404 9.75438 10.5352 9.3311 10.5352 8.72021C10.5352 8.20626 10.4362 7.83069 10.2382 7.59354C10.0402 7.35657 9.77161 7.23792 9.43237 7.23792Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M15.0854 7.16345H14.6264V8.38137H15.0213C15.332 8.38137 15.5502 8.32492 15.676 8.21189C15.8017 8.09885 15.8645 7.9543 15.8645 7.778C15.8645 7.60668 15.81 7.46143 15.7008 7.34218C15.5917 7.22306 15.3866 7.16345 15.0854 7.16345Z"
+                                                  fill="#E1125E"/>
+                                        </svg>
+                                    </div>
+                                    <div class="top-number text-center">
+                                        01
+                                    </div>
+                                    <a href="" target="_blank" class="site-logo">
+
+                                    </a>
+                                    <div class="name"> まいこ@様</div>
+                                    <div class="small-text-box"> またね☆彡</div>
+                                </div>
+                            </div>
+                            <div class="rank-item">
+                                <div class="rank-profile">
+                                    <a class="profile-link" target="_blank" href="">
+                                    </a>
+                                    <div class="offline status">オフライン</div>
+                                </div>
+
+                                <div class="rank-meta">
+                                    <div class="top-icon text-center">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.9822 6.45301L17.5242 6.35078C17.4661 6.26989 17.4039 6.19239 17.333 6.12148C17.2982 6.08667 17.2604 6.05515 17.2228 6.02341C16.8467 5.7069 16.3319 5.54487 15.6866 5.54487H15.0786H13.9135L12.8851 5.31537L10.0405 0.387812C9.89128 0.129226 9.69561 0 9.50001 0C9.3044 0 9.1087 0.129293 8.95945 0.387812L6.11494 5.3153L5.08651 5.5448H3.92137H2.7563H1.56665C1.34481 5.5448 1.15981 5.70135 1.10157 5.91409C1.08944 5.95864 1.08077 6.00472 1.08077 6.05346V6.1788V6.43881L1.01771 6.45284C0.453272 6.57878 0.331494 7.02194 0.745922 7.4426L2.72435 9.45108V9.80541V10.1597V11.5137C2.72435 11.7946 2.94194 12.0224 3.2102 12.0224H3.98114H4.22641H4.47165L3.77009 17.2951C3.71129 17.7371 3.89 17.9999 4.19627 17.9999C4.30462 17.9999 4.429 17.967 4.56443 17.8975L9.49994 15.3675L14.4354 17.8976C14.5708 17.967 14.6952 18 14.8035 18C15.1099 18 15.2886 17.7373 15.2297 17.2952L14.5281 12.0225H14.6263C14.6767 12.0225 14.7243 12.0122 14.7701 11.9972C14.8588 11.9684 14.9359 11.9143 14.9947 11.842C15.0669 11.7532 15.1122 11.6396 15.1122 11.5138V11.3407V10.9866V10.6323L15.7465 9.98833C15.8845 9.98029 16.0154 9.96436 16.141 9.94222C16.3114 9.91223 16.4701 9.86905 16.617 9.81313C16.8792 9.71332 17.1054 9.57462 17.2905 9.39333C17.5052 9.18275 17.6644 8.93158 17.7694 8.64321C17.8231 8.4955 17.8617 8.33751 17.8863 8.17025C17.9045 8.04698 17.9147 7.91848 17.917 7.7849L18.2541 7.44267C18.6685 7.02208 18.5468 6.57894 17.9822 6.45301ZM17.3463 8.36434C17.2689 8.62306 17.1409 8.84321 16.9585 9.02204C16.7991 9.1784 16.597 9.29522 16.353 9.37269C16.1127 9.44925 15.8313 9.48755 15.5088 9.48755H14.6265V11.1254V11.5138H14.4608H13.0078V6.05353H15.6866C16.27 6.05353 16.707 6.19881 16.9975 6.48934C17.2881 6.77991 17.4334 7.19332 17.4334 7.72968C17.4334 7.9633 17.4031 8.17401 17.3463 8.36434ZM3.21026 10.653V10.2988V9.94441V7.40184H1.56665V6.3305V6.07048V6.05359H1.64232H2.80736H6.46539V7.40194H4.82177V11.514H4.53928H4.29404H4.04877H3.21026V10.653ZM9.50001 11.607C8.91185 11.607 8.42502 11.5089 8.03965 11.3127C7.65428 11.1166 7.34178 10.8062 7.10225 10.3816C6.86276 9.95695 6.74295 9.42558 6.74295 8.78743C6.74295 7.89597 6.98013 7.20193 7.45441 6.70538C7.92879 6.20872 8.58922 5.9605 9.43596 5.9605C10.304 5.9605 10.9728 6.20446 11.4424 6.69238C11.912 7.18029 12.1468 7.86383 12.1468 8.74278C12.1468 9.38093 12.0442 9.90429 11.8391 10.3127C11.6339 10.7211 11.3375 11.039 10.9497 11.2663C10.5618 11.4935 10.0787 11.607 9.50001 11.607Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M9.43237 7.23792C9.10746 7.23792 8.84653 7.35836 8.64969 7.59916C8.45284 7.84006 8.3544 8.23855 8.3544 8.79481C8.3544 9.34613 8.45227 9.74215 8.64797 9.98292C8.84368 10.2238 9.10981 10.3442 9.4466 10.3442C9.79282 10.3442 10.0609 10.2263 10.2506 9.99036C10.4404 9.75438 10.5352 9.3311 10.5352 8.72021C10.5352 8.20626 10.4362 7.83069 10.2382 7.59354C10.0402 7.35657 9.77161 7.23792 9.43237 7.23792Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M15.0854 7.16345H14.6264V8.38137H15.0213C15.332 8.38137 15.5502 8.32492 15.676 8.21189C15.8017 8.09885 15.8645 7.9543 15.8645 7.778C15.8645 7.60668 15.81 7.46143 15.7008 7.34218C15.5917 7.22306 15.3866 7.16345 15.0854 7.16345Z"
+                                                  fill="#E1125E"/>
+                                        </svg>
+                                    </div>
+                                    <div class="top-number text-center">
+                                        01
+                                    </div>
+                                    <a href="" target="_blank" class="site-logo">
+
+                                    </a>
+                                    <div class="name"> まいこ@様</div>
+                                    <div class="small-text-box"> またね☆彡</div>
+                                </div>
+                            </div>
+                            <div class="rank-item">
+                                <div class="rank-profile">
+                                    <a class="profile-link" target="_blank" href="">
+                                    </a>
+                                    <div class="offline status">オフライン</div>
+                                </div>
+
+                                <div class="rank-meta">
+                                    <div class="top-icon text-center">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.9822 6.45301L17.5242 6.35078C17.4661 6.26989 17.4039 6.19239 17.333 6.12148C17.2982 6.08667 17.2604 6.05515 17.2228 6.02341C16.8467 5.7069 16.3319 5.54487 15.6866 5.54487H15.0786H13.9135L12.8851 5.31537L10.0405 0.387812C9.89128 0.129226 9.69561 0 9.50001 0C9.3044 0 9.1087 0.129293 8.95945 0.387812L6.11494 5.3153L5.08651 5.5448H3.92137H2.7563H1.56665C1.34481 5.5448 1.15981 5.70135 1.10157 5.91409C1.08944 5.95864 1.08077 6.00472 1.08077 6.05346V6.1788V6.43881L1.01771 6.45284C0.453272 6.57878 0.331494 7.02194 0.745922 7.4426L2.72435 9.45108V9.80541V10.1597V11.5137C2.72435 11.7946 2.94194 12.0224 3.2102 12.0224H3.98114H4.22641H4.47165L3.77009 17.2951C3.71129 17.7371 3.89 17.9999 4.19627 17.9999C4.30462 17.9999 4.429 17.967 4.56443 17.8975L9.49994 15.3675L14.4354 17.8976C14.5708 17.967 14.6952 18 14.8035 18C15.1099 18 15.2886 17.7373 15.2297 17.2952L14.5281 12.0225H14.6263C14.6767 12.0225 14.7243 12.0122 14.7701 11.9972C14.8588 11.9684 14.9359 11.9143 14.9947 11.842C15.0669 11.7532 15.1122 11.6396 15.1122 11.5138V11.3407V10.9866V10.6323L15.7465 9.98833C15.8845 9.98029 16.0154 9.96436 16.141 9.94222C16.3114 9.91223 16.4701 9.86905 16.617 9.81313C16.8792 9.71332 17.1054 9.57462 17.2905 9.39333C17.5052 9.18275 17.6644 8.93158 17.7694 8.64321C17.8231 8.4955 17.8617 8.33751 17.8863 8.17025C17.9045 8.04698 17.9147 7.91848 17.917 7.7849L18.2541 7.44267C18.6685 7.02208 18.5468 6.57894 17.9822 6.45301ZM17.3463 8.36434C17.2689 8.62306 17.1409 8.84321 16.9585 9.02204C16.7991 9.1784 16.597 9.29522 16.353 9.37269C16.1127 9.44925 15.8313 9.48755 15.5088 9.48755H14.6265V11.1254V11.5138H14.4608H13.0078V6.05353H15.6866C16.27 6.05353 16.707 6.19881 16.9975 6.48934C17.2881 6.77991 17.4334 7.19332 17.4334 7.72968C17.4334 7.9633 17.4031 8.17401 17.3463 8.36434ZM3.21026 10.653V10.2988V9.94441V7.40184H1.56665V6.3305V6.07048V6.05359H1.64232H2.80736H6.46539V7.40194H4.82177V11.514H4.53928H4.29404H4.04877H3.21026V10.653ZM9.50001 11.607C8.91185 11.607 8.42502 11.5089 8.03965 11.3127C7.65428 11.1166 7.34178 10.8062 7.10225 10.3816C6.86276 9.95695 6.74295 9.42558 6.74295 8.78743C6.74295 7.89597 6.98013 7.20193 7.45441 6.70538C7.92879 6.20872 8.58922 5.9605 9.43596 5.9605C10.304 5.9605 10.9728 6.20446 11.4424 6.69238C11.912 7.18029 12.1468 7.86383 12.1468 8.74278C12.1468 9.38093 12.0442 9.90429 11.8391 10.3127C11.6339 10.7211 11.3375 11.039 10.9497 11.2663C10.5618 11.4935 10.0787 11.607 9.50001 11.607Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M9.43237 7.23792C9.10746 7.23792 8.84653 7.35836 8.64969 7.59916C8.45284 7.84006 8.3544 8.23855 8.3544 8.79481C8.3544 9.34613 8.45227 9.74215 8.64797 9.98292C8.84368 10.2238 9.10981 10.3442 9.4466 10.3442C9.79282 10.3442 10.0609 10.2263 10.2506 9.99036C10.4404 9.75438 10.5352 9.3311 10.5352 8.72021C10.5352 8.20626 10.4362 7.83069 10.2382 7.59354C10.0402 7.35657 9.77161 7.23792 9.43237 7.23792Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M15.0854 7.16345H14.6264V8.38137H15.0213C15.332 8.38137 15.5502 8.32492 15.676 8.21189C15.8017 8.09885 15.8645 7.9543 15.8645 7.778C15.8645 7.60668 15.81 7.46143 15.7008 7.34218C15.5917 7.22306 15.3866 7.16345 15.0854 7.16345Z"
+                                                  fill="#E1125E"/>
+                                        </svg>
+                                    </div>
+                                    <div class="top-number text-center">
+                                        01
+                                    </div>
+                                    <a href="" target="_blank" class="site-logo">
+
+                                    </a>
+                                    <div class="name"> まいこ@様</div>
+                                    <div class="small-text-box"> またね☆彡</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="box-top-ranks">
+                        <h3 class="rank-head head-green"> 日間新人ランキング
+                        </h3>
+                        <div class="rank-body">
+                            <div class="rank-item">
+                                <div class="rank-profile">
+                                    <a class="profile-link" target="_blank" href="">
+                                    </a>
+                                    <div class="offline status">オフライン</div>
+                                </div>
+
+                                <div class="rank-meta">
+                                    <div class="top-icon text-center">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.9822 6.45301L17.5242 6.35078C17.4661 6.26989 17.4039 6.19239 17.333 6.12148C17.2982 6.08667 17.2604 6.05515 17.2228 6.02341C16.8467 5.7069 16.3319 5.54487 15.6866 5.54487H15.0786H13.9135L12.8851 5.31537L10.0405 0.387812C9.89128 0.129226 9.69561 0 9.50001 0C9.3044 0 9.1087 0.129293 8.95945 0.387812L6.11494 5.3153L5.08651 5.5448H3.92137H2.7563H1.56665C1.34481 5.5448 1.15981 5.70135 1.10157 5.91409C1.08944 5.95864 1.08077 6.00472 1.08077 6.05346V6.1788V6.43881L1.01771 6.45284C0.453272 6.57878 0.331494 7.02194 0.745922 7.4426L2.72435 9.45108V9.80541V10.1597V11.5137C2.72435 11.7946 2.94194 12.0224 3.2102 12.0224H3.98114H4.22641H4.47165L3.77009 17.2951C3.71129 17.7371 3.89 17.9999 4.19627 17.9999C4.30462 17.9999 4.429 17.967 4.56443 17.8975L9.49994 15.3675L14.4354 17.8976C14.5708 17.967 14.6952 18 14.8035 18C15.1099 18 15.2886 17.7373 15.2297 17.2952L14.5281 12.0225H14.6263C14.6767 12.0225 14.7243 12.0122 14.7701 11.9972C14.8588 11.9684 14.9359 11.9143 14.9947 11.842C15.0669 11.7532 15.1122 11.6396 15.1122 11.5138V11.3407V10.9866V10.6323L15.7465 9.98833C15.8845 9.98029 16.0154 9.96436 16.141 9.94222C16.3114 9.91223 16.4701 9.86905 16.617 9.81313C16.8792 9.71332 17.1054 9.57462 17.2905 9.39333C17.5052 9.18275 17.6644 8.93158 17.7694 8.64321C17.8231 8.4955 17.8617 8.33751 17.8863 8.17025C17.9045 8.04698 17.9147 7.91848 17.917 7.7849L18.2541 7.44267C18.6685 7.02208 18.5468 6.57894 17.9822 6.45301ZM17.3463 8.36434C17.2689 8.62306 17.1409 8.84321 16.9585 9.02204C16.7991 9.1784 16.597 9.29522 16.353 9.37269C16.1127 9.44925 15.8313 9.48755 15.5088 9.48755H14.6265V11.1254V11.5138H14.4608H13.0078V6.05353H15.6866C16.27 6.05353 16.707 6.19881 16.9975 6.48934C17.2881 6.77991 17.4334 7.19332 17.4334 7.72968C17.4334 7.9633 17.4031 8.17401 17.3463 8.36434ZM3.21026 10.653V10.2988V9.94441V7.40184H1.56665V6.3305V6.07048V6.05359H1.64232H2.80736H6.46539V7.40194H4.82177V11.514H4.53928H4.29404H4.04877H3.21026V10.653ZM9.50001 11.607C8.91185 11.607 8.42502 11.5089 8.03965 11.3127C7.65428 11.1166 7.34178 10.8062 7.10225 10.3816C6.86276 9.95695 6.74295 9.42558 6.74295 8.78743C6.74295 7.89597 6.98013 7.20193 7.45441 6.70538C7.92879 6.20872 8.58922 5.9605 9.43596 5.9605C10.304 5.9605 10.9728 6.20446 11.4424 6.69238C11.912 7.18029 12.1468 7.86383 12.1468 8.74278C12.1468 9.38093 12.0442 9.90429 11.8391 10.3127C11.6339 10.7211 11.3375 11.039 10.9497 11.2663C10.5618 11.4935 10.0787 11.607 9.50001 11.607Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M9.43237 7.23792C9.10746 7.23792 8.84653 7.35836 8.64969 7.59916C8.45284 7.84006 8.3544 8.23855 8.3544 8.79481C8.3544 9.34613 8.45227 9.74215 8.64797 9.98292C8.84368 10.2238 9.10981 10.3442 9.4466 10.3442C9.79282 10.3442 10.0609 10.2263 10.2506 9.99036C10.4404 9.75438 10.5352 9.3311 10.5352 8.72021C10.5352 8.20626 10.4362 7.83069 10.2382 7.59354C10.0402 7.35657 9.77161 7.23792 9.43237 7.23792Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M15.0854 7.16345H14.6264V8.38137H15.0213C15.332 8.38137 15.5502 8.32492 15.676 8.21189C15.8017 8.09885 15.8645 7.9543 15.8645 7.778C15.8645 7.60668 15.81 7.46143 15.7008 7.34218C15.5917 7.22306 15.3866 7.16345 15.0854 7.16345Z"
+                                                  fill="#E1125E"/>
+                                        </svg>
+                                    </div>
+                                    <div class="top-number text-center">
+                                        01
+                                    </div>
+                                    <a href="" target="_blank" class="site-logo">
+
+                                    </a>
+                                    <div class="name"> まいこ@様</div>
+                                    <div class="small-text-box"> またね☆彡</div>
+                                </div>
+                            </div>
+                            <div class="rank-item">
+                                <div class="rank-profile">
+                                    <a class="profile-link" target="_blank" href="">
+                                    </a>
+                                    <div class="offline status">オフライン</div>
+                                </div>
+
+                                <div class="rank-meta">
+                                    <div class="top-icon text-center">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.9822 6.45301L17.5242 6.35078C17.4661 6.26989 17.4039 6.19239 17.333 6.12148C17.2982 6.08667 17.2604 6.05515 17.2228 6.02341C16.8467 5.7069 16.3319 5.54487 15.6866 5.54487H15.0786H13.9135L12.8851 5.31537L10.0405 0.387812C9.89128 0.129226 9.69561 0 9.50001 0C9.3044 0 9.1087 0.129293 8.95945 0.387812L6.11494 5.3153L5.08651 5.5448H3.92137H2.7563H1.56665C1.34481 5.5448 1.15981 5.70135 1.10157 5.91409C1.08944 5.95864 1.08077 6.00472 1.08077 6.05346V6.1788V6.43881L1.01771 6.45284C0.453272 6.57878 0.331494 7.02194 0.745922 7.4426L2.72435 9.45108V9.80541V10.1597V11.5137C2.72435 11.7946 2.94194 12.0224 3.2102 12.0224H3.98114H4.22641H4.47165L3.77009 17.2951C3.71129 17.7371 3.89 17.9999 4.19627 17.9999C4.30462 17.9999 4.429 17.967 4.56443 17.8975L9.49994 15.3675L14.4354 17.8976C14.5708 17.967 14.6952 18 14.8035 18C15.1099 18 15.2886 17.7373 15.2297 17.2952L14.5281 12.0225H14.6263C14.6767 12.0225 14.7243 12.0122 14.7701 11.9972C14.8588 11.9684 14.9359 11.9143 14.9947 11.842C15.0669 11.7532 15.1122 11.6396 15.1122 11.5138V11.3407V10.9866V10.6323L15.7465 9.98833C15.8845 9.98029 16.0154 9.96436 16.141 9.94222C16.3114 9.91223 16.4701 9.86905 16.617 9.81313C16.8792 9.71332 17.1054 9.57462 17.2905 9.39333C17.5052 9.18275 17.6644 8.93158 17.7694 8.64321C17.8231 8.4955 17.8617 8.33751 17.8863 8.17025C17.9045 8.04698 17.9147 7.91848 17.917 7.7849L18.2541 7.44267C18.6685 7.02208 18.5468 6.57894 17.9822 6.45301ZM17.3463 8.36434C17.2689 8.62306 17.1409 8.84321 16.9585 9.02204C16.7991 9.1784 16.597 9.29522 16.353 9.37269C16.1127 9.44925 15.8313 9.48755 15.5088 9.48755H14.6265V11.1254V11.5138H14.4608H13.0078V6.05353H15.6866C16.27 6.05353 16.707 6.19881 16.9975 6.48934C17.2881 6.77991 17.4334 7.19332 17.4334 7.72968C17.4334 7.9633 17.4031 8.17401 17.3463 8.36434ZM3.21026 10.653V10.2988V9.94441V7.40184H1.56665V6.3305V6.07048V6.05359H1.64232H2.80736H6.46539V7.40194H4.82177V11.514H4.53928H4.29404H4.04877H3.21026V10.653ZM9.50001 11.607C8.91185 11.607 8.42502 11.5089 8.03965 11.3127C7.65428 11.1166 7.34178 10.8062 7.10225 10.3816C6.86276 9.95695 6.74295 9.42558 6.74295 8.78743C6.74295 7.89597 6.98013 7.20193 7.45441 6.70538C7.92879 6.20872 8.58922 5.9605 9.43596 5.9605C10.304 5.9605 10.9728 6.20446 11.4424 6.69238C11.912 7.18029 12.1468 7.86383 12.1468 8.74278C12.1468 9.38093 12.0442 9.90429 11.8391 10.3127C11.6339 10.7211 11.3375 11.039 10.9497 11.2663C10.5618 11.4935 10.0787 11.607 9.50001 11.607Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M9.43237 7.23792C9.10746 7.23792 8.84653 7.35836 8.64969 7.59916C8.45284 7.84006 8.3544 8.23855 8.3544 8.79481C8.3544 9.34613 8.45227 9.74215 8.64797 9.98292C8.84368 10.2238 9.10981 10.3442 9.4466 10.3442C9.79282 10.3442 10.0609 10.2263 10.2506 9.99036C10.4404 9.75438 10.5352 9.3311 10.5352 8.72021C10.5352 8.20626 10.4362 7.83069 10.2382 7.59354C10.0402 7.35657 9.77161 7.23792 9.43237 7.23792Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M15.0854 7.16345H14.6264V8.38137H15.0213C15.332 8.38137 15.5502 8.32492 15.676 8.21189C15.8017 8.09885 15.8645 7.9543 15.8645 7.778C15.8645 7.60668 15.81 7.46143 15.7008 7.34218C15.5917 7.22306 15.3866 7.16345 15.0854 7.16345Z"
+                                                  fill="#E1125E"/>
+                                        </svg>
+                                    </div>
+                                    <div class="top-number text-center">
+                                        01
+                                    </div>
+                                    <a href="" target="_blank" class="site-logo">
+
+                                    </a>
+                                    <div class="name"> まいこ@様</div>
+                                    <div class="small-text-box"> またね☆彡</div>
+                                </div>
+                            </div>
+                            <div class="rank-item">
+                                <div class="rank-profile">
+                                    <a class="profile-link" target="_blank" href="">
+                                    </a>
+                                    <div class="offline status">オフライン</div>
+                                </div>
+
+                                <div class="rank-meta">
+                                    <div class="top-icon text-center">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.9822 6.45301L17.5242 6.35078C17.4661 6.26989 17.4039 6.19239 17.333 6.12148C17.2982 6.08667 17.2604 6.05515 17.2228 6.02341C16.8467 5.7069 16.3319 5.54487 15.6866 5.54487H15.0786H13.9135L12.8851 5.31537L10.0405 0.387812C9.89128 0.129226 9.69561 0 9.50001 0C9.3044 0 9.1087 0.129293 8.95945 0.387812L6.11494 5.3153L5.08651 5.5448H3.92137H2.7563H1.56665C1.34481 5.5448 1.15981 5.70135 1.10157 5.91409C1.08944 5.95864 1.08077 6.00472 1.08077 6.05346V6.1788V6.43881L1.01771 6.45284C0.453272 6.57878 0.331494 7.02194 0.745922 7.4426L2.72435 9.45108V9.80541V10.1597V11.5137C2.72435 11.7946 2.94194 12.0224 3.2102 12.0224H3.98114H4.22641H4.47165L3.77009 17.2951C3.71129 17.7371 3.89 17.9999 4.19627 17.9999C4.30462 17.9999 4.429 17.967 4.56443 17.8975L9.49994 15.3675L14.4354 17.8976C14.5708 17.967 14.6952 18 14.8035 18C15.1099 18 15.2886 17.7373 15.2297 17.2952L14.5281 12.0225H14.6263C14.6767 12.0225 14.7243 12.0122 14.7701 11.9972C14.8588 11.9684 14.9359 11.9143 14.9947 11.842C15.0669 11.7532 15.1122 11.6396 15.1122 11.5138V11.3407V10.9866V10.6323L15.7465 9.98833C15.8845 9.98029 16.0154 9.96436 16.141 9.94222C16.3114 9.91223 16.4701 9.86905 16.617 9.81313C16.8792 9.71332 17.1054 9.57462 17.2905 9.39333C17.5052 9.18275 17.6644 8.93158 17.7694 8.64321C17.8231 8.4955 17.8617 8.33751 17.8863 8.17025C17.9045 8.04698 17.9147 7.91848 17.917 7.7849L18.2541 7.44267C18.6685 7.02208 18.5468 6.57894 17.9822 6.45301ZM17.3463 8.36434C17.2689 8.62306 17.1409 8.84321 16.9585 9.02204C16.7991 9.1784 16.597 9.29522 16.353 9.37269C16.1127 9.44925 15.8313 9.48755 15.5088 9.48755H14.6265V11.1254V11.5138H14.4608H13.0078V6.05353H15.6866C16.27 6.05353 16.707 6.19881 16.9975 6.48934C17.2881 6.77991 17.4334 7.19332 17.4334 7.72968C17.4334 7.9633 17.4031 8.17401 17.3463 8.36434ZM3.21026 10.653V10.2988V9.94441V7.40184H1.56665V6.3305V6.07048V6.05359H1.64232H2.80736H6.46539V7.40194H4.82177V11.514H4.53928H4.29404H4.04877H3.21026V10.653ZM9.50001 11.607C8.91185 11.607 8.42502 11.5089 8.03965 11.3127C7.65428 11.1166 7.34178 10.8062 7.10225 10.3816C6.86276 9.95695 6.74295 9.42558 6.74295 8.78743C6.74295 7.89597 6.98013 7.20193 7.45441 6.70538C7.92879 6.20872 8.58922 5.9605 9.43596 5.9605C10.304 5.9605 10.9728 6.20446 11.4424 6.69238C11.912 7.18029 12.1468 7.86383 12.1468 8.74278C12.1468 9.38093 12.0442 9.90429 11.8391 10.3127C11.6339 10.7211 11.3375 11.039 10.9497 11.2663C10.5618 11.4935 10.0787 11.607 9.50001 11.607Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M9.43237 7.23792C9.10746 7.23792 8.84653 7.35836 8.64969 7.59916C8.45284 7.84006 8.3544 8.23855 8.3544 8.79481C8.3544 9.34613 8.45227 9.74215 8.64797 9.98292C8.84368 10.2238 9.10981 10.3442 9.4466 10.3442C9.79282 10.3442 10.0609 10.2263 10.2506 9.99036C10.4404 9.75438 10.5352 9.3311 10.5352 8.72021C10.5352 8.20626 10.4362 7.83069 10.2382 7.59354C10.0402 7.35657 9.77161 7.23792 9.43237 7.23792Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M15.0854 7.16345H14.6264V8.38137H15.0213C15.332 8.38137 15.5502 8.32492 15.676 8.21189C15.8017 8.09885 15.8645 7.9543 15.8645 7.778C15.8645 7.60668 15.81 7.46143 15.7008 7.34218C15.5917 7.22306 15.3866 7.16345 15.0854 7.16345Z"
+                                                  fill="#E1125E"/>
+                                        </svg>
+                                    </div>
+                                    <div class="top-number text-center">
+                                        01
+                                    </div>
+                                    <a href="" target="_blank" class="site-logo">
+
+                                    </a>
+                                    <div class="name"> まいこ@様</div>
+                                    <div class="small-text-box"> またね☆彡</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="box-top-ranks">
+                        <h3 class="rank-head head-orange">
+                            待機注目度ランキング</h3>
+                        <div class="rank-body">
+                            <div class="rank-item">
+                                <div class="rank-profile">
+                                    <a class="profile-link" target="_blank" href="">
+                                    </a>
+                                    <div class="offline status">オフライン</div>
+                                </div>
+
+                                <div class="rank-meta">
+                                    <div class="top-icon text-center">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.9822 6.45301L17.5242 6.35078C17.4661 6.26989 17.4039 6.19239 17.333 6.12148C17.2982 6.08667 17.2604 6.05515 17.2228 6.02341C16.8467 5.7069 16.3319 5.54487 15.6866 5.54487H15.0786H13.9135L12.8851 5.31537L10.0405 0.387812C9.89128 0.129226 9.69561 0 9.50001 0C9.3044 0 9.1087 0.129293 8.95945 0.387812L6.11494 5.3153L5.08651 5.5448H3.92137H2.7563H1.56665C1.34481 5.5448 1.15981 5.70135 1.10157 5.91409C1.08944 5.95864 1.08077 6.00472 1.08077 6.05346V6.1788V6.43881L1.01771 6.45284C0.453272 6.57878 0.331494 7.02194 0.745922 7.4426L2.72435 9.45108V9.80541V10.1597V11.5137C2.72435 11.7946 2.94194 12.0224 3.2102 12.0224H3.98114H4.22641H4.47165L3.77009 17.2951C3.71129 17.7371 3.89 17.9999 4.19627 17.9999C4.30462 17.9999 4.429 17.967 4.56443 17.8975L9.49994 15.3675L14.4354 17.8976C14.5708 17.967 14.6952 18 14.8035 18C15.1099 18 15.2886 17.7373 15.2297 17.2952L14.5281 12.0225H14.6263C14.6767 12.0225 14.7243 12.0122 14.7701 11.9972C14.8588 11.9684 14.9359 11.9143 14.9947 11.842C15.0669 11.7532 15.1122 11.6396 15.1122 11.5138V11.3407V10.9866V10.6323L15.7465 9.98833C15.8845 9.98029 16.0154 9.96436 16.141 9.94222C16.3114 9.91223 16.4701 9.86905 16.617 9.81313C16.8792 9.71332 17.1054 9.57462 17.2905 9.39333C17.5052 9.18275 17.6644 8.93158 17.7694 8.64321C17.8231 8.4955 17.8617 8.33751 17.8863 8.17025C17.9045 8.04698 17.9147 7.91848 17.917 7.7849L18.2541 7.44267C18.6685 7.02208 18.5468 6.57894 17.9822 6.45301ZM17.3463 8.36434C17.2689 8.62306 17.1409 8.84321 16.9585 9.02204C16.7991 9.1784 16.597 9.29522 16.353 9.37269C16.1127 9.44925 15.8313 9.48755 15.5088 9.48755H14.6265V11.1254V11.5138H14.4608H13.0078V6.05353H15.6866C16.27 6.05353 16.707 6.19881 16.9975 6.48934C17.2881 6.77991 17.4334 7.19332 17.4334 7.72968C17.4334 7.9633 17.4031 8.17401 17.3463 8.36434ZM3.21026 10.653V10.2988V9.94441V7.40184H1.56665V6.3305V6.07048V6.05359H1.64232H2.80736H6.46539V7.40194H4.82177V11.514H4.53928H4.29404H4.04877H3.21026V10.653ZM9.50001 11.607C8.91185 11.607 8.42502 11.5089 8.03965 11.3127C7.65428 11.1166 7.34178 10.8062 7.10225 10.3816C6.86276 9.95695 6.74295 9.42558 6.74295 8.78743C6.74295 7.89597 6.98013 7.20193 7.45441 6.70538C7.92879 6.20872 8.58922 5.9605 9.43596 5.9605C10.304 5.9605 10.9728 6.20446 11.4424 6.69238C11.912 7.18029 12.1468 7.86383 12.1468 8.74278C12.1468 9.38093 12.0442 9.90429 11.8391 10.3127C11.6339 10.7211 11.3375 11.039 10.9497 11.2663C10.5618 11.4935 10.0787 11.607 9.50001 11.607Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M9.43237 7.23792C9.10746 7.23792 8.84653 7.35836 8.64969 7.59916C8.45284 7.84006 8.3544 8.23855 8.3544 8.79481C8.3544 9.34613 8.45227 9.74215 8.64797 9.98292C8.84368 10.2238 9.10981 10.3442 9.4466 10.3442C9.79282 10.3442 10.0609 10.2263 10.2506 9.99036C10.4404 9.75438 10.5352 9.3311 10.5352 8.72021C10.5352 8.20626 10.4362 7.83069 10.2382 7.59354C10.0402 7.35657 9.77161 7.23792 9.43237 7.23792Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M15.0854 7.16345H14.6264V8.38137H15.0213C15.332 8.38137 15.5502 8.32492 15.676 8.21189C15.8017 8.09885 15.8645 7.9543 15.8645 7.778C15.8645 7.60668 15.81 7.46143 15.7008 7.34218C15.5917 7.22306 15.3866 7.16345 15.0854 7.16345Z"
+                                                  fill="#E1125E"/>
+                                        </svg>
+                                    </div>
+                                    <div class="top-number text-center">
+                                        01
+                                    </div>
+                                    <a href="" target="_blank" class="site-logo">
+
+                                    </a>
+                                    <div class="name"> まいこ@様</div>
+                                    <div class="small-text-box"> またね☆彡</div>
+                                </div>
+                            </div>
+                            <div class="rank-item">
+                                <div class="rank-profile">
+                                    <a class="profile-link" target="_blank" href="">
+                                    </a>
+                                    <div class="offline status">オフライン</div>
+                                </div>
+
+                                <div class="rank-meta">
+                                    <div class="top-icon text-center">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.9822 6.45301L17.5242 6.35078C17.4661 6.26989 17.4039 6.19239 17.333 6.12148C17.2982 6.08667 17.2604 6.05515 17.2228 6.02341C16.8467 5.7069 16.3319 5.54487 15.6866 5.54487H15.0786H13.9135L12.8851 5.31537L10.0405 0.387812C9.89128 0.129226 9.69561 0 9.50001 0C9.3044 0 9.1087 0.129293 8.95945 0.387812L6.11494 5.3153L5.08651 5.5448H3.92137H2.7563H1.56665C1.34481 5.5448 1.15981 5.70135 1.10157 5.91409C1.08944 5.95864 1.08077 6.00472 1.08077 6.05346V6.1788V6.43881L1.01771 6.45284C0.453272 6.57878 0.331494 7.02194 0.745922 7.4426L2.72435 9.45108V9.80541V10.1597V11.5137C2.72435 11.7946 2.94194 12.0224 3.2102 12.0224H3.98114H4.22641H4.47165L3.77009 17.2951C3.71129 17.7371 3.89 17.9999 4.19627 17.9999C4.30462 17.9999 4.429 17.967 4.56443 17.8975L9.49994 15.3675L14.4354 17.8976C14.5708 17.967 14.6952 18 14.8035 18C15.1099 18 15.2886 17.7373 15.2297 17.2952L14.5281 12.0225H14.6263C14.6767 12.0225 14.7243 12.0122 14.7701 11.9972C14.8588 11.9684 14.9359 11.9143 14.9947 11.842C15.0669 11.7532 15.1122 11.6396 15.1122 11.5138V11.3407V10.9866V10.6323L15.7465 9.98833C15.8845 9.98029 16.0154 9.96436 16.141 9.94222C16.3114 9.91223 16.4701 9.86905 16.617 9.81313C16.8792 9.71332 17.1054 9.57462 17.2905 9.39333C17.5052 9.18275 17.6644 8.93158 17.7694 8.64321C17.8231 8.4955 17.8617 8.33751 17.8863 8.17025C17.9045 8.04698 17.9147 7.91848 17.917 7.7849L18.2541 7.44267C18.6685 7.02208 18.5468 6.57894 17.9822 6.45301ZM17.3463 8.36434C17.2689 8.62306 17.1409 8.84321 16.9585 9.02204C16.7991 9.1784 16.597 9.29522 16.353 9.37269C16.1127 9.44925 15.8313 9.48755 15.5088 9.48755H14.6265V11.1254V11.5138H14.4608H13.0078V6.05353H15.6866C16.27 6.05353 16.707 6.19881 16.9975 6.48934C17.2881 6.77991 17.4334 7.19332 17.4334 7.72968C17.4334 7.9633 17.4031 8.17401 17.3463 8.36434ZM3.21026 10.653V10.2988V9.94441V7.40184H1.56665V6.3305V6.07048V6.05359H1.64232H2.80736H6.46539V7.40194H4.82177V11.514H4.53928H4.29404H4.04877H3.21026V10.653ZM9.50001 11.607C8.91185 11.607 8.42502 11.5089 8.03965 11.3127C7.65428 11.1166 7.34178 10.8062 7.10225 10.3816C6.86276 9.95695 6.74295 9.42558 6.74295 8.78743C6.74295 7.89597 6.98013 7.20193 7.45441 6.70538C7.92879 6.20872 8.58922 5.9605 9.43596 5.9605C10.304 5.9605 10.9728 6.20446 11.4424 6.69238C11.912 7.18029 12.1468 7.86383 12.1468 8.74278C12.1468 9.38093 12.0442 9.90429 11.8391 10.3127C11.6339 10.7211 11.3375 11.039 10.9497 11.2663C10.5618 11.4935 10.0787 11.607 9.50001 11.607Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M9.43237 7.23792C9.10746 7.23792 8.84653 7.35836 8.64969 7.59916C8.45284 7.84006 8.3544 8.23855 8.3544 8.79481C8.3544 9.34613 8.45227 9.74215 8.64797 9.98292C8.84368 10.2238 9.10981 10.3442 9.4466 10.3442C9.79282 10.3442 10.0609 10.2263 10.2506 9.99036C10.4404 9.75438 10.5352 9.3311 10.5352 8.72021C10.5352 8.20626 10.4362 7.83069 10.2382 7.59354C10.0402 7.35657 9.77161 7.23792 9.43237 7.23792Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M15.0854 7.16345H14.6264V8.38137H15.0213C15.332 8.38137 15.5502 8.32492 15.676 8.21189C15.8017 8.09885 15.8645 7.9543 15.8645 7.778C15.8645 7.60668 15.81 7.46143 15.7008 7.34218C15.5917 7.22306 15.3866 7.16345 15.0854 7.16345Z"
+                                                  fill="#E1125E"/>
+                                        </svg>
+                                    </div>
+                                    <div class="top-number text-center">
+                                        01
+                                    </div>
+                                    <a href="" target="_blank" class="site-logo">
+
+                                    </a>
+                                    <div class="name"> まいこ@様</div>
+                                    <div class="small-text-box"> またね☆彡</div>
+                                </div>
+                            </div>
+                            <div class="rank-item">
+                                <div class="rank-profile">
+                                    <a class="profile-link" target="_blank" href="">
+                                    </a>
+                                    <div class="offline status">オフライン</div>
+                                </div>
+
+                                <div class="rank-meta">
+                                    <div class="top-icon text-center">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.9822 6.45301L17.5242 6.35078C17.4661 6.26989 17.4039 6.19239 17.333 6.12148C17.2982 6.08667 17.2604 6.05515 17.2228 6.02341C16.8467 5.7069 16.3319 5.54487 15.6866 5.54487H15.0786H13.9135L12.8851 5.31537L10.0405 0.387812C9.89128 0.129226 9.69561 0 9.50001 0C9.3044 0 9.1087 0.129293 8.95945 0.387812L6.11494 5.3153L5.08651 5.5448H3.92137H2.7563H1.56665C1.34481 5.5448 1.15981 5.70135 1.10157 5.91409C1.08944 5.95864 1.08077 6.00472 1.08077 6.05346V6.1788V6.43881L1.01771 6.45284C0.453272 6.57878 0.331494 7.02194 0.745922 7.4426L2.72435 9.45108V9.80541V10.1597V11.5137C2.72435 11.7946 2.94194 12.0224 3.2102 12.0224H3.98114H4.22641H4.47165L3.77009 17.2951C3.71129 17.7371 3.89 17.9999 4.19627 17.9999C4.30462 17.9999 4.429 17.967 4.56443 17.8975L9.49994 15.3675L14.4354 17.8976C14.5708 17.967 14.6952 18 14.8035 18C15.1099 18 15.2886 17.7373 15.2297 17.2952L14.5281 12.0225H14.6263C14.6767 12.0225 14.7243 12.0122 14.7701 11.9972C14.8588 11.9684 14.9359 11.9143 14.9947 11.842C15.0669 11.7532 15.1122 11.6396 15.1122 11.5138V11.3407V10.9866V10.6323L15.7465 9.98833C15.8845 9.98029 16.0154 9.96436 16.141 9.94222C16.3114 9.91223 16.4701 9.86905 16.617 9.81313C16.8792 9.71332 17.1054 9.57462 17.2905 9.39333C17.5052 9.18275 17.6644 8.93158 17.7694 8.64321C17.8231 8.4955 17.8617 8.33751 17.8863 8.17025C17.9045 8.04698 17.9147 7.91848 17.917 7.7849L18.2541 7.44267C18.6685 7.02208 18.5468 6.57894 17.9822 6.45301ZM17.3463 8.36434C17.2689 8.62306 17.1409 8.84321 16.9585 9.02204C16.7991 9.1784 16.597 9.29522 16.353 9.37269C16.1127 9.44925 15.8313 9.48755 15.5088 9.48755H14.6265V11.1254V11.5138H14.4608H13.0078V6.05353H15.6866C16.27 6.05353 16.707 6.19881 16.9975 6.48934C17.2881 6.77991 17.4334 7.19332 17.4334 7.72968C17.4334 7.9633 17.4031 8.17401 17.3463 8.36434ZM3.21026 10.653V10.2988V9.94441V7.40184H1.56665V6.3305V6.07048V6.05359H1.64232H2.80736H6.46539V7.40194H4.82177V11.514H4.53928H4.29404H4.04877H3.21026V10.653ZM9.50001 11.607C8.91185 11.607 8.42502 11.5089 8.03965 11.3127C7.65428 11.1166 7.34178 10.8062 7.10225 10.3816C6.86276 9.95695 6.74295 9.42558 6.74295 8.78743C6.74295 7.89597 6.98013 7.20193 7.45441 6.70538C7.92879 6.20872 8.58922 5.9605 9.43596 5.9605C10.304 5.9605 10.9728 6.20446 11.4424 6.69238C11.912 7.18029 12.1468 7.86383 12.1468 8.74278C12.1468 9.38093 12.0442 9.90429 11.8391 10.3127C11.6339 10.7211 11.3375 11.039 10.9497 11.2663C10.5618 11.4935 10.0787 11.607 9.50001 11.607Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M9.43237 7.23792C9.10746 7.23792 8.84653 7.35836 8.64969 7.59916C8.45284 7.84006 8.3544 8.23855 8.3544 8.79481C8.3544 9.34613 8.45227 9.74215 8.64797 9.98292C8.84368 10.2238 9.10981 10.3442 9.4466 10.3442C9.79282 10.3442 10.0609 10.2263 10.2506 9.99036C10.4404 9.75438 10.5352 9.3311 10.5352 8.72021C10.5352 8.20626 10.4362 7.83069 10.2382 7.59354C10.0402 7.35657 9.77161 7.23792 9.43237 7.23792Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M15.0854 7.16345H14.6264V8.38137H15.0213C15.332 8.38137 15.5502 8.32492 15.676 8.21189C15.8017 8.09885 15.8645 7.9543 15.8645 7.778C15.8645 7.60668 15.81 7.46143 15.7008 7.34218C15.5917 7.22306 15.3866 7.16345 15.0854 7.16345Z"
+                                                  fill="#E1125E"/>
+                                        </svg>
+                                    </div>
+                                    <div class="top-number text-center">
+                                        01
+                                    </div>
+                                    <a href="" target="_blank" class="site-logo">
+
+                                    </a>
+                                    <div class="name"> まいこ@様</div>
+                                    <div class="small-text-box"> またね☆彡</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="box-top-ranks">
+                        <h3 class="rank-head head-pink"> 週間獲得ポイントランキング
+                        </h3>
+                        <div class="rank-body">
+                            <div class="rank-item">
+                                <div class="rank-profile">
+                                    <a class="profile-link" target="_blank" href="">
+                                    </a>
+                                    <div class="offline status">オフライン</div>
+                                </div>
+
+                                <div class="rank-meta">
+                                    <div class="top-icon text-center">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.9822 6.45301L17.5242 6.35078C17.4661 6.26989 17.4039 6.19239 17.333 6.12148C17.2982 6.08667 17.2604 6.05515 17.2228 6.02341C16.8467 5.7069 16.3319 5.54487 15.6866 5.54487H15.0786H13.9135L12.8851 5.31537L10.0405 0.387812C9.89128 0.129226 9.69561 0 9.50001 0C9.3044 0 9.1087 0.129293 8.95945 0.387812L6.11494 5.3153L5.08651 5.5448H3.92137H2.7563H1.56665C1.34481 5.5448 1.15981 5.70135 1.10157 5.91409C1.08944 5.95864 1.08077 6.00472 1.08077 6.05346V6.1788V6.43881L1.01771 6.45284C0.453272 6.57878 0.331494 7.02194 0.745922 7.4426L2.72435 9.45108V9.80541V10.1597V11.5137C2.72435 11.7946 2.94194 12.0224 3.2102 12.0224H3.98114H4.22641H4.47165L3.77009 17.2951C3.71129 17.7371 3.89 17.9999 4.19627 17.9999C4.30462 17.9999 4.429 17.967 4.56443 17.8975L9.49994 15.3675L14.4354 17.8976C14.5708 17.967 14.6952 18 14.8035 18C15.1099 18 15.2886 17.7373 15.2297 17.2952L14.5281 12.0225H14.6263C14.6767 12.0225 14.7243 12.0122 14.7701 11.9972C14.8588 11.9684 14.9359 11.9143 14.9947 11.842C15.0669 11.7532 15.1122 11.6396 15.1122 11.5138V11.3407V10.9866V10.6323L15.7465 9.98833C15.8845 9.98029 16.0154 9.96436 16.141 9.94222C16.3114 9.91223 16.4701 9.86905 16.617 9.81313C16.8792 9.71332 17.1054 9.57462 17.2905 9.39333C17.5052 9.18275 17.6644 8.93158 17.7694 8.64321C17.8231 8.4955 17.8617 8.33751 17.8863 8.17025C17.9045 8.04698 17.9147 7.91848 17.917 7.7849L18.2541 7.44267C18.6685 7.02208 18.5468 6.57894 17.9822 6.45301ZM17.3463 8.36434C17.2689 8.62306 17.1409 8.84321 16.9585 9.02204C16.7991 9.1784 16.597 9.29522 16.353 9.37269C16.1127 9.44925 15.8313 9.48755 15.5088 9.48755H14.6265V11.1254V11.5138H14.4608H13.0078V6.05353H15.6866C16.27 6.05353 16.707 6.19881 16.9975 6.48934C17.2881 6.77991 17.4334 7.19332 17.4334 7.72968C17.4334 7.9633 17.4031 8.17401 17.3463 8.36434ZM3.21026 10.653V10.2988V9.94441V7.40184H1.56665V6.3305V6.07048V6.05359H1.64232H2.80736H6.46539V7.40194H4.82177V11.514H4.53928H4.29404H4.04877H3.21026V10.653ZM9.50001 11.607C8.91185 11.607 8.42502 11.5089 8.03965 11.3127C7.65428 11.1166 7.34178 10.8062 7.10225 10.3816C6.86276 9.95695 6.74295 9.42558 6.74295 8.78743C6.74295 7.89597 6.98013 7.20193 7.45441 6.70538C7.92879 6.20872 8.58922 5.9605 9.43596 5.9605C10.304 5.9605 10.9728 6.20446 11.4424 6.69238C11.912 7.18029 12.1468 7.86383 12.1468 8.74278C12.1468 9.38093 12.0442 9.90429 11.8391 10.3127C11.6339 10.7211 11.3375 11.039 10.9497 11.2663C10.5618 11.4935 10.0787 11.607 9.50001 11.607Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M9.43237 7.23792C9.10746 7.23792 8.84653 7.35836 8.64969 7.59916C8.45284 7.84006 8.3544 8.23855 8.3544 8.79481C8.3544 9.34613 8.45227 9.74215 8.64797 9.98292C8.84368 10.2238 9.10981 10.3442 9.4466 10.3442C9.79282 10.3442 10.0609 10.2263 10.2506 9.99036C10.4404 9.75438 10.5352 9.3311 10.5352 8.72021C10.5352 8.20626 10.4362 7.83069 10.2382 7.59354C10.0402 7.35657 9.77161 7.23792 9.43237 7.23792Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M15.0854 7.16345H14.6264V8.38137H15.0213C15.332 8.38137 15.5502 8.32492 15.676 8.21189C15.8017 8.09885 15.8645 7.9543 15.8645 7.778C15.8645 7.60668 15.81 7.46143 15.7008 7.34218C15.5917 7.22306 15.3866 7.16345 15.0854 7.16345Z"
+                                                  fill="#E1125E"/>
+                                        </svg>
+                                    </div>
+                                    <div class="top-number text-center">
+                                        01
+                                    </div>
+                                    <a href="" target="_blank" class="site-logo">
+
+                                    </a>
+                                    <div class="name"> まいこ@様</div>
+                                    <div class="small-text-box"> またね☆彡</div>
+                                </div>
+                            </div>
+                            <div class="rank-item">
+                                <div class="rank-profile">
+                                    <a class="profile-link" target="_blank" href="">
+                                    </a>
+                                    <div class="offline status">オフライン</div>
+                                </div>
+
+                                <div class="rank-meta">
+                                    <div class="top-icon text-center">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.9822 6.45301L17.5242 6.35078C17.4661 6.26989 17.4039 6.19239 17.333 6.12148C17.2982 6.08667 17.2604 6.05515 17.2228 6.02341C16.8467 5.7069 16.3319 5.54487 15.6866 5.54487H15.0786H13.9135L12.8851 5.31537L10.0405 0.387812C9.89128 0.129226 9.69561 0 9.50001 0C9.3044 0 9.1087 0.129293 8.95945 0.387812L6.11494 5.3153L5.08651 5.5448H3.92137H2.7563H1.56665C1.34481 5.5448 1.15981 5.70135 1.10157 5.91409C1.08944 5.95864 1.08077 6.00472 1.08077 6.05346V6.1788V6.43881L1.01771 6.45284C0.453272 6.57878 0.331494 7.02194 0.745922 7.4426L2.72435 9.45108V9.80541V10.1597V11.5137C2.72435 11.7946 2.94194 12.0224 3.2102 12.0224H3.98114H4.22641H4.47165L3.77009 17.2951C3.71129 17.7371 3.89 17.9999 4.19627 17.9999C4.30462 17.9999 4.429 17.967 4.56443 17.8975L9.49994 15.3675L14.4354 17.8976C14.5708 17.967 14.6952 18 14.8035 18C15.1099 18 15.2886 17.7373 15.2297 17.2952L14.5281 12.0225H14.6263C14.6767 12.0225 14.7243 12.0122 14.7701 11.9972C14.8588 11.9684 14.9359 11.9143 14.9947 11.842C15.0669 11.7532 15.1122 11.6396 15.1122 11.5138V11.3407V10.9866V10.6323L15.7465 9.98833C15.8845 9.98029 16.0154 9.96436 16.141 9.94222C16.3114 9.91223 16.4701 9.86905 16.617 9.81313C16.8792 9.71332 17.1054 9.57462 17.2905 9.39333C17.5052 9.18275 17.6644 8.93158 17.7694 8.64321C17.8231 8.4955 17.8617 8.33751 17.8863 8.17025C17.9045 8.04698 17.9147 7.91848 17.917 7.7849L18.2541 7.44267C18.6685 7.02208 18.5468 6.57894 17.9822 6.45301ZM17.3463 8.36434C17.2689 8.62306 17.1409 8.84321 16.9585 9.02204C16.7991 9.1784 16.597 9.29522 16.353 9.37269C16.1127 9.44925 15.8313 9.48755 15.5088 9.48755H14.6265V11.1254V11.5138H14.4608H13.0078V6.05353H15.6866C16.27 6.05353 16.707 6.19881 16.9975 6.48934C17.2881 6.77991 17.4334 7.19332 17.4334 7.72968C17.4334 7.9633 17.4031 8.17401 17.3463 8.36434ZM3.21026 10.653V10.2988V9.94441V7.40184H1.56665V6.3305V6.07048V6.05359H1.64232H2.80736H6.46539V7.40194H4.82177V11.514H4.53928H4.29404H4.04877H3.21026V10.653ZM9.50001 11.607C8.91185 11.607 8.42502 11.5089 8.03965 11.3127C7.65428 11.1166 7.34178 10.8062 7.10225 10.3816C6.86276 9.95695 6.74295 9.42558 6.74295 8.78743C6.74295 7.89597 6.98013 7.20193 7.45441 6.70538C7.92879 6.20872 8.58922 5.9605 9.43596 5.9605C10.304 5.9605 10.9728 6.20446 11.4424 6.69238C11.912 7.18029 12.1468 7.86383 12.1468 8.74278C12.1468 9.38093 12.0442 9.90429 11.8391 10.3127C11.6339 10.7211 11.3375 11.039 10.9497 11.2663C10.5618 11.4935 10.0787 11.607 9.50001 11.607Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M9.43237 7.23792C9.10746 7.23792 8.84653 7.35836 8.64969 7.59916C8.45284 7.84006 8.3544 8.23855 8.3544 8.79481C8.3544 9.34613 8.45227 9.74215 8.64797 9.98292C8.84368 10.2238 9.10981 10.3442 9.4466 10.3442C9.79282 10.3442 10.0609 10.2263 10.2506 9.99036C10.4404 9.75438 10.5352 9.3311 10.5352 8.72021C10.5352 8.20626 10.4362 7.83069 10.2382 7.59354C10.0402 7.35657 9.77161 7.23792 9.43237 7.23792Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M15.0854 7.16345H14.6264V8.38137H15.0213C15.332 8.38137 15.5502 8.32492 15.676 8.21189C15.8017 8.09885 15.8645 7.9543 15.8645 7.778C15.8645 7.60668 15.81 7.46143 15.7008 7.34218C15.5917 7.22306 15.3866 7.16345 15.0854 7.16345Z"
+                                                  fill="#E1125E"/>
+                                        </svg>
+                                    </div>
+                                    <div class="top-number text-center">
+                                        01
+                                    </div>
+                                    <a href="" target="_blank" class="site-logo">
+
+                                    </a>
+                                    <div class="name"> まいこ@様</div>
+                                    <div class="small-text-box"> またね☆彡</div>
+                                </div>
+                            </div>
+                            <div class="rank-item">
+                                <div class="rank-profile">
+                                    <a class="profile-link" target="_blank" href="">
+                                    </a>
+                                    <div class="offline status">オフライン</div>
+                                </div>
+
+                                <div class="rank-meta">
+                                    <div class="top-icon text-center">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M17.9822 6.45301L17.5242 6.35078C17.4661 6.26989 17.4039 6.19239 17.333 6.12148C17.2982 6.08667 17.2604 6.05515 17.2228 6.02341C16.8467 5.7069 16.3319 5.54487 15.6866 5.54487H15.0786H13.9135L12.8851 5.31537L10.0405 0.387812C9.89128 0.129226 9.69561 0 9.50001 0C9.3044 0 9.1087 0.129293 8.95945 0.387812L6.11494 5.3153L5.08651 5.5448H3.92137H2.7563H1.56665C1.34481 5.5448 1.15981 5.70135 1.10157 5.91409C1.08944 5.95864 1.08077 6.00472 1.08077 6.05346V6.1788V6.43881L1.01771 6.45284C0.453272 6.57878 0.331494 7.02194 0.745922 7.4426L2.72435 9.45108V9.80541V10.1597V11.5137C2.72435 11.7946 2.94194 12.0224 3.2102 12.0224H3.98114H4.22641H4.47165L3.77009 17.2951C3.71129 17.7371 3.89 17.9999 4.19627 17.9999C4.30462 17.9999 4.429 17.967 4.56443 17.8975L9.49994 15.3675L14.4354 17.8976C14.5708 17.967 14.6952 18 14.8035 18C15.1099 18 15.2886 17.7373 15.2297 17.2952L14.5281 12.0225H14.6263C14.6767 12.0225 14.7243 12.0122 14.7701 11.9972C14.8588 11.9684 14.9359 11.9143 14.9947 11.842C15.0669 11.7532 15.1122 11.6396 15.1122 11.5138V11.3407V10.9866V10.6323L15.7465 9.98833C15.8845 9.98029 16.0154 9.96436 16.141 9.94222C16.3114 9.91223 16.4701 9.86905 16.617 9.81313C16.8792 9.71332 17.1054 9.57462 17.2905 9.39333C17.5052 9.18275 17.6644 8.93158 17.7694 8.64321C17.8231 8.4955 17.8617 8.33751 17.8863 8.17025C17.9045 8.04698 17.9147 7.91848 17.917 7.7849L18.2541 7.44267C18.6685 7.02208 18.5468 6.57894 17.9822 6.45301ZM17.3463 8.36434C17.2689 8.62306 17.1409 8.84321 16.9585 9.02204C16.7991 9.1784 16.597 9.29522 16.353 9.37269C16.1127 9.44925 15.8313 9.48755 15.5088 9.48755H14.6265V11.1254V11.5138H14.4608H13.0078V6.05353H15.6866C16.27 6.05353 16.707 6.19881 16.9975 6.48934C17.2881 6.77991 17.4334 7.19332 17.4334 7.72968C17.4334 7.9633 17.4031 8.17401 17.3463 8.36434ZM3.21026 10.653V10.2988V9.94441V7.40184H1.56665V6.3305V6.07048V6.05359H1.64232H2.80736H6.46539V7.40194H4.82177V11.514H4.53928H4.29404H4.04877H3.21026V10.653ZM9.50001 11.607C8.91185 11.607 8.42502 11.5089 8.03965 11.3127C7.65428 11.1166 7.34178 10.8062 7.10225 10.3816C6.86276 9.95695 6.74295 9.42558 6.74295 8.78743C6.74295 7.89597 6.98013 7.20193 7.45441 6.70538C7.92879 6.20872 8.58922 5.9605 9.43596 5.9605C10.304 5.9605 10.9728 6.20446 11.4424 6.69238C11.912 7.18029 12.1468 7.86383 12.1468 8.74278C12.1468 9.38093 12.0442 9.90429 11.8391 10.3127C11.6339 10.7211 11.3375 11.039 10.9497 11.2663C10.5618 11.4935 10.0787 11.607 9.50001 11.607Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M9.43237 7.23792C9.10746 7.23792 8.84653 7.35836 8.64969 7.59916C8.45284 7.84006 8.3544 8.23855 8.3544 8.79481C8.3544 9.34613 8.45227 9.74215 8.64797 9.98292C8.84368 10.2238 9.10981 10.3442 9.4466 10.3442C9.79282 10.3442 10.0609 10.2263 10.2506 9.99036C10.4404 9.75438 10.5352 9.3311 10.5352 8.72021C10.5352 8.20626 10.4362 7.83069 10.2382 7.59354C10.0402 7.35657 9.77161 7.23792 9.43237 7.23792Z"
+                                                  fill="#E1125E"/>
+                                            <path d="M15.0854 7.16345H14.6264V8.38137H15.0213C15.332 8.38137 15.5502 8.32492 15.676 8.21189C15.8017 8.09885 15.8645 7.9543 15.8645 7.778C15.8645 7.60668 15.81 7.46143 15.7008 7.34218C15.5917 7.22306 15.3866 7.16345 15.0854 7.16345Z"
+                                                  fill="#E1125E"/>
+                                        </svg>
+                                    </div>
+                                    <div class="top-number text-center">
+                                        01
+                                    </div>
+                                    <a href="" target="_blank" class="site-logo">
+
+                                    </a>
+                                    <div class="name"> まいこ@様</div>
+                                    <div class="small-text-box"> またね☆彡</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End of Box Top Girls-->
+
+            <!-- Ranking Sites -->
+            <div class="box-ranking-sites">
+                <h2 class="ranking-site__heading">
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.6367 17.4727V11.1094C11.6367 10.8179 11.4009 10.582 11.1094 10.582H6.89062C6.59914 10.582 6.36328 10.8179 6.36328 11.1094V17.4727C6.36328 17.7641 6.59914 18 6.89062 18H11.1094C11.4009 18 11.6367 17.7641 11.6367 17.4727Z" fill="#414141"/>
+                        <path d="M4.25391 0.527344C4.25391 2.11247 5.27667 3.54227 6.76065 4.0467C7.13679 4.65701 7.74742 5.10743 8.47266 5.25523V7.41797H7.41797C6.83546 7.41797 6.36328 7.89015 6.36328 8.47266V9C6.36328 9.29123 6.59939 9.52734 6.89062 9.52734H11.1094C11.4006 9.52734 11.6367 9.29123 11.6367 9V8.47266C11.6367 7.89015 11.1645 7.41797 10.582 7.41797H9.52734V5.25523C10.2526 5.10743 10.8632 4.65701 11.2393 4.0467C12.7233 3.54227 13.7461 2.11247 13.7461 0.527344C13.7461 0.235863 13.5102 0 13.2188 0C9.33114 0 7.40869 0 4.78125 0C4.48977 0 4.25391 0.235863 4.25391 0.527344ZM11.6367 2.64322V1.05434H12.6379C12.5095 1.68395 12.1393 2.25939 11.6367 2.64322ZM6.36328 1.05469V2.64322C5.86072 2.25939 5.49046 1.68395 5.36214 1.05469H6.36328Z" fill="#414141"/>
+                        <path d="M15.3281 3.19922C15.0366 3.19922 14.8008 3.43508 14.8008 3.72656V4.25391H14.2734C13.982 4.25391 13.7461 4.48977 13.7461 4.78125C13.7461 5.07273 13.982 5.30859 14.2734 5.30859H14.8008V5.83594C14.8008 6.12742 15.0366 6.36328 15.3281 6.36328C15.6196 6.36328 15.8555 6.12742 15.8555 5.83594V5.30859H16.3828C16.6743 5.30859 16.9102 5.07273 16.9102 4.78125C16.9102 4.48977 16.6743 4.25391 16.3828 4.25391H15.8555V3.72656C15.8555 3.43508 15.6196 3.19922 15.3281 3.19922Z" fill="#414141"/>
+                        <path d="M2.67188 2.14453C2.38039 2.14453 2.14453 2.38039 2.14453 2.67188V3.19922H1.61719C1.32571 3.19922 1.08984 3.43508 1.08984 3.72656C1.08984 4.01804 1.32571 4.25391 1.61719 4.25391H2.14453V4.78125C2.14453 5.07273 2.38039 5.30859 2.67188 5.30859C2.96336 5.30859 3.19922 5.07273 3.19922 4.78125V4.25391H3.72656C4.01804 4.25391 4.25391 4.01804 4.25391 3.72656C4.25391 3.43508 4.01804 3.19922 3.72656 3.19922H3.19922V2.67188C3.19922 2.38039 2.96336 2.14453 2.67188 2.14453Z" fill="#414141"/>
+                        <path d="M17.4727 12.6914H13.2188C12.9273 12.6914 12.6914 12.9273 12.6914 13.2188V17.4727C12.6914 17.7641 12.9273 18 13.2188 18H17.4727C17.7641 18 18 17.7641 18 17.4727V13.2188C18 12.9273 17.7641 12.6914 17.4727 12.6914Z" fill="#414141"/>
+                        <path d="M0.527344 18H4.78125C5.07273 18 5.30859 17.7641 5.30859 17.4727V15.3633C5.30859 15.0718 5.07273 14.8359 4.78125 14.8359H0.527344C0.235863 14.8359 0 15.0718 0 15.3633V17.4727C0 17.7641 0.235863 18 0.527344 18Z" fill="#414141"/>
+                    </svg>
+                    チャットレディ出勤状況
+                </h2>
+
+                <div class="ranking-site-info">
+                    <div class="left">
+                        <span class="date">2021/07/15 20:40</span>
+                        <span class="text">更新 ノンアダ・アダルト・ミックスを対象に掲載</span>
+                    </div>
+                    <div class="right">
+                        <button class="foreign-sites">海外サイト向け</button>
+                    </div>
+                </div>
+
+                <div class="ranking-site__body">
+                    <div class="ranking-site__left">
+                        <div class="ranking-site__item">
+                            <div class="site-item__number">
+                                <svg width="46" height="44" viewBox="0 0 46 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M44.6768 15.7829L43.5062 15.5334C43.3577 15.336 43.1988 15.1468 43.0177 14.9737C42.9288 14.8887 42.832 14.8118 42.7359 14.7343C41.7748 13.9618 40.4592 13.5662 38.8101 13.5662H37.2564H34.2789L31.6506 13.006L24.3813 0.978237C23.9999 0.347048 23.4998 0.0316162 22.9999 0.0316162C22.5 0.0316162 21.9999 0.347211 21.6185 0.978237L14.3492 13.0059L11.721 13.5661H8.74339H5.76598H2.72576C2.15884 13.5661 1.68606 13.9482 1.53723 14.4675C1.50623 14.5762 1.48408 14.6887 1.48408 14.8077V15.1136V15.7483L1.32291 15.7825C-0.119537 16.0899 -0.430749 17.1717 0.628346 18.1985L5.68435 23.101V23.9659V24.8306V28.1358C5.68435 28.8213 6.24039 29.3773 6.92595 29.3773H8.89612H9.52293H10.1497L8.35679 42.2477C8.2065 43.3266 8.66322 43.968 9.44592 43.968C9.7228 43.968 10.0407 43.8878 10.3868 43.7182L22.9998 37.5425L35.6125 43.7183C35.9587 43.8878 36.2765 43.9683 36.5533 43.9683C37.3363 43.9683 37.7929 43.327 37.6425 42.2478L35.8496 29.3777H36.1004C36.2293 29.3777 36.351 29.3526 36.4679 29.316C36.6946 29.2455 36.8916 29.1134 37.042 28.937C37.2265 28.7204 37.3422 28.443 37.3422 28.136V27.7134V26.849V25.9842L38.9633 24.4124C39.3159 24.3928 39.6504 24.3539 39.9712 24.2998C40.4068 24.2266 40.8123 24.1212 41.1878 23.9847C41.8577 23.7411 42.436 23.4026 42.9089 22.96C43.4576 22.446 43.8646 21.8329 44.1328 21.129C44.2701 20.7685 44.3687 20.3829 44.4316 19.9746C44.478 19.6737 44.5041 19.36 44.5101 19.034L45.3715 18.1986C46.4304 17.172 46.1195 16.0903 44.6768 15.7829ZM43.0516 20.4484C42.8539 21.0799 42.5266 21.6172 42.0605 22.0538C41.6531 22.4354 41.1367 22.7206 40.5132 22.9097C39.8989 23.0965 39.18 23.19 38.3559 23.19H36.1011V27.1878V28.136H35.6774H31.9643V14.8078H38.8102C40.3011 14.8078 41.4178 15.1625 42.1603 15.8716C42.9027 16.5809 43.2741 17.59 43.2741 18.8992C43.2741 19.4694 43.1968 19.9838 43.0516 20.4484ZM6.92611 26.0349V25.1702V24.3052V18.099H2.72576V15.4839V14.8492V14.808H2.91914H5.89647H15.2448V18.0992H11.0444V28.1364H10.3225H9.69578H9.06897H6.92611V26.0349ZM22.9999 28.3634C21.4968 28.3634 20.2527 28.1239 19.2679 27.6452C18.283 27.1664 17.4844 26.4088 16.8723 25.3723C16.2603 24.3358 15.9541 23.0388 15.9541 21.4811C15.9541 19.3051 16.5602 17.611 17.7723 16.3989C18.9846 15.1866 20.6724 14.5808 22.8362 14.5808C25.0545 14.5808 26.7637 15.1762 27.9638 16.3672C29.1639 17.5582 29.764 19.2266 29.764 21.3721C29.764 22.9298 29.5018 24.2072 28.9775 25.2042C28.4533 26.2011 27.6957 26.977 26.7047 27.5317C25.7135 28.0865 24.4789 28.3634 22.9999 28.3634Z" fill="#E1125E"/>
+                                    <path d="M22.8271 17.6989C21.9967 17.6989 21.3299 17.9929 20.8269 18.5807C20.3238 19.1687 20.0723 20.1414 20.0723 21.4992C20.0723 22.8449 20.3224 23.8116 20.8225 24.3993C21.3226 24.9873 22.0027 25.2811 22.8634 25.2811C23.7482 25.2811 24.4333 24.9933 24.9181 24.4174C25.403 23.8414 25.6454 22.8082 25.6454 21.3171C25.6454 20.0626 25.3924 19.1458 24.8863 18.567C24.3804 17.9885 23.694 17.6989 22.8271 17.6989Z" fill="#E1125E"/>
+                                    <path d="M37.2736 17.5172H36.1008V20.4901H37.11C37.9039 20.4901 38.4616 20.3523 38.7829 20.0764C39.1042 19.8005 39.2647 19.4476 39.2647 19.0173C39.2647 18.5991 39.1253 18.2446 38.8465 17.9535C38.5677 17.6627 38.0434 17.5172 37.2736 17.5172Z" fill="#E1125E"/>
+                                </svg>
+                                <div class="no text-center">
+                                    01
+                                </div>
+                            </div>
+                            <div class="site-item__info">
+                                <a class="site-name">FANZAライブチャット 人妻</a>
+                                <div class="percent">
+                                    <div style="width: 56%" class="per p-blue"></div>
+                                    <div style="width: 46%" class="per p-green"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ranking-site__item">
+                            <div class="site-item__number">
+                                <svg width="46" height="44" viewBox="0 0 46 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M44.6768 15.7829L43.5062 15.5334C43.3577 15.336 43.1988 15.1468 43.0177 14.9737C42.9288 14.8887 42.832 14.8118 42.7359 14.7343C41.7748 13.9618 40.4592 13.5662 38.8101 13.5662H37.2564H34.2789L31.6506 13.006L24.3813 0.978237C23.9999 0.347048 23.4998 0.0316162 22.9999 0.0316162C22.5 0.0316162 21.9999 0.347211 21.6185 0.978237L14.3492 13.0059L11.721 13.5661H8.74339H5.76598H2.72576C2.15884 13.5661 1.68606 13.9482 1.53723 14.4675C1.50623 14.5762 1.48408 14.6887 1.48408 14.8077V15.1136V15.7483L1.32291 15.7825C-0.119537 16.0899 -0.430749 17.1717 0.628346 18.1985L5.68435 23.101V23.9659V24.8306V28.1358C5.68435 28.8213 6.24039 29.3773 6.92595 29.3773H8.89612H9.52293H10.1497L8.35679 42.2477C8.2065 43.3266 8.66322 43.968 9.44592 43.968C9.7228 43.968 10.0407 43.8878 10.3868 43.7182L22.9998 37.5425L35.6125 43.7183C35.9587 43.8878 36.2765 43.9683 36.5533 43.9683C37.3363 43.9683 37.7929 43.327 37.6425 42.2478L35.8496 29.3777H36.1004C36.2293 29.3777 36.351 29.3526 36.4679 29.316C36.6946 29.2455 36.8916 29.1134 37.042 28.937C37.2265 28.7204 37.3422 28.443 37.3422 28.136V27.7134V26.849V25.9842L38.9633 24.4124C39.3159 24.3928 39.6504 24.3539 39.9712 24.2998C40.4068 24.2266 40.8123 24.1212 41.1878 23.9847C41.8577 23.7411 42.436 23.4026 42.9089 22.96C43.4576 22.446 43.8646 21.8329 44.1328 21.129C44.2701 20.7685 44.3687 20.3829 44.4316 19.9746C44.478 19.6737 44.5041 19.36 44.5101 19.034L45.3715 18.1986C46.4304 17.172 46.1195 16.0903 44.6768 15.7829ZM43.0516 20.4484C42.8539 21.0799 42.5266 21.6172 42.0605 22.0538C41.6531 22.4354 41.1367 22.7206 40.5132 22.9097C39.8989 23.0965 39.18 23.19 38.3559 23.19H36.1011V27.1878V28.136H35.6774H31.9643V14.8078H38.8102C40.3011 14.8078 41.4178 15.1625 42.1603 15.8716C42.9027 16.5809 43.2741 17.59 43.2741 18.8992C43.2741 19.4694 43.1968 19.9838 43.0516 20.4484ZM6.92611 26.0349V25.1702V24.3052V18.099H2.72576V15.4839V14.8492V14.808H2.91914H5.89647H15.2448V18.0992H11.0444V28.1364H10.3225H9.69578H9.06897H6.92611V26.0349ZM22.9999 28.3634C21.4968 28.3634 20.2527 28.1239 19.2679 27.6452C18.283 27.1664 17.4844 26.4088 16.8723 25.3723C16.2603 24.3358 15.9541 23.0388 15.9541 21.4811C15.9541 19.3051 16.5602 17.611 17.7723 16.3989C18.9846 15.1866 20.6724 14.5808 22.8362 14.5808C25.0545 14.5808 26.7637 15.1762 27.9638 16.3672C29.1639 17.5582 29.764 19.2266 29.764 21.3721C29.764 22.9298 29.5018 24.2072 28.9775 25.2042C28.4533 26.2011 27.6957 26.977 26.7047 27.5317C25.7135 28.0865 24.4789 28.3634 22.9999 28.3634Z" fill="#E1125E"/>
+                                    <path d="M22.8271 17.6989C21.9967 17.6989 21.3299 17.9929 20.8269 18.5807C20.3238 19.1687 20.0723 20.1414 20.0723 21.4992C20.0723 22.8449 20.3224 23.8116 20.8225 24.3993C21.3226 24.9873 22.0027 25.2811 22.8634 25.2811C23.7482 25.2811 24.4333 24.9933 24.9181 24.4174C25.403 23.8414 25.6454 22.8082 25.6454 21.3171C25.6454 20.0626 25.3924 19.1458 24.8863 18.567C24.3804 17.9885 23.694 17.6989 22.8271 17.6989Z" fill="#E1125E"/>
+                                    <path d="M37.2736 17.5172H36.1008V20.4901H37.11C37.9039 20.4901 38.4616 20.3523 38.7829 20.0764C39.1042 19.8005 39.2647 19.4476 39.2647 19.0173C39.2647 18.5991 39.1253 18.2446 38.8465 17.9535C38.5677 17.6627 38.0434 17.5172 37.2736 17.5172Z" fill="#E1125E"/>
+                                </svg>
+                                <div class="no text-center">
+                                    01
+                                </div>
+                            </div>
+                            <div class="site-item__info">
+                                <a class="site-name">FANZAライブチャット 人妻</a>
+                                <div class="percent">
+                                    <div style="width: 56%" class="per p-blue"></div>
+                                    <div style="width: 46%" class="per p-green"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ranking-site__item">
+                            <div class="site-item__number">
+                                <svg width="46" height="44" viewBox="0 0 46 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M44.6768 15.7829L43.5062 15.5334C43.3577 15.336 43.1988 15.1468 43.0177 14.9737C42.9288 14.8887 42.832 14.8118 42.7359 14.7343C41.7748 13.9618 40.4592 13.5662 38.8101 13.5662H37.2564H34.2789L31.6506 13.006L24.3813 0.978237C23.9999 0.347048 23.4998 0.0316162 22.9999 0.0316162C22.5 0.0316162 21.9999 0.347211 21.6185 0.978237L14.3492 13.0059L11.721 13.5661H8.74339H5.76598H2.72576C2.15884 13.5661 1.68606 13.9482 1.53723 14.4675C1.50623 14.5762 1.48408 14.6887 1.48408 14.8077V15.1136V15.7483L1.32291 15.7825C-0.119537 16.0899 -0.430749 17.1717 0.628346 18.1985L5.68435 23.101V23.9659V24.8306V28.1358C5.68435 28.8213 6.24039 29.3773 6.92595 29.3773H8.89612H9.52293H10.1497L8.35679 42.2477C8.2065 43.3266 8.66322 43.968 9.44592 43.968C9.7228 43.968 10.0407 43.8878 10.3868 43.7182L22.9998 37.5425L35.6125 43.7183C35.9587 43.8878 36.2765 43.9683 36.5533 43.9683C37.3363 43.9683 37.7929 43.327 37.6425 42.2478L35.8496 29.3777H36.1004C36.2293 29.3777 36.351 29.3526 36.4679 29.316C36.6946 29.2455 36.8916 29.1134 37.042 28.937C37.2265 28.7204 37.3422 28.443 37.3422 28.136V27.7134V26.849V25.9842L38.9633 24.4124C39.3159 24.3928 39.6504 24.3539 39.9712 24.2998C40.4068 24.2266 40.8123 24.1212 41.1878 23.9847C41.8577 23.7411 42.436 23.4026 42.9089 22.96C43.4576 22.446 43.8646 21.8329 44.1328 21.129C44.2701 20.7685 44.3687 20.3829 44.4316 19.9746C44.478 19.6737 44.5041 19.36 44.5101 19.034L45.3715 18.1986C46.4304 17.172 46.1195 16.0903 44.6768 15.7829ZM43.0516 20.4484C42.8539 21.0799 42.5266 21.6172 42.0605 22.0538C41.6531 22.4354 41.1367 22.7206 40.5132 22.9097C39.8989 23.0965 39.18 23.19 38.3559 23.19H36.1011V27.1878V28.136H35.6774H31.9643V14.8078H38.8102C40.3011 14.8078 41.4178 15.1625 42.1603 15.8716C42.9027 16.5809 43.2741 17.59 43.2741 18.8992C43.2741 19.4694 43.1968 19.9838 43.0516 20.4484ZM6.92611 26.0349V25.1702V24.3052V18.099H2.72576V15.4839V14.8492V14.808H2.91914H5.89647H15.2448V18.0992H11.0444V28.1364H10.3225H9.69578H9.06897H6.92611V26.0349ZM22.9999 28.3634C21.4968 28.3634 20.2527 28.1239 19.2679 27.6452C18.283 27.1664 17.4844 26.4088 16.8723 25.3723C16.2603 24.3358 15.9541 23.0388 15.9541 21.4811C15.9541 19.3051 16.5602 17.611 17.7723 16.3989C18.9846 15.1866 20.6724 14.5808 22.8362 14.5808C25.0545 14.5808 26.7637 15.1762 27.9638 16.3672C29.1639 17.5582 29.764 19.2266 29.764 21.3721C29.764 22.9298 29.5018 24.2072 28.9775 25.2042C28.4533 26.2011 27.6957 26.977 26.7047 27.5317C25.7135 28.0865 24.4789 28.3634 22.9999 28.3634Z" fill="#E1125E"/>
+                                    <path d="M22.8271 17.6989C21.9967 17.6989 21.3299 17.9929 20.8269 18.5807C20.3238 19.1687 20.0723 20.1414 20.0723 21.4992C20.0723 22.8449 20.3224 23.8116 20.8225 24.3993C21.3226 24.9873 22.0027 25.2811 22.8634 25.2811C23.7482 25.2811 24.4333 24.9933 24.9181 24.4174C25.403 23.8414 25.6454 22.8082 25.6454 21.3171C25.6454 20.0626 25.3924 19.1458 24.8863 18.567C24.3804 17.9885 23.694 17.6989 22.8271 17.6989Z" fill="#E1125E"/>
+                                    <path d="M37.2736 17.5172H36.1008V20.4901H37.11C37.9039 20.4901 38.4616 20.3523 38.7829 20.0764C39.1042 19.8005 39.2647 19.4476 39.2647 19.0173C39.2647 18.5991 39.1253 18.2446 38.8465 17.9535C38.5677 17.6627 38.0434 17.5172 37.2736 17.5172Z" fill="#E1125E"/>
+                                </svg>
+                                <div class="no text-center">
+                                    01
+                                </div>
+                            </div>
+                            <div class="site-item__info">
+                                <a class="site-name">FANZAライブチャット 人妻</a>
+                                <div class="percent">
+                                    <div style="width: 56%" class="per p-blue"></div>
+                                    <div style="width: 46%" class="per p-green"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ranking-site__right">
+                        <div class="ranking-site__item">
+                            <div class="site-item__number">
+                                <svg width="46" height="44" viewBox="0 0 46 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M44.6768 15.7829L43.5062 15.5334C43.3577 15.336 43.1988 15.1468 43.0177 14.9737C42.9288 14.8887 42.832 14.8118 42.7359 14.7343C41.7748 13.9618 40.4592 13.5662 38.8101 13.5662H37.2564H34.2789L31.6506 13.006L24.3813 0.978237C23.9999 0.347048 23.4998 0.0316162 22.9999 0.0316162C22.5 0.0316162 21.9999 0.347211 21.6185 0.978237L14.3492 13.0059L11.721 13.5661H8.74339H5.76598H2.72576C2.15884 13.5661 1.68606 13.9482 1.53723 14.4675C1.50623 14.5762 1.48408 14.6887 1.48408 14.8077V15.1136V15.7483L1.32291 15.7825C-0.119537 16.0899 -0.430749 17.1717 0.628346 18.1985L5.68435 23.101V23.9659V24.8306V28.1358C5.68435 28.8213 6.24039 29.3773 6.92595 29.3773H8.89612H9.52293H10.1497L8.35679 42.2477C8.2065 43.3266 8.66322 43.968 9.44592 43.968C9.7228 43.968 10.0407 43.8878 10.3868 43.7182L22.9998 37.5425L35.6125 43.7183C35.9587 43.8878 36.2765 43.9683 36.5533 43.9683C37.3363 43.9683 37.7929 43.327 37.6425 42.2478L35.8496 29.3777H36.1004C36.2293 29.3777 36.351 29.3526 36.4679 29.316C36.6946 29.2455 36.8916 29.1134 37.042 28.937C37.2265 28.7204 37.3422 28.443 37.3422 28.136V27.7134V26.849V25.9842L38.9633 24.4124C39.3159 24.3928 39.6504 24.3539 39.9712 24.2998C40.4068 24.2266 40.8123 24.1212 41.1878 23.9847C41.8577 23.7411 42.436 23.4026 42.9089 22.96C43.4576 22.446 43.8646 21.8329 44.1328 21.129C44.2701 20.7685 44.3687 20.3829 44.4316 19.9746C44.478 19.6737 44.5041 19.36 44.5101 19.034L45.3715 18.1986C46.4304 17.172 46.1195 16.0903 44.6768 15.7829ZM43.0516 20.4484C42.8539 21.0799 42.5266 21.6172 42.0605 22.0538C41.6531 22.4354 41.1367 22.7206 40.5132 22.9097C39.8989 23.0965 39.18 23.19 38.3559 23.19H36.1011V27.1878V28.136H35.6774H31.9643V14.8078H38.8102C40.3011 14.8078 41.4178 15.1625 42.1603 15.8716C42.9027 16.5809 43.2741 17.59 43.2741 18.8992C43.2741 19.4694 43.1968 19.9838 43.0516 20.4484ZM6.92611 26.0349V25.1702V24.3052V18.099H2.72576V15.4839V14.8492V14.808H2.91914H5.89647H15.2448V18.0992H11.0444V28.1364H10.3225H9.69578H9.06897H6.92611V26.0349ZM22.9999 28.3634C21.4968 28.3634 20.2527 28.1239 19.2679 27.6452C18.283 27.1664 17.4844 26.4088 16.8723 25.3723C16.2603 24.3358 15.9541 23.0388 15.9541 21.4811C15.9541 19.3051 16.5602 17.611 17.7723 16.3989C18.9846 15.1866 20.6724 14.5808 22.8362 14.5808C25.0545 14.5808 26.7637 15.1762 27.9638 16.3672C29.1639 17.5582 29.764 19.2266 29.764 21.3721C29.764 22.9298 29.5018 24.2072 28.9775 25.2042C28.4533 26.2011 27.6957 26.977 26.7047 27.5317C25.7135 28.0865 24.4789 28.3634 22.9999 28.3634Z" fill="#E1125E"/>
+                                    <path d="M22.8271 17.6989C21.9967 17.6989 21.3299 17.9929 20.8269 18.5807C20.3238 19.1687 20.0723 20.1414 20.0723 21.4992C20.0723 22.8449 20.3224 23.8116 20.8225 24.3993C21.3226 24.9873 22.0027 25.2811 22.8634 25.2811C23.7482 25.2811 24.4333 24.9933 24.9181 24.4174C25.403 23.8414 25.6454 22.8082 25.6454 21.3171C25.6454 20.0626 25.3924 19.1458 24.8863 18.567C24.3804 17.9885 23.694 17.6989 22.8271 17.6989Z" fill="#E1125E"/>
+                                    <path d="M37.2736 17.5172H36.1008V20.4901H37.11C37.9039 20.4901 38.4616 20.3523 38.7829 20.0764C39.1042 19.8005 39.2647 19.4476 39.2647 19.0173C39.2647 18.5991 39.1253 18.2446 38.8465 17.9535C38.5677 17.6627 38.0434 17.5172 37.2736 17.5172Z" fill="#E1125E"/>
+                                </svg>
+                                <div class="no text-center">
+                                    01
+                                </div>
+                            </div>
+                            <div class="site-item__info">
+                                <a class="site-name">FANZAライブチャット 人妻</a>
+                                <div class="percent">
+                                    <div style="width: 56%" class="per p-blue"></div>
+                                    <div style="width: 46%" class="per p-green"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ranking-site__item">
+                            <div class="site-item__number">
+                                <svg width="46" height="44" viewBox="0 0 46 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M44.6768 15.7829L43.5062 15.5334C43.3577 15.336 43.1988 15.1468 43.0177 14.9737C42.9288 14.8887 42.832 14.8118 42.7359 14.7343C41.7748 13.9618 40.4592 13.5662 38.8101 13.5662H37.2564H34.2789L31.6506 13.006L24.3813 0.978237C23.9999 0.347048 23.4998 0.0316162 22.9999 0.0316162C22.5 0.0316162 21.9999 0.347211 21.6185 0.978237L14.3492 13.0059L11.721 13.5661H8.74339H5.76598H2.72576C2.15884 13.5661 1.68606 13.9482 1.53723 14.4675C1.50623 14.5762 1.48408 14.6887 1.48408 14.8077V15.1136V15.7483L1.32291 15.7825C-0.119537 16.0899 -0.430749 17.1717 0.628346 18.1985L5.68435 23.101V23.9659V24.8306V28.1358C5.68435 28.8213 6.24039 29.3773 6.92595 29.3773H8.89612H9.52293H10.1497L8.35679 42.2477C8.2065 43.3266 8.66322 43.968 9.44592 43.968C9.7228 43.968 10.0407 43.8878 10.3868 43.7182L22.9998 37.5425L35.6125 43.7183C35.9587 43.8878 36.2765 43.9683 36.5533 43.9683C37.3363 43.9683 37.7929 43.327 37.6425 42.2478L35.8496 29.3777H36.1004C36.2293 29.3777 36.351 29.3526 36.4679 29.316C36.6946 29.2455 36.8916 29.1134 37.042 28.937C37.2265 28.7204 37.3422 28.443 37.3422 28.136V27.7134V26.849V25.9842L38.9633 24.4124C39.3159 24.3928 39.6504 24.3539 39.9712 24.2998C40.4068 24.2266 40.8123 24.1212 41.1878 23.9847C41.8577 23.7411 42.436 23.4026 42.9089 22.96C43.4576 22.446 43.8646 21.8329 44.1328 21.129C44.2701 20.7685 44.3687 20.3829 44.4316 19.9746C44.478 19.6737 44.5041 19.36 44.5101 19.034L45.3715 18.1986C46.4304 17.172 46.1195 16.0903 44.6768 15.7829ZM43.0516 20.4484C42.8539 21.0799 42.5266 21.6172 42.0605 22.0538C41.6531 22.4354 41.1367 22.7206 40.5132 22.9097C39.8989 23.0965 39.18 23.19 38.3559 23.19H36.1011V27.1878V28.136H35.6774H31.9643V14.8078H38.8102C40.3011 14.8078 41.4178 15.1625 42.1603 15.8716C42.9027 16.5809 43.2741 17.59 43.2741 18.8992C43.2741 19.4694 43.1968 19.9838 43.0516 20.4484ZM6.92611 26.0349V25.1702V24.3052V18.099H2.72576V15.4839V14.8492V14.808H2.91914H5.89647H15.2448V18.0992H11.0444V28.1364H10.3225H9.69578H9.06897H6.92611V26.0349ZM22.9999 28.3634C21.4968 28.3634 20.2527 28.1239 19.2679 27.6452C18.283 27.1664 17.4844 26.4088 16.8723 25.3723C16.2603 24.3358 15.9541 23.0388 15.9541 21.4811C15.9541 19.3051 16.5602 17.611 17.7723 16.3989C18.9846 15.1866 20.6724 14.5808 22.8362 14.5808C25.0545 14.5808 26.7637 15.1762 27.9638 16.3672C29.1639 17.5582 29.764 19.2266 29.764 21.3721C29.764 22.9298 29.5018 24.2072 28.9775 25.2042C28.4533 26.2011 27.6957 26.977 26.7047 27.5317C25.7135 28.0865 24.4789 28.3634 22.9999 28.3634Z" fill="#E1125E"/>
+                                    <path d="M22.8271 17.6989C21.9967 17.6989 21.3299 17.9929 20.8269 18.5807C20.3238 19.1687 20.0723 20.1414 20.0723 21.4992C20.0723 22.8449 20.3224 23.8116 20.8225 24.3993C21.3226 24.9873 22.0027 25.2811 22.8634 25.2811C23.7482 25.2811 24.4333 24.9933 24.9181 24.4174C25.403 23.8414 25.6454 22.8082 25.6454 21.3171C25.6454 20.0626 25.3924 19.1458 24.8863 18.567C24.3804 17.9885 23.694 17.6989 22.8271 17.6989Z" fill="#E1125E"/>
+                                    <path d="M37.2736 17.5172H36.1008V20.4901H37.11C37.9039 20.4901 38.4616 20.3523 38.7829 20.0764C39.1042 19.8005 39.2647 19.4476 39.2647 19.0173C39.2647 18.5991 39.1253 18.2446 38.8465 17.9535C38.5677 17.6627 38.0434 17.5172 37.2736 17.5172Z" fill="#E1125E"/>
+                                </svg>
+                                <div class="no text-center">
+                                    01
+                                </div>
+                            </div>
+                            <div class="site-item__info">
+                                <a class="site-name">FANZAライブチャット 人妻</a>
+                                <div class="percent">
+                                    <div style="width: 56%" class="per p-blue"></div>
+                                    <div style="width: 46%" class="per p-green"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ranking-site__item">
+                            <div class="site-item__number">
+                                <svg width="46" height="44" viewBox="0 0 46 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M44.6768 15.7829L43.5062 15.5334C43.3577 15.336 43.1988 15.1468 43.0177 14.9737C42.9288 14.8887 42.832 14.8118 42.7359 14.7343C41.7748 13.9618 40.4592 13.5662 38.8101 13.5662H37.2564H34.2789L31.6506 13.006L24.3813 0.978237C23.9999 0.347048 23.4998 0.0316162 22.9999 0.0316162C22.5 0.0316162 21.9999 0.347211 21.6185 0.978237L14.3492 13.0059L11.721 13.5661H8.74339H5.76598H2.72576C2.15884 13.5661 1.68606 13.9482 1.53723 14.4675C1.50623 14.5762 1.48408 14.6887 1.48408 14.8077V15.1136V15.7483L1.32291 15.7825C-0.119537 16.0899 -0.430749 17.1717 0.628346 18.1985L5.68435 23.101V23.9659V24.8306V28.1358C5.68435 28.8213 6.24039 29.3773 6.92595 29.3773H8.89612H9.52293H10.1497L8.35679 42.2477C8.2065 43.3266 8.66322 43.968 9.44592 43.968C9.7228 43.968 10.0407 43.8878 10.3868 43.7182L22.9998 37.5425L35.6125 43.7183C35.9587 43.8878 36.2765 43.9683 36.5533 43.9683C37.3363 43.9683 37.7929 43.327 37.6425 42.2478L35.8496 29.3777H36.1004C36.2293 29.3777 36.351 29.3526 36.4679 29.316C36.6946 29.2455 36.8916 29.1134 37.042 28.937C37.2265 28.7204 37.3422 28.443 37.3422 28.136V27.7134V26.849V25.9842L38.9633 24.4124C39.3159 24.3928 39.6504 24.3539 39.9712 24.2998C40.4068 24.2266 40.8123 24.1212 41.1878 23.9847C41.8577 23.7411 42.436 23.4026 42.9089 22.96C43.4576 22.446 43.8646 21.8329 44.1328 21.129C44.2701 20.7685 44.3687 20.3829 44.4316 19.9746C44.478 19.6737 44.5041 19.36 44.5101 19.034L45.3715 18.1986C46.4304 17.172 46.1195 16.0903 44.6768 15.7829ZM43.0516 20.4484C42.8539 21.0799 42.5266 21.6172 42.0605 22.0538C41.6531 22.4354 41.1367 22.7206 40.5132 22.9097C39.8989 23.0965 39.18 23.19 38.3559 23.19H36.1011V27.1878V28.136H35.6774H31.9643V14.8078H38.8102C40.3011 14.8078 41.4178 15.1625 42.1603 15.8716C42.9027 16.5809 43.2741 17.59 43.2741 18.8992C43.2741 19.4694 43.1968 19.9838 43.0516 20.4484ZM6.92611 26.0349V25.1702V24.3052V18.099H2.72576V15.4839V14.8492V14.808H2.91914H5.89647H15.2448V18.0992H11.0444V28.1364H10.3225H9.69578H9.06897H6.92611V26.0349ZM22.9999 28.3634C21.4968 28.3634 20.2527 28.1239 19.2679 27.6452C18.283 27.1664 17.4844 26.4088 16.8723 25.3723C16.2603 24.3358 15.9541 23.0388 15.9541 21.4811C15.9541 19.3051 16.5602 17.611 17.7723 16.3989C18.9846 15.1866 20.6724 14.5808 22.8362 14.5808C25.0545 14.5808 26.7637 15.1762 27.9638 16.3672C29.1639 17.5582 29.764 19.2266 29.764 21.3721C29.764 22.9298 29.5018 24.2072 28.9775 25.2042C28.4533 26.2011 27.6957 26.977 26.7047 27.5317C25.7135 28.0865 24.4789 28.3634 22.9999 28.3634Z" fill="#E1125E"/>
+                                    <path d="M22.8271 17.6989C21.9967 17.6989 21.3299 17.9929 20.8269 18.5807C20.3238 19.1687 20.0723 20.1414 20.0723 21.4992C20.0723 22.8449 20.3224 23.8116 20.8225 24.3993C21.3226 24.9873 22.0027 25.2811 22.8634 25.2811C23.7482 25.2811 24.4333 24.9933 24.9181 24.4174C25.403 23.8414 25.6454 22.8082 25.6454 21.3171C25.6454 20.0626 25.3924 19.1458 24.8863 18.567C24.3804 17.9885 23.694 17.6989 22.8271 17.6989Z" fill="#E1125E"/>
+                                    <path d="M37.2736 17.5172H36.1008V20.4901H37.11C37.9039 20.4901 38.4616 20.3523 38.7829 20.0764C39.1042 19.8005 39.2647 19.4476 39.2647 19.0173C39.2647 18.5991 39.1253 18.2446 38.8465 17.9535C38.5677 17.6627 38.0434 17.5172 37.2736 17.5172Z" fill="#E1125E"/>
+                                </svg>
+                                <div class="no text-center">
+                                    01
+                                </div>
+                            </div>
+                            <div class="site-item__info">
+                                <a class="site-name">FANZAライブチャット 人妻</a>
+                                <div class="percent">
+                                    <div style="width: 56%" class="per p-blue"></div>
+                                    <div style="width: 46%" class="per p-green"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ranking-site__meta">
+                    <div class="meta-item blue">
+                        <div class="color"></div>
+                        <div class="text">待機中</div>
+                    </div>
+                    <div class="meta-item green ">
+                        <div class="color"></div>
+                        <div class="text">チャット中</div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Ranking Sites -->
+        </div>
+    </div>
+</div>
+<!--End of Page Content-->
 
 <!--JS library-->
 <script src="js/index.js"></script>

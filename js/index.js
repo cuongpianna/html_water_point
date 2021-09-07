@@ -8,12 +8,24 @@ jQuery(document).ready(function (e) {
     // window.onscroll = function() {stickyHeader()};
 
     function stickyHeader() {
-        console.log(window.pageYOffset);
         if (window.pageYOffset > 80) {
             $('.header').addClass('sticky');
         } else {
             $('.header').removeClass('sticky');
         }
     }
+
+    var swiper = new Swiper("#girl-slide__Swiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        slidesPerView: 1,
+        autoplay: {
+            delay: 3000,
+        },
+        loop: true,
+        speed: 700,
+    });
 });
 

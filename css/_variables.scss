@@ -1,17 +1,11 @@
 /*=================VARIABLE===============*/
-$fontLato: 'Lato', sans-serif;
-$borderColor: #C9C9C9;
-$mainColor: #1E1E41;
-$blue1: #19E6F3;
-$blue2: #0C3BC1;
+$pink: #FAC1D6;
+$pink2: #E1125E;
+$purple: #D972F4;
+$green: #2AB930;
+$orange: #FCB243;
 
-@font-face {
-  font-family: patua ;
-  src: url('../fonts/Patua_One/PatuaOne-Regular.ttf');
-}
-
-$fontPatua: patua;
 
 body{
-  font-family: $fontLato;
+  font-family: Roboto, sans-serif;
 }

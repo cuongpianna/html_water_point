@@ -12,7 +12,7 @@ body {
   background: #fff;
   overflow-x: hidden;
   position: relative;
-  font-family: $fontLato;
+  font-family: Roboto, sans-serif;
 
   a {
     text-decoration: none;
@@ -37,301 +37,87 @@ body {
   overflow: hidden;
 }
 
-.wrapper {
-  overflow: hidden;
+
+.page-container{
+  max-width: 1160px;
+  margin: auto;
+}
+
+// Header
+.header{
+  background: $pink;
+  box-shadow: 0px 2px 4px rgba(97, 97, 97, 0.18), 0px 4px 8px rgba(97, 97, 97, 0.18);
+  border-radius: 0px 0px 10px 10px;
+
+  .header-inner{
+    padding: 7px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .search-box{
+      width: 250px;
+      position: relative;
+      svg{
+        position: absolute;
+        left: 8px;
+        top: 11px;
+      }
+
+      input{
+        width: 100%;
+        background: #FFFFFF;
+        border: 1px solid #E1125E;
+        box-sizing: border-box;
+        border-radius: 8px;
+        height: 40px;
+        padding: 8px 14px 8px 32px;
+        outline: none;
+      }
+    }
+  }
 }
 
 
+// Navigation
+.navigation{
+  .nav{
+    display: flex;
+    padding: 30px 24px;
 
-.page-jobs{
-  position: relative;
+    li{
+      margin-right: 64px;
 
-  .sticky + .content-wrap{
-    padding-top: 82px;
-  }
+      &.home-link{
+        a{
+          font-weight: bold;
+          color: $pink2;
+          padding: 8px 16px;
+          border: 2px solid #E1125E;
+          border-radius: 6px;
+          transition: all ease .2s;
 
-  .header{
-    transition: all ease 3s;
-    position: sticky !important;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-
-    &.sticky{
-      position: sticky !important;
-      top: 0;
-      width: 100%;
-      z-index: 100;
-    }
-
-    background: $mainColor;
-
-    .header-wrap{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-
-      .site-logo{
-        display: inline-flex;
-        align-items: center;
-        text-decoration: unset;
-
-        span{
-          font-family: $fontPatua;
-          font-style: normal;
-          font-weight: 400;
-          font-size: 22px;
-          line-height: 20px;
-          color: #fff;
-          margin-left: 15px;
-        }
-      }
-
-      .header-menu{
-        .menu-wrap{
-          display: flex;
-
-          .menu-item{
-            display: inline-flex;
-            height: 82px;
-            align-items: center;
+          &:hover{
+            background: $pink2;
             color: #fff;
-            padding: 0 15px;
-            cursor: pointer;
-            transition: all ease .3s;
-
-            path{
-              //fill: #fff;
-            }
-
-            a{
-              text-decoration: unset;
-              font-family: $fontLato;
-              font-style: normal;
-              font-weight: bold;
-              font-size: 18px;
-              line-height: 20px;
-              color: #fff;
-              margin-left: 12px;
-            }
-
-            &.active{
-              border-bottom: 4px solid $blue1;
-
-              a{
-                color: $blue1;
-              }
-            }
-
-            &:hover{
-              border-bottom: 4px solid $blue1;
-
-              a{
-                color: $blue1;
-              }
-            }
-
-            &.menu-chat{
-              .menu-icon{
-                position: relative;
-              }
-
-              .num{
-                position: absolute;
-                width: 25px;
-                height: 25px;
-                border-radius: 100%;
-                background: $blue1;
-                color: #171717;
-                font-family: $fontLato;
-                font-weight: bold !important;
-                font-size: 14px;
-                line-height: 20px;
-                display: inline-flex;
-                justify-content: center;
-                align-items: center;
-                left: 10px;
-                top: -18px;
-              }
-            }
-
-            &.menu-league{
-              .menu-icon{
-                position: relative;
-              }
-
-              .num{
-                position: absolute;
-                width: 25px;
-                height: 25px;
-                border-radius: 100%;
-                background: #FFA724;
-                color: #171717;
-                font-family: $fontLato;
-                font-weight: bold !important;
-                font-size: 14px;
-                line-height: 20px;
-                display: inline-flex;
-                justify-content: center;
-                align-items: center;
-                left: 12px;
-                top: -20px;
-              }
-            }
-
           }
         }
       }
 
-      .user-profile{
-        display: inline-flex;
-        align-items: center;
-        .user-avatar{
-          border-radius: 100%;
-          max-width: 45px;
-        }
-
-        .user-info{
-          margin-left: 15px;
-          .username{
-            color: #fff;
-            font-family: $fontLato;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 1;
-          }
-
-          .user-level{
-            display: inline-flex;
-            align-items: center;
-            margin-top: 3px;
-
-            img{
-              max-width: 12px;
-            }
-
-            span{
-              margin-left: 7px;
-              color: #fff;
-              font-style: normal;
-              font-weight: 500;
-              font-size: 14px;
-              line-height: 16px;
-              font-family: $fontLato;
-            }
-          }
-        }
+      a{
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        color: #818181;
+        text-decoration: none;
       }
-    }
-  }
-}
 
-@media only screen and (max-width: 1024px) {
-  .page-jobs{
-    .header{
-      .header-wrap{
-        .site-logo{
-
-          span{
-            font-size: 20px;
-          }
-        }
-
-        .header-menu{
-          .menu-wrap{
-            display: flex;
-
-            .menu-item{
-              padding: 0 12px;
-
-            }
-          }
-        }
-
+      &:last-child{
+        margin-right: 0;
       }
     }
   }
 }
 
 
-@media only screen and (max-width: 768px) {
-  .page-jobs{
-    .header{
-      .header-wrap{
-        height: 80px;
-
-        .header-menu{
-
-          .menu-wrap{
-            transition: all ease .3s;
-            width: 400px;
-            max-width: 85%;
-            position: fixed;
-            left: -500px;
-            height: 100vh;
-            display: block;
-            background: #1E1E41;
-            z-index: 200;
-            top: 80px;
-
-            &.show{
-              left: 0;
-
-              .menu-item{
-                display: flex;
-                border-bottom: 2px solid #19E6F3 !important;
-                padding-left: 20px;
-              }
-            }
-          }
-        }
-
-        .menu-icon{
-          display: block !important;
-          .icon{
-            color: #fff;
-            margin-left: 20px;
-          }
-        }
-
-      }
-    }
-
-    .overlay.show{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: 3;
-      background: #1c1a1a9c;
-      display: block;
-      margin-top: 80px;
-    }
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .header-wrap{
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .page-jobs .header .header-wrap .user-profile .user-avatar {
-    max-width: 35px;
-  }
-
-  .page-jobs .header .header-wrap .user-profile .user-info .username {
-    font-size: 15px;
-  }
-
-  .page-jobs .header .header-wrap .user-profile .user-info .user-level span {
-    font-size: 12px;
-  }
-
-  .page-jobs .header .header-wrap .menu-icon .icon {
-    color: #fff;
-    margin-left: 12px;
-  }
-}
 
